@@ -10,9 +10,9 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Breno Xavier
-* Bruno L. Tetzner
-* Camila Cintra de Oliveira
+* Breno Henrique Martins Xavier
+* Bruno de Lacerda Tetzner
+* Camilla Cintra de Oliveira
 * Geraldo Daniel Soriano Freire
 * Gilberto Modesto
 * Ramon de Almeida Lima
