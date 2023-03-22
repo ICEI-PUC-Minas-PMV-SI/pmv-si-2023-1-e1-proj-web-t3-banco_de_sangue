@@ -1,13 +1,12 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+O sistema ABO foi descoberto por Karl Landsteiner em 1901, solucionando um dos grandes problemas da medicina de sua época: transfusões de sangue. Desde então, sua descoberta tem sido empregada em todo o mundo para classificar os tipos sanguíneos humanos (A, B, AB e O) e ajudar os médicos a realizar transfusões de sangue de maneira mais eficaz e segura em seus pacientes.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
+A descoberta de Landsteiner foi fundamental para a medicina e teve um impacto significativo na saúde pública, ajudando a evitar incompatibilidades entre os tipos sanguíneos e a diminuir as taxas de mortalidade decorrentes de transfusões de sangue. Além disso, o sistema ABO permitiu o desenvolvimento de novas tecnologias, como a criopreservação de sangue e o armazenamento de sangue em bancos de sangue.
 
+No entanto, apenas 1,9% dos brasileiros doam sangue, enquanto o valor ideal, de acordo com as Nações Unidas, é de 5%. Isso tem gerado um grande problema para os órgãos de saúde, uma vez que seus bancos de sangue carecem desse material vital para o tratamento de diversos problemas de saúde. Seja por medo, falta de conhecimento ou desinteresse, o número de doadores nunca foi muito grande no Brasil, e esse número diminuiu ainda mais com a COVID-19.
 
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Dito isso, o objetivo da aplicação que está sendo construída é facilitar o processo de recrutamento de doadores de sangue, permitindo um recrutamento simples e eficaz de pessoas que atendam aos requisitos necessários para serem doadores, respeitando normas e protocolos de segurança, e buscando aproximar a população desse problema afim de resolvê-lo.
 
 ## Problema
 
