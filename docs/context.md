@@ -23,7 +23,7 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Afim de resolver problemas enfrentados pela sociedade, problemas de doação de sangue, foi desenvolvido um software capaz de auxiliar nesses problemas, para que possam ser mitigados ou sanados.
+Afim de resolver problemas enfrentados pela sociedade, problemas de doação de sangue, foi desenvolvido um software capaz de auxiliar na solução desses problemas, para que possam ser mitigados ou sanados.
 
 Resolução de problemas como: a burocratização na instituição para se doar sangue. O software permite desburocratizar, permitindo assim que seja feito um pré-cadastro coletando todo tipo de informação que é preciso para fazer a doação. Assim, tornando o momento da triagem mais ágil, evitando até, desistência na fila de espera dos doadores.
 
