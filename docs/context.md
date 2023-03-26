@@ -23,12 +23,13 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Afim de resolver problemas enfrentados pela sociedade, problemas de doação de sangue, foi desenvolvido um software capaz de auxiliar nesses problemas, para que possam ser mitigados ou sanados.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Resolução de problemas como: a burocratização na instituição para se doar sangue. O software permite desburocratizar, permitindo assim que seja feito um pré-cadastro coletando todo tipo de informação que é preciso para fazer a doação. Assim, tornando o momento da triagem mais ágil, evitando até, desistência na fila de espera dos doadores.
+
+Levar informação as pessoas que moram em áreas mais remotas, ou até em cidades que não tenham hemocentros, para que dessa forma possa ser feito um cadastramento com seus dados como, sua localização, seu contato, se tem alguma comorbidade, se tem interesse em doar e seu tipo sanguíneo. Para que nesse caso possam ser acionados se preciso.
+
+
 
 ## Justificativa
 
