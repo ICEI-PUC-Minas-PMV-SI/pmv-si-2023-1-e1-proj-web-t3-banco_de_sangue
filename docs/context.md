@@ -10,16 +10,12 @@ Dito isso, o objetivo da aplicação que está sendo construída é facilitar o 
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Atualmente quase 50% dos brasileiros não doam sangue por medo ou simplesmente for falta de informação. Muitos não sabem se enquadram nos requisitos necessários para serem doadores e outros temem o processo por não terem consciência de como é feito. Maísa Ribeiro, diretora técnico-científica da Fundação Hemominas, destaca as principais dúvidas a respeito do tema. “O principal desconhecimento da população diz respeito a estar ou não apto a doar diante do uso de medicamentos, ter tatuagem ou piercing, após o retorno de viagens e ou ser submetido a procedimentos estéticos. Também há dúvidas sobre problemas de saúde crônicos como hipertensão, diabetes ou hipotireoidismo”.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Segundo o **[IBGE](https://www.correiodopovo.com.br/jornalcomtecnologia/mais-de-155-milhões-de-brasileiros-possuem-celular-para-uso-pessoal-aponta-ibge-1.891007)** cerca de 84% da população brasileira possui acesso a um telefone celular. Além disso, uma pesquisa realizada pelo **[PoderData](https://www.poder360.com.br/midia/internet-e-principal-meio-de-informacao-para-43-tv-e-preferida-de-40/)** aponta que 43% das pessoas de informam primariamente pela internet. Dessa forma utilizar essa tecnologia para aumentar o acesso as informações sobre a doação de sangue apresenta um grande potencial de sucesso para o aumento da base de doadores. Ademais, na perspectiva dos profissionais de saúde o processo de cadastro e de contato tende a ser oneroso e demorado. 
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+> * [Mitos e verdades sobre doação de sangue](https://www.agenciaminas.mg.gov.br/noticia/hemominas-esclarece-mitos-e-verdades-sobre-doacao-de-sangue)
+> * [Ministério da Saúde - Doação de sangue](https://www.gov.br/saude/pt-br/composicao/saes/sangue)
 
 ## Objetivos
 
