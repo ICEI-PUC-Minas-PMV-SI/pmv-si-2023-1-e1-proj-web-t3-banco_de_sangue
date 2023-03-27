@@ -6,7 +6,7 @@ Para isso será abordado a construção das personas e das histórias de usuári
 As técnicas utilizadas são:
 - Definição de personas, contextualizando seus momentos de vida e suas necessidades.
 - Criação das histórias de usuários, separando em "Persona" | "Funcionalidade" | "Motivo".
-- Baseado nos resultados dos passos anteriores, Criação dos requisitos do sistema.
+- Criação dos requisitos do sistema, baseado nos resultados dos passos anteriores.
 
 ## Personas
 
