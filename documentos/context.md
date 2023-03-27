@@ -33,6 +33,14 @@ Levar informação as pessoas que moram em áreas mais remotas, ou até em cidad
 
 ## Justificativa
 
+O que mais motivou a utilização deste tema para o desenvolvimento de um aplicativo para doação de sangue, foi a intenção de se manter os estoques nos Hemocentros em níveis ideais para que cirurgias e transfusões de sangue não deixem de acontecer.
+
+Conscientizando e incentivando de forma clara e fácil de entender, que o ato de doar sangue é um gesto solidário que pode salvar vidas, passando informações e tirando dúvidas no formato FAQ, a aplicação poderá mostrar também qual seria o centro mais próximo para se doar sangue.
+
+Os hemocentros poderão ter acesso ao cadastro dos doadores de tal modo a entrar em contato com os mesmos para agilizar e regularizar seus estoques.
+
+Assim sendo, os maiores beneficiários são aquelas pessoas que necessitariam em caráter de emergência de cirurgia, e as que tem doenças graves que dependem diretamente de transfusões frequentes.
+
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
 O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
