@@ -42,6 +42,23 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
+No  Brasil , a doação de sangue é regulamentada pelo ministerio da saúde e é considerado um serviço essecial para garantir a saúde publica.
+O sangue doado  é utiliza  em  diveras situaçoes ,como cirurgias, tratamento de doenças croni, tranfusões em caso  de  emergrncia, emtre outros.
+A aplicação do público-alvo  de um site ou aplicativo  para facilitar o processo  de doação de sangue . isso inclui:
+* Pessoas  saudáveis que deseja  ajudar  e contribuir  co ma saúde pública;
+*  Pessoas que  já doaram  sangue antes  e desejam  continuar doando regulamente;
+*  Pessoas que tivera amigos  ou familiares  que preciaram de tranfusão  de sangue e querem retribuir;
+*  Pessoas que foram  sensibilizada por campanhas  de doação  de sangue  e querem  se envolver.
+Além disso ,  o site ou aplicativo tembém pode ser útil  para profi da area  da saúd, hospitais, bancos de sangue  e organiz não governamentais que trabalam
+com doações de sangue.Esses profissionais podem  ultilizar a plataforma para  cadastrar  doadores , agendar doaçoes e acompanhar as nessecidade de sangue de cada unidade de saúde.
+Existem  vários  públicos-alvo que podem ser benefciados  com  um projeto de doação de sangue. Aqui estão  aguns exemplos:
+1. hospitais e clinicas: essas instituiçoes de saúde  são as principais beneficiar,pois  precisam de sanguue  para tratar pacientes com doeças graves,cirurgias, acidentes e outras condiçoes medicas.
+2.  Pacientes com doenças  cronicas, como anemia falciforme, hemofilia e cancer, requerem  transfusões regulares de sangue  para ajudar a controlar  a doença  e melhorar a qualidade de vidado  paciente.
+3.  Mulheres gravida  e para recem-nacidos, pode ser  nece durante a gravideze apos o parto para  ajudar a tratar complicações  médicas e garantir  a saúde da mãe e do bebé.
+4.   Pessoas que sofreram trauma: acidante de carro, desastres naturais  e outras situaçoes  de emergencias  que poodem causar perda significativa de  sangue.
+5.   Pessoas em tratamento de quimioterapia, pode afetar  a produção de células sanguíneas no corpo, e doação de sangue são necessarioas para ajudar a previnircomplicações .
+Com o fácil acesso a plataforma de informções e cadastro, pode ser incluid pessoas de todas as idades e gêneros que  precisam de doação de sangue para ajudar salvar vidas e ter uma vida com a saúde melhor.  
+
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
 
