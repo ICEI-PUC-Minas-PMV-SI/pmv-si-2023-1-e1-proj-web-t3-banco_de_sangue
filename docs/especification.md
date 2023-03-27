@@ -40,31 +40,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
-
+|RF-001 | O sistema deve permitir que novos usuários se cadastrem como doadores de sangue | ALTA |  |
+|RF-002 | O sistema deve permitir que representantes de banco de sangue criem contas para acessar o sistema | ALTA | |
+|RF-003 | O sistema deve permitir que os usuários visualizem informações sobre doação de sangue, requisitos e locais de doação | ALTA |
+|RF-004 | O sistema deve permitir que os usuários visualizem suas próprias informações de doação de sangue | ALTA |
+|RF-005 | O sistema deve permitir que os usuários atualizem suas próprias informações de doação de sangue | ALTA |
+|RF-006 | O sistema deve permitir que representantes de banco de sangue visualizem informações de doadores de sangue | ALTA |
+|RF-007 | O sistema deve permitir que representantes de banco de sangue atualizem informações de doadores de sangue | ALTA |
+|RF-008 | O sistema deve permitir que os usuários recebam notificações por e-mail ou mensagem de texto sobre campanhas de doação de sangue | BAIXA |
+|RF-009 | O sistema deve permitir que o administrador do sistema gerencie as permissões de acesso dos usuários do sistema | ALTA |
+|RF-010 | O sistema deve permitir que os usuários solicitem a remoção de suas informações do sistema | BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-002 | O sistema deve ser seguro e confiável, com medidas de segurança adequadas para proteger as informações dos usuários | ALTA |
+|RNF-003 | O sistema deve ser compatível com diferentes navegadores web, incluindo Chrome, Firefox e Safari | MÉDIA |
+|RNF-004 | O sistema deve ter um tempo de resposta rápido para fornecer uma boa experiência do usuário | ALTA |
 
 ## Restrições
 
