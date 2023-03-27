@@ -1,42 +1,36 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+O problema em que irá ser atacado para esse projeto é a falta de doadores de sangue no Brasil. Esse sistema deve ter como objetivo incentivar mais pessoas a se tornarem doadores de sangue, facilitar o processo de doação e garantir que os bancos de sangue tenham um suprimento adequado de sangue para atender às necessidades da população.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Para isso será abordado a construção das personas e dasnhistórias de usuários para, posteriormente, serem definidas os requisitos do sistema.
+As técnicas utilizadas são:
+- Definição de personas, contextualizando seus momentos de vida e suas necessidades.
+- Criação das histórias de usuários, separando em "Persona" | "Funcionalidade" | "Motivo".
+- Baseado nos resultados dos passos anteriores, Criação dos requisitos do sistema.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+1) Maria, 35 anos, Enfermeira:
+Maria trabalha em um banco de sangue em uma grande cidade do Brasil. Ela é uma pessoa ocupada que geralmente precisa lidar com muitas tarefas ao mesmo tempo. Como representante do banco de sangue, ela precisa entrar em contato com doadores regularmente para agendar doações e atualizar informações importantes. Maria precisa de um sistema de cadastro de doadores fácil de usar e que possa ser acessado rapidamente para encontrar doadores disponíveis quando necessário.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+2) João, 25 anos, Estudante universitário:
+João é um jovem estudante universitário que está preocupado com a questão da doação de sangue. Ele não sabe muito sobre o processo e não tem certeza se pode doar sangue ou não. Ele quer aprender mais sobre como se tornar um doador e como se preparar para a doação. Ele gostaria de ter acesso a informações precisas e confiáveis sobre doação de sangue, como requisitos, tipos de doação, riscos e benefícios.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+3) Ana, 50 anos, Dona de casa:
+Ana é uma dona de casa que se preocupa com a saúde da família e da comunidade. Ela acredita que a doação de sangue é uma forma importante de ajudar outras pessoas em momentos de necessidade. Ela gostaria de ter acesso a um sistema de cadastro de doadores de sangue onde possa se cadastrar e receber informações sobre quando e onde pode doar sangue. Ela também gostaria de receber lembretes sobre quando é hora de doar novamente e ter informações sobre os benefícios da doação de sangue.
+
+4) Gabriel, 30 anos, administrador do sistema de cadastro de doadores de sangue:
+ Gabriel é um profissional de TI experiente, organizado e detalhista. Ele é responsável por garantir a segurança e privacidade das informações do sistema e se preocupa em garantir que os usuários tenham as permissões de acesso corretas. Gabriel é um tomador de decisão confiável e justo, motivado pela causa da doação de sangue.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|`PERSONA`| `FUNCIONALIDADE` |`MOTIVO/VALOR` |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Representante do banco de sangue | Encontrar doadores disponíveis rapidamente quando surge uma necessidade urgente | Maior eficiênia na busca e possibilidade de contata-los |
+|Representante do banco de sangue | Atualizar informações importantes sobre os doadores, como a última data de doação e os tipos de sangue | Manter os usuários atualizados |
+|Doador de sangue |Ter acesso à fnformações detalhadas sobre doação de sangue |Aprender mais sobre a doação de sangue e se sentir mais confiante e preparada para doar |
+|Doador de sangue |Acompanhar o histórico de doações e receber notificações de doação |Monitorar sua frequência de doação e receber lembretes para doar novamente |
+|Administrador do sistema |Gerenciar permissões de acesso |Organização dos acessos referentes ao usuários representantes dos bancos de sangue |
 
 ## Requisitos
 
