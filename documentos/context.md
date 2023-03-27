@@ -41,6 +41,13 @@ Os hemocentros poderão ter acesso ao cadastro dos doadores de tal modo a entrar
 
 Assim sendo, os maiores beneficiários são aquelas pessoas que necessitariam em caráter de emergência de cirurgia, e as que tem doenças graves que dependem diretamente de transfusões frequentes.
 
+Segundo o Ministério da Saúde (1), 14 em cada 1000 habitantes doam sangue de forma regular nos hemocentros do Sistema Único de Saúde (SUS).
+
+O Instituto Nacional do Câncer (2) publicou que em setembro/2022 o número de doações de sangue teve uma queda de 30% em relação ao mesmo período em 2021.
+
+Uma prova que falta informação à população é que mesmo com o aparecimento da COVID-19 as doações não devem parar:
+  De acordo com as orientações do Ministério da Saúde e da Agência Nacional de Vigilância Sanitária, pessoas com diagnóstico ou suspeita de Covid-19 estão aptas a doar sangue 10 dias depois do desaparecimento dos sintomas. Já quem teve contato com casos positivos pode doar após sete dias do último contato, enquanto os assintomáticos com teste positivo podem fazer a doação após 10 dias da realização do teste. Aqueles que fizeram isolamento voluntário ou por determinação médica podem realizar a ação 10 dias após o término do isolamento.
+
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
 O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
