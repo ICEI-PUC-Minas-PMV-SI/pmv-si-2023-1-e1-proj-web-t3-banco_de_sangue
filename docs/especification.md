@@ -29,6 +29,7 @@ Ana é uma dona de casa que se preocupa com a saúde da família e da comunidade
 |Representante do banco de sangue | Encontrar doadores disponíveis rapidamente quando surge uma necessidade urgente | Maior eficiênia na busca e possibilidade de contata-los |
 |Representante do banco de sangue | Atualizar informações importantes sobre os doadores, como a última data de doação e os tipos de sangue | Manter os usuários atualizados |
 |Doador de sangue |Ter acesso à fnformações detalhadas sobre doação de sangue |Aprender mais sobre a doação de sangue e se sentir mais confiante e preparada para doar |
+|Doador de sangue |Se voluntariar à doação de sangue através de um cadastro |Disponibilizar os dados de contato para a doação |
 |Doador de sangue |Acompanhar o histórico de doações e receber notificações de doação |Monitorar sua frequência de doação e receber lembretes para doar novamente |
 |Administrador do sistema |Gerenciar permissões de acesso |Organização dos acessos referentes ao usuários representantes dos bancos de sangue |
 
