@@ -19,13 +19,13 @@ Segundo o **[IBGE](https://www.correiodopovo.com.br/jornalcomtecnologia/mais-de-
 
 ## Objetivos
 
-Afim de resolver problemas enfrentados pela sociedade, problemas de doação de sangue, foi desenvolvido um software capaz de auxiliar na solução desses problemas, para que possam ser mitigados ou sanados.
+Afim de resolver problemas enfrentados pela sociedade, problemas de doação de sangue, está sendo desenvolvido um software capaz de auxiliar na solução desses problemas, para que possam ser sanados ou mitigados.
 
-Resolução de problemas como: a burocratização na instituição para se doar sangue. O software permite desburocratizar, permitindo assim que seja feito um pré-cadastro coletando todo tipo de informação que é preciso para fazer a doação. Assim, tornando o momento da triagem mais ágil, evitando até, desistência na fila de espera dos doadores.
+Resolução de problemas como: a burocratização na instituição para se doar sangue. O software permite desburocratizar, permitindo assim que seja feito um pré-cadastro coletando todo tipo de informação que é preciso para fazer a doação. Assim, tornando o momento da triagem mais ágil, evitando até, desistências na fila de espera dos doadores.
 
 Levar informação as pessoas que moram em áreas mais remotas, ou até em cidades que não tenham hemocentros, para que dessa forma possa ser feito um cadastramento com seus dados como, sua localização, seu contato, se tem alguma comorbidade, se tem interesse em doar e seu tipo sanguíneo. Para que nesse caso possam ser acionados se preciso.
 
-
+Conscientizando e incentivando de forma clara e fácil de entender, que o ato de doar sangue é um gesto solidário que pode salvar vidas, passando informações e tirando dúvidas no formato FAQ, a aplicação poderá mostrar também qual seria o centro mais próximo para se doar sangue.
 
 ## Justificativa
 
