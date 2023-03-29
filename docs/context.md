@@ -30,36 +30,28 @@ Conscientizando e incentivando de forma clara e fácil de entender, que o ato de
 
 ## Justificativa
 
-O que mais motivou a utilização deste tema para o desenvolvimento de um aplicativo para doação de sangue, foi a intenção de se manter os estoques nos Hemocentros em níveis ideais para que cirurgias e transfusões de sangue não deixem de acontecer.
+As doações de sangue no Brasil correspondem, a 1,9% da população brasileira, sendo que 40% dessas doações são realizadas para fins de reposição, ou seja, quando algum familiar ou pessoa do vínculo social sofre um acidente ou algum problema de saúde. Este percentual está abaixo do que é recomendado pela OMS de 3% a 5%. [5]
 
-Conscientizando e incentivando de forma clara e fácil de entender, que o ato de doar sangue é um gesto solidário que pode salvar vidas, passando informações e tirando dúvidas no formato FAQ, a aplicação poderá mostrar também qual seria o centro mais próximo para se doar sangue.
+De acordo com a Organização Pan-Americana da Saúde, a maior dificuldade em aumentar o volume de doações reside na falta de informações sobre o processo e também na falta de conscientização sobre a sua importância. [5]
 
-Os hemocentros poderão ter acesso ao cadastro dos doadores de tal modo a entrar em contato com os mesmos para agilizar e regularizar seus estoques.
+Citações de especialistas sobre o assunto corroboram o contexto atual no Brasil. Segundo Naura Faria [6], chefe de atendimento ao doador do HemoRio, hemocentro coordenador do Estado do Rio de Janeiro, a doação de sangue no Brasil ainda é cercada de "mitos":
+"Infelizmente, ainda existem alguns mitos em relação à doação de sangue. Há pessoas que acreditam que se doarem uma vez, vão ter de doar sempre. Outras acham que doar sangue engorda. Existem ainda aquelas que temem contrair alguma doença infecciosa durante a coleta. É preciso desfazer esses mitos e informar a população sobre os benefícios da doação."
 
-Assim sendo, os maiores beneficiários são aquelas pessoas que necessitariam em caráter de emergência de cirurgia, e as que tem doenças graves que dependem diretamente de transfusões frequentes.
+Para Júnia Guimarães Mourão [6], presidente da Fundação Hemominas, hemocentro coordenador do Estado de Minas Gerais, o volume de sangue doado está relacionado "à cultura dos países".
+"Diferentemente de países desenvolvidos, como o Japão ou os Estados Unidos, o Brasil não se envolveu em grandes guerras ou passou por grandes catástrofes naturais, que, acredito, podem ter criado em suas sociedades a compreensão da importância da doação de sangue.”
 
-Segundo o Ministério da Saúde (1), 14 em cada 1000 habitantes doam sangue de forma regular nos hemocentros do Sistema Único de Saúde (SUS).
+Diante do apresentado, torna-se plausível o desenvolvimento de uma aplicação que possa divulgar informações esclarecedoras para conscientização da população da importância do tema.
 
-O Instituto Nacional do Câncer (2) publicou que em setembro/2022 o número de doações de sangue teve uma queda de 30% em relação ao mesmo período em 2021.
-
-Uma prova que falta informação à população é que mesmo com o aparecimento da COVID-19 as doações não devem parar:
-  De acordo com as orientações do Ministério da Saúde e da Agência Nacional de Vigilância Sanitária, pessoas com diagnóstico ou suspeita de Covid-19 estão aptas a doar sangue 10 dias depois do desaparecimento dos sintomas. Já quem teve contato com casos positivos pode doar após sete dias do último contato, enquanto os assintomáticos com teste positivo podem fazer a doação após 10 dias da realização do teste. Aqueles que fizeram isolamento voluntário ou por determinação médica podem realizar a ação 10 dias após o término do isolamento.
-
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+As pessoas cadastradas poderão ser notificadas sobre campanhas regionais e nacionais, oferecendo às mais de duas mil unidades da Hemorrede [7] (Rede de sangue e hemoderivados do Brasil) a possibilidade de recrutamento de voluntários para doação, de acordo com a necessidade específica de cada uma delas.
 
 ## Público-Alvo
 
 No  Brasil , a doação de sangue é regulamentada pelo ministerio da saúde e é considerado um serviço essecial para garantir a saúde publica.
 O sangue doado  é utiliza  em  diveras situaçoes ,como cirurgias, tratamento de doenças croni, tranfusões em caso  de  emergrncia, emtre outros.
 A aplicação do público-alvo  de um site ou aplicativo  para facilitar o processo  de doação de sangue . isso inclui:
-* Pessoas  saudáveis que deseja  ajudar  e contribuir  co ma saúde pública;
-*  Pessoas que  já doaram  sangue antes  e desejam  continuar doando regulamente;
-*  Pessoas que tivera amigos  ou familiares  que preciaram de tranfusão  de sangue e querem retribuir;
+* Pessoas saudáveis que desejam ajudar e contribuir com a saúde pública;
+*  Pessoas que  já doaram  sangue antes e desejam continuar doando regulamente;
+*  Pessoas que tivera amigos ou familiares que precisaram de tranfusão  de sangue e querem retribuir;
 *  Pessoas que foram  sensibilizada por campanhas  de doação  de sangue  e querem  se envolver.
 Além disso ,  o site ou aplicativo tembém pode ser útil  para profi da area  da saúd, hospitais, bancos de sangue  e organiz não governamentais que trabalam
 com doações de sangue.Esses profissionais podem  ultilizar a plataforma para  cadastrar  doadores , agendar doaçoes e acompanhar as nessecidade de sangue de cada unidade de saúde.
