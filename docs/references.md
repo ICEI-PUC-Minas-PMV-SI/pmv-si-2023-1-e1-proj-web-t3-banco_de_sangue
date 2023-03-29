@@ -11,7 +11,7 @@ Referências utilizadas durante o desenvolvimento desse projeto
 
 **[3]** - _CORREIO DO POVO_, **Mais de 155 milhões de brasileiros possuem celular para uso pessoal, aponta IBGE**. https://www.correiodopovo.com.br/jornalcomtecnologia/mais-de-155-milh%C3%B5es-de-brasileiros-possuem-celular-para-uso-pessoal-aponta-ibge-1.891007. Acessado em: 28/3/2023
 
-**[3]** - PODER 360_, **Internet é o principal meio de informação para 43%; TV é mais usada por 40%**. https://www.poder360.com.br/midia/internet-e-principal-meio-de-informacao-para-43-tv-e-preferida-de-40/
+**[3]** - PODER 360_, **Internet é o principal meio de informação para 43%; TV é mais usada por 40%**. https://www.poder360.com.br/midia/internet-e-principal-meio-de-informacao-para-43-tv-e-preferida-de-40/. Acessado em: 28/3/2023
 
 **[4]** - _COPPIN, Ben. **Inteligência artificial**. Rio de Janeiro, RJ: LTC, c2010. E-book. ISBN 978-85-216-2936-8._
 
