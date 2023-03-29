@@ -11,16 +11,16 @@ As técnicas utilizadas são:
 ## Personas
 
 1) Maria, 35 anos, Enfermeira:
-Maria trabalha em um banco de sangue em uma grande cidade do Brasil. Ela é uma pessoa ocupada que geralmente precisa lidar com muitas tarefas ao mesmo tempo. Como representante do banco de sangue, ela precisa entrar em contato com doadores regularmente para agendar doações e atualizar informações importantes. Maria precisa de um sistema de cadastro de doadores fácil de usar e que possa ser acessado rapidamente para encontrar doadores disponíveis quando necessário.
+Maria trabalha em um banco de sangue em uma grande cidade do Brasil. Ela é uma pessoa ocupada que geralmente precisa lidar com muitas tarefas simultaneamente. Como representante do banco de sangue, ela precisa entrar em contato com doadores regularmente para agendar doações e atualizar informações importantes. Os últimos anos tem sido muito difíceis para Maria, uma vez que a COVID 19, o isolamento social, e uma crescente quantidade de fake news anti-ciência afastaram as pessoas dos centros doação e as tornaram mais desinformadas
 
 2) João, 25 anos, Estudante universitário:
-João é um jovem estudante universitário que está preocupado com a questão da doação de sangue. Ele não sabe muito sobre o processo e não tem certeza se pode doar sangue ou não. Ele quer aprender mais sobre como se tornar um doador e como se preparar para a doação. Ele gostaria de ter acesso a informações precisas e confiáveis sobre doação de sangue, como requisitos, tipos de doação, riscos e benefícios.
+João é um jovem estudante universitário que está preocupado com a questão da doação de sangue. Ele não sabe muito sobre o processo e não tem certeza se pode doar sangue ou não. João quer aprender mais sobre como se tornar um doador e como se preparar para a doação. Ele gostaria de ter acesso a informações precisas e confiáveis sobre doação de sangue, como requisitos, tipos de doação, riscos e benefícios.
 
 3) Ana, 50 anos, Dona de casa:
-Ana é uma dona de casa que se preocupa com a saúde da família e da comunidade. Ela acredita que a doação de sangue é uma forma importante de ajudar outras pessoas em momentos de necessidade. Ela gostaria de ter acesso a um sistema de cadastro de doadores de sangue onde possa se cadastrar e receber informações sobre quando e onde pode doar sangue. Ela também gostaria de receber lembretes sobre quando é hora de doar novamente e ter informações sobre os benefícios da doação de sangue.
+Ana é uma dona de casa que se preocupa com a saúde da família e da comunidade. Ela acredita que a doação de sangue é uma forma importante de ajudar outras pessoas em momentos de necessidade. Ana adquiriu o habito quando quase perdeu uma amiga muito próxima devido à falta de sangue no hospital da cidade. Desde então, ela doa sempre que possível, e incentiva as pessoas a sua volta a fazerem o mesmo. No entanto, Ana percebe que muitos ao seu redor não entendem muito bem como o processo de doação funciona e acabam não indo ao hemocentro  por conta disso.
 
-4) Gabriel, 30 anos, administrador do sistema de cadastro de doadores de sangue:
- Gabriel é um profissional de TI experiente, organizado e detalhista. Ele é responsável por garantir a segurança e privacidade das informações do sistema e se preocupa em garantir que os usuários tenham as permissões de acesso corretas. Gabriel é um tomador de decisão confiável e justo, motivado pela causa da doação de sangue.
+4) Gabriel, 35 anos, médico:
+ Gabriel é um médico especialista no tratamento de câncer. Durante toda sua carreira, ele e seus colegas sofre com a falta de doadores de sangue. A situação piorou quando ele se especializou no tratamento de câncer, uma vez que nessa área da medicina a demanda de sangue é muito grande devido à quimioterapia. Um único paciente às vezes usa muitas bolsas de sangue, que demora para ser reposto devido ao baixo volume de doações. Gabriel doa sempre que possível, e incentiva os familiares a fazerem o mesmo deste que entrou na faculdade, mas ele sempre notou a falta de engajamento da sociedade com o problema.
 
 ## Histórias de Usuários
 
