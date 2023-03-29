@@ -40,9 +40,9 @@ Citações de especialistas sobre o assunto corroboram o contexto atual no Brasi
 Para Júnia Guimarães Mourão [6], presidente da Fundação Hemominas, hemocentro coordenador do Estado de Minas Gerais, o volume de sangue doado está relacionado "à cultura dos países".
 "Diferentemente de países desenvolvidos, como o Japão ou os Estados Unidos, o Brasil não se envolveu em grandes guerras ou passou por grandes catástrofes naturais, que, acredito, podem ter criado em suas sociedades a compreensão da importância da doação de sangue.”
 
-Diante do apresentado, torna-se plausível o desenvolvimento de uma aplicação que possa divulgar informações esclarecedoras para conscientização da população da importância do tema.
-
 As pessoas cadastradas poderão ser notificadas sobre campanhas regionais e nacionais, oferecendo às mais de duas mil unidades da Hemorrede [7] (Rede de sangue e hemoderivados do Brasil) a possibilidade de recrutamento de voluntários para doação, de acordo com a necessidade específica de cada uma delas.
+
+Diante do apresentado, torna-se plausível o desenvolvimento de uma aplicação que possa divulgar informações esclarecedoras para conscientização da população da importância do tema.
 
 ## Público-Alvo
 
