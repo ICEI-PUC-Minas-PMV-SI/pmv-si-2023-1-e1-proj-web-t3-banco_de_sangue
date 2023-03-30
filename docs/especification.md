@@ -39,12 +39,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001 | O sistema deve permitir que usuários, loagados ou não, visualizem a página inicial do sistema, em que se explica o intuito do projeto | ALTA |  |
-|RF-002 | O sistema deve permitir que usuários, loagados ou não, visualizem a página referente à conscientização sobre doação de sangue | ALTA |  |
-|RF-003 | O sistema deve permitir que usuários, loagados ou não, visualizem a página referente às informações dos pré requisitos para doação de sangue | ALTA |  |
-|RF-004 | O sistema deve permitir que usuários, loagados ou não, visualizem a página referente às informações sobre o processo de doação de sangue | ALTA |  |
-|RF-005 | O sistema deve permitir que usuários, loagados ou não, visualizem a página FAQ | ALTA |  |
-|RF-006 | O sistema deve permitir que usuários, loagados ou não, visualizem a página referente às informações sobre os diferentes tipos de sangue | ALTA |  |
+|RF-001 | O sistema deve permitir que usuários, logados ou não, visualizem a página inicial do sistema, em que se explica o intuito do projeto | ALTA |  |
+|RF-002 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente à conscientização sobre doação de sangue | ALTA |  |
+|RF-003 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações dos pré-requisitos para doação de sangue | ALTA |  |
+|RF-004 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre o processo de doação de sangue | ALTA |  |
+|RF-005 | O sistema deve permitir que usuários, logados ou não, visualizem a página FAQ | ALTA |  |
+|RF-006 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre os diferentes tipos de sangue | ALTA |  |
 |RF-007 | O sistema deve permitir que novos usuários doadores gerenciem seu cadastro no sistema | ALTA |  |
 |RF-008 | O sistema deve permitir que novos usuários representantes dos bancos de sangue gerenciem seu cadastro no sistema | ALTA |  |
 |RF-009 | O sistema deve permitir que todos os usuários cadastrados possam realizar o login no sistema | ALTA |  |
@@ -77,9 +77,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |03| O sistema será construído por um time de 6 pessoas    |
 |04| O projeto iniciará com um orçamento de R$00,00        |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
