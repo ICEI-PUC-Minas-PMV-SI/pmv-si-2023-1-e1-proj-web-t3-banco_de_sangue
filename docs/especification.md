@@ -1,6 +1,6 @@
 # Especificações do Projeto
 
-O problema em que irá ser atacado para esse projeto é a falta de doadores de sangue no Brasil. Esse sistema deve ter como objetivo incentivar mais pessoas a se tornarem doadores de sangue, facilitar o processo de doação e garantir que os bancos de sangue tenham um suprimento adequado de sangue para atender às necessidades da população.
+O problema que irá ser atacado para esse projeto é a falta de doadores de sangue no Brasil. Esse sistema deve ter como objetivo incentivar mais pessoas a se tornarem doadores de sangue, facilitar o processo de doação e garantir que os bancos de sangue tenham um suprimento adequado de sangue para atender às necessidades da população.
 
 Para isso será abordado a construção das personas e das histórias de usuários para, posteriormente, serem definidas os requisitos do sistema.
 As técnicas utilizadas são:
