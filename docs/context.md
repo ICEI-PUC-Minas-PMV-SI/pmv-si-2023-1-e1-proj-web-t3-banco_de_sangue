@@ -6,21 +6,21 @@ A descoberta de Landsteiner foi fundamental para a medicina e teve um impacto si
 
 No entanto, segundo a **[A Biblioteca Virtual em Saúde do Ministério da Saúde](https://bvsms.saude.gov.br/a-importancia-da-doacao-regular-de-sangue/)**, apenas 1,8% dos brasileiros doam sangue. Isso tem gerado um grande problema para os órgãos de saúde, uma vez que seus bancos de sangue carecem desse material vital para o tratamento de diversos problemas de saúde. Seja por medo, falta de conhecimento ou desinteresse, o número de doadores nunca foi muito grande no Brasil, e esse número diminuiu ainda mais com a COVID-19.
 
-Dito isso, o objetivo da aplicação que está sendo construída é facilitar o processo de recrutamento de doadores de sangue, permitindo um recrutamento simples e eficaz de pessoas que atendam aos requisitos necessários para serem doadores, respeitando normas e protocolos de segurança, e buscando aproximar a população desse problema afim de resolvê-lo.
+Dito isso, o objetivo da aplicação que está sendo construída é facilitar o processo de recrutamento de doadores de sangue, permitindo um recrutamento simples e eficaz de pessoas que atendam aos requisitos necessários para serem doadores, respeitando normas e protocolos de segurança, e buscando aproximar a população desse problema a fim de resolvê-lo.
 
 
 ## Problema
 
-Atualmente quase 50% dos brasileiros não doam sangue por medo ou simplesmente for falta de informação. Muitos não sabem se enquadram nos requisitos necessários para serem doadores e outros temem o processo por não terem consciência de como é feito. Maísa Ribeiro, diretora técnico-científica da Fundação Hemominas, destaca as principais dúvidas a respeito do tema. “O principal desconhecimento da população diz respeito a estar ou não apto a doar diante do uso de medicamentos, ter tatuagem ou piercing, após o retorno de viagens e ou ser submetido a procedimentos estéticos. Também há dúvidas sobre problemas de saúde crônicos como hipertensão, diabetes ou hipotireoidismo”.
+Atualmente quase 50% dos brasileiros não doam sangue por medo ou simplesmente for falta de informação. Muitos não sabem se enquadram-se nos requisitos necessários para serem doadores e outros temem o processo por não terem consciência de como é feito. Maísa Ribeiro, diretora técnico-científica da Fundação Hemominas, destaca as principais dúvidas a respeito do tema. “O principal desconhecimento da população diz respeito a estar ou não apto a doar diante do uso de medicamentos, ter tatuagem ou piercing, após o retorno de viagens e ou ser submetido a procedimentos estéticos. Também há dúvidas sobre problemas de saúde crônicos como hipertensão, diabetes ou hipotireoidismo”.
 
-Segundo o **[IBGE](https://www.correiodopovo.com.br/jornalcomtecnologia/mais-de-155-milhões-de-brasileiros-possuem-celular-para-uso-pessoal-aponta-ibge-1.891007)** cerca de 84% da população brasileira possui acesso a um telefone celular. Além disso, uma pesquisa realizada pelo **[PoderData](https://www.poder360.com.br/midia/internet-e-principal-meio-de-informacao-para-43-tv-e-preferida-de-40/)** aponta que 43% das pessoas de informam primariamente pela internet. Dessa forma utilizar essa tecnologia para aumentar o acesso as informações sobre a doação de sangue apresenta um grande potencial de sucesso para o aumento da base de doadores. Ademais, na perspectiva dos profissionais de saúde o processo de cadastro e de contato tende a ser oneroso e demorado. 
+Segundo o **[IBGE](https://www.correiodopovo.com.br/jornalcomtecnologia/mais-de-155-milhões-de-brasileiros-possuem-celular-para-uso-pessoal-aponta-ibge-1.891007)** cerca de 84% da população brasileira possui acesso a um telefone celular. Além disso, uma pesquisa realizada pelo **[PoderData](https://www.poder360.com.br/midia/internet-e-principal-meio-de-informacao-para-43-tv-e-preferida-de-40/)** aponta que 43% das pessoas de informam primariamente pela internet. Dessa forma utilizar essa tecnologia para aumentar o acesso às informações sobre a doação de sangue apresenta um grande potencial de sucesso para o aumento da base de doadores. Ademais, na perspectiva dos profissionais de saúde o processo de cadastro e de contato tende a ser oneroso e demorado. 
 
 > * [Mitos e verdades sobre doação de sangue](https://www.agenciaminas.mg.gov.br/noticia/hemominas-esclarece-mitos-e-verdades-sobre-doacao-de-sangue)
 > * [Ministério da Saúde - Doação de sangue](https://www.gov.br/saude/pt-br/composicao/saes/sangue)
 
 ## Objetivos
 
-Afim de resolver problemas enfrentados pela sociedade, problemas de doação de sangue, está sendo desenvolvido um software capaz de auxiliar na solução desses problemas, para que possam ser sanados ou mitigados.
+A fim de resolver problemas enfrentados pela sociedade, como doação de sangue, está sendo desenvolvido um software capaz de auxiliar na solução dos mesmos, para que possam ser sanados ou mitigados.
 
 Resolução de problemas como: a burocratização na instituição para se doar sangue. O software permite desburocratizar, permitindo assim que seja feito um pré-cadastro coletando todo tipo de informação que é preciso para fazer a doação. Assim, tornando o momento da triagem mais ágil, evitando até, desistências na fila de espera dos doadores.
 
@@ -46,30 +46,21 @@ Diante do apresentado, torna-se plausível o desenvolvimento de uma aplicação 
 
 ## Público-Alvo
 
-No  Brasil , a doação de sangue é regulamentada pelo ministerio da saúde e é considerado um serviço essecial para garantir a saúde publica.
-O sangue doado  é utiliza  em  diveras situaçoes ,como cirurgias, tratamento de doenças croni, tranfusões em caso  de  emergrncia, emtre outros.
-A aplicação do público-alvo  de um site ou aplicativo  para facilitar o processo  de doação de sangue . isso inclui:
+No  Brasil, a doação de sangue é regulamentada pelo Ministério da Saúde e é considerado um serviço essecial para garantir a saúde publica.
+O sangue doado é utilizado em diversas situações, como cirurgias, tratamento de doenças crônicas, transfusões em caso de emergência, entre outros.
+O público-alvo de um site ou aplicativo para facilitar o processo de doação de sangue inclui:
 * Pessoas saudáveis que desejam ajudar e contribuir com a saúde pública;
-*  Pessoas que  já doaram  sangue antes e desejam continuar doando regulamente;
-*  Pessoas que tivera amigos ou familiares que precisaram de tranfusão  de sangue e querem retribuir;
-*  Pessoas que foram  sensibilizada por campanhas  de doação  de sangue  e querem  se envolver.
-Além disso ,  o site ou aplicativo tembém pode ser útil  para profi da area  da saúd, hospitais, bancos de sangue  e organiz não governamentais que trabalam
-com doações de sangue.Esses profissionais podem  ultilizar a plataforma para  cadastrar  doadores , agendar doaçoes e acompanhar as nessecidade de sangue de cada unidade de saúde.
-Existem  vários  públicos-alvo que podem ser benefciados  com  um projeto de doação de sangue. Aqui estão  aguns exemplos:
-1. hospitais e clinicas: essas instituiçoes de saúde  são as principais beneficiar,pois  precisam de sanguue  para tratar pacientes com doeças graves,cirurgias, acidentes e outras condiçoes medicas.
-2.  Pacientes com doenças  cronicas, como anemia falciforme, hemofilia e cancer, requerem  transfusões regulares de sangue  para ajudar a controlar  a doença  e melhorar a qualidade de vidado  paciente.
-3.  Mulheres gravida  e para recem-nacidos, pode ser  nece durante a gravideze apos o parto para  ajudar a tratar complicações  médicas e garantir  a saúde da mãe e do bebé.
-4.   Pessoas que sofreram trauma: acidante de carro, desastres naturais  e outras situaçoes  de emergencias  que poodem causar perda significativa de  sangue.
-5.   Pessoas em tratamento de quimioterapia, pode afetar  a produção de células sanguíneas no corpo, e doação de sangue são necessarioas para ajudar a previnircomplicações .
-Com o fácil acesso a plataforma de informções e cadastro, pode ser incluid pessoas de todas as idades e gêneros que  precisam de doação de sangue para ajudar salvar vidas e ter uma vida com a saúde melhor.  
+*  Pessoas que  já doaram  sangue antes e desejam continuar doando regularmente;
+*  Pessoas que tiveram amigos ou familiares que precisaram de transfusão de sangue e querem retribuir;
+*  Pessoas que foram  sensibilizadas por campanhas de doação de sangue e querem se envolver.
+Além disso, o site ou aplicativo tembém pode ser útil para profissionais da área de saúde, hospitais, bancos de sangue  e organizações não governamentais que trabalham
+com doações de sangue. Esses profissionais podem se utilizar da plataforma para cadastrar doadores, agendar doações e acompanhar as necessidades de sangue de cada unidade de saúde.
+Existem vários públicos-alvo que podem ser beneficiados com um projeto de doação de sangue. Aqui estão alguns exemplos:
+1. Hospitais e clínicas: essas instituiçoes de saúde são as principais a se beneficiarem, pois precisam de sanguue para tratar pacientes com doenças graves, cirurgias, acidentes e outras condições médicas;
+2.  Pacientes com doenças crônicas, como anemia falciforme, hemofilia e câncer: requerem  transfusões regulares de sangue para ajudar a controlar a doença e melhorar a qualidade de vida do paciente;
+3.  Mulheres grávidas e para recém-nacidos: pode ser necessário durante a gravidez e após o parto para ajudar a tratar complicações médicas e garantir a saúde da mãe e do bebê;
+4.   Pessoas que sofreram trauma: acidente de carro, desastres naturais e outras situações de emergências que podem causar perda significativa de sangue;
+5.   Pessoas em tratamento de quimioterapia: pode afetar a produção de células sanguíneas no corpo, e doações de sangue são necessárias para ajudar a previnir complicações.
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Com o fácil acesso à plataforma de informações e cadastro, podem ser incluídas pessoas de todas as idades e gêneros que precisam de doação de sangue para ajudar salvar vidas e ter uma vida com a saúde melhor.  
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
