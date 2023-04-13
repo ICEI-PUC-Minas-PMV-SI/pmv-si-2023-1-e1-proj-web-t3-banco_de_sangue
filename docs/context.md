@@ -30,7 +30,7 @@ Conscientizando e incentivando de forma clara e fácil de entender, que o ato de
 
 ## Justificativa
 
-As doações de sangue no Brasil correspondem, a 1,8% da população brasileira, sendo que 40% dessas doações são realizadas para fins de reposição, ou seja, quando algum familiar ou pessoa do vínculo social sofre um acidente ou algum problema de saúde. Este percentual está abaixo do que é recomendado pela OMS de 3% a 5%. **[[5]](..references.md)**
+As doações de sangue no Brasil correspondem, a 1,8% da população brasileira, sendo que 40% dessas doações são realizadas para fins de reposição, ou seja, quando algum familiar ou pessoa do vínculo social sofre um acidente ou algum problema de saúde. Este percentual está abaixo do que é recomendado pela OMS de 3% a 5%. **[[5]](..docs/references.md)**
 
 De acordo com a Organização Pan-Americana da Saúde, a maior dificuldade em aumentar o volume de doações reside na falta de informações sobre o processo e também na falta de conscientização sobre a sua importância. [5]
 
