@@ -30,17 +30,17 @@ Conscientizando e incentivando de forma clara e fácil de entender, que o ato de
 
 ## Justificativa
 
-As doações de sangue no Brasil correspondem, a 1,8% da população brasileira, sendo que 40% dessas doações são realizadas para fins de reposição, ou seja, quando algum familiar ou pessoa do vínculo social sofre um acidente ou algum problema de saúde. Este percentual está abaixo do que é recomendado pela OMS de 3% a 5%. **[[5]](..docs/references.md)**
+As doações de sangue no Brasil correspondem, a 1,8% da população brasileira, sendo que 40% dessas doações são realizadas para fins de reposição, ou seja, quando algum familiar ou pessoa do vínculo social sofre um acidente ou algum problema de saúde. Este percentual está abaixo do que é recomendado pela OMS de 3% a 5%. **[[5]](../docs/references.md)**
 
-De acordo com a Organização Pan-Americana da Saúde, a maior dificuldade em aumentar o volume de doações reside na falta de informações sobre o processo e também na falta de conscientização sobre a sua importância. [5]
+De acordo com a Organização Pan-Americana da Saúde, a maior dificuldade em aumentar o volume de doações reside na falta de informações sobre o processo e também na falta de conscientização sobre a sua importância. **[[5]](../docs/references.md)**
 
-Citações de especialistas sobre o assunto corroboram o contexto atual no Brasil. Segundo Naura Faria [6], chefe de atendimento ao doador do HemoRio, hemocentro coordenador do Estado do Rio de Janeiro, a doação de sangue no Brasil ainda é cercada de "mitos":
+Citações de especialistas sobre o assunto corroboram o contexto atual no Brasil. Segundo Naura Faria  **[[6]](../docs/references.md)**, chefe de atendimento ao doador do HemoRio, hemocentro coordenador do Estado do Rio de Janeiro, a doação de sangue no Brasil ainda é cercada de "mitos":
 "Infelizmente, ainda existem alguns mitos em relação à doação de sangue. Há pessoas que acreditam que se doarem uma vez, vão ter de doar sempre. Outras acham que doar sangue engorda. Existem ainda aquelas que temem contrair alguma doença infecciosa durante a coleta. É preciso desfazer esses mitos e informar a população sobre os benefícios da doação."
 
-Para Júnia Guimarães Mourão [6], presidente da Fundação Hemominas, hemocentro coordenador do Estado de Minas Gerais, o volume de sangue doado está relacionado "à cultura dos países".
+Para Júnia Guimarães Mourão  **[[6]](../docs/references.md)**, presidente da Fundação Hemominas, hemocentro coordenador do Estado de Minas Gerais, o volume de sangue doado está relacionado "à cultura dos países".
 "Diferentemente de países desenvolvidos, como o Japão ou os Estados Unidos, o Brasil não se envolveu em grandes guerras ou passou por grandes catástrofes naturais, que, acredito, podem ter criado em suas sociedades a compreensão da importância da doação de sangue.”
 
-As pessoas cadastradas poderão ser notificadas sobre campanhas regionais e nacionais, oferecendo às mais de duas mil unidades da Hemorrede [7] (Rede de sangue e hemoderivados do Brasil) a possibilidade de recrutamento de voluntários para doação, de acordo com a necessidade específica de cada uma delas.
+As pessoas cadastradas poderão ser notificadas sobre campanhas regionais e nacionais, oferecendo às mais de duas mil unidades da Hemorrede  **[[7]](../docs/references.md)** (Rede de sangue e hemoderivados do Brasil) a possibilidade de recrutamento de voluntários para doação, de acordo com a necessidade específica de cada uma delas.
 
 Diante do apresentado, torna-se plausível o desenvolvimento de uma aplicação que possa divulgar informações esclarecedoras para conscientização da população da importância do tema.
 
