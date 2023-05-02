@@ -57,4 +57,11 @@
   background: #ffffff;
   border-radius: 50%;
   z-index: 2;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.main-header__logo-container > svg {
+  margin: auto;
 }
