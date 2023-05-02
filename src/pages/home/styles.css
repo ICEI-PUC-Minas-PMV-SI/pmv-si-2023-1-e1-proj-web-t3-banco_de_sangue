@@ -65,3 +65,9 @@
 .main-header__logo-container > svg {
   margin: auto;
 }
+
+.register-section {
+  height: 60vh;
+  background-color: #FFFFFF;
+  border-top: 8.5px solid #33a0ab;
+}
