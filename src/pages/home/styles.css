@@ -3,17 +3,39 @@
   position: relative;
 }
 
+.main-header__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('../../public/assets/woman-picture.jpeg');
+  background-size: cover;
+  z-index: 1;
+}
+
+.main-header__image-color {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #EB3738;
+  opacity: 0.83;
+  z-index: 2;
+}
+
 .main-header__content {
   padding: 18px 25px;
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: #eb3738;
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-header__content__title {
@@ -56,7 +78,7 @@
   bottom: -59.5px;
   background: #ffffff;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-items: center;
   align-items: center;
