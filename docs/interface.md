@@ -37,7 +37,7 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 ### RF-007	O sistema deve permitir que novos usuários doadores gerenciem seu cadastro no sistema
 ### RF-012	O sistema deve permitir que os usuários visualizem suas próprias informações de doação de sangue	
 ### RF-015	O sistema deve permitir que os usuários solicitem a remoção de suas informações do sistema
-![](ttps://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/Tela%20do%20doadortelas-1.png)
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/Tela%20do%20doadortelas-1.png)
 
 ### RF-008	O sistema deve permitir que novos usuários representantes dos bancos de sangue gerenciem seu cadastro no sistema	
 ### RF-013	O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue
