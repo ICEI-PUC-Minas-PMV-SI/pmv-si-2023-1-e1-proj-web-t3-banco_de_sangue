@@ -3,7 +3,7 @@
   <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/logo-final.png"    alt="Descrição da imagem" style="width: 100px; height: 100px; margin-left: 400px; margin-right: auto;" />
 <div/>
 
-# Bancode Doadores de Sangue
+# Banco de Doadores de Sangue
 
 `CURSO: Sistemas de Informação`
 
