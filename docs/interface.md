@@ -19,7 +19,31 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 ### RF-001 O sistema deve permitir que usuários, logados ou não, visualizem a página inicial do sistema, em que se explica o intuito do projeto
-![Landingpage](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/landing%20pagetelas.png)
+![Landing page](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/landing%20pagetelas.png)
+		
+### RF-002	O sistema deve permitir que usuários, logados ou não, visualizem a página referente à conscientização sobre doação de sangue	
+![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/por%20que%20doartelas.png)
+
+### RF-003	O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações dos pré-requisitos para doação de sangue	
+
+### RF-004	O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre o processo de doação de sangue		
+
+### RF-005	O sistema deve permitir que usuários, logados ou não, visualizem a página FAQ	ALTA	
+
+### RF-006	O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre os diferentes tipos de sangue	
+
+### RF-007	O sistema deve permitir que novos usuários doadores gerenciem seu cadastro no sistema
+### RF-012	O sistema deve permitir que os usuários visualizem suas próprias informações de doação de sangue	
+### RF-015	O sistema deve permitir que os usuários solicitem a remoção de suas informações do sistema
+
+### RF-008	O sistema deve permitir que novos usuários representantes dos bancos de sangue gerenciem seu cadastro no sistema	
+### RF-013	O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue
+
+### RF-009	O sistema deve permitir que todos os usuários cadastrados possam realizar o login no sistema		
+### RF-010	O sistema deve permitir que todos os usuários cadastrados possam recuperar suas senhas	
+
+### RF-011	O sistema deve permitir que usuários doadores se voluntariem para a doação realizando o cadastro de pré-triagem	
+
 
 
 
