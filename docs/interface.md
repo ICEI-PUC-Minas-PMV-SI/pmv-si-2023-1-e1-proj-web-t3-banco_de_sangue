@@ -19,8 +19,8 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 ### RF-001 O sistema deve permitir que usuários, logados ou não, visualizem a página inicial do sistema, em que se explica o intuito do projeto
-![UserFlow](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/fluxo-da-aplica%C3%A7%C3%A3o.png)
-https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/landing%20pagetelas.png
+![Landingpage](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/landing%20pagetelas.png)
+
 
 
 ### Exemplo
