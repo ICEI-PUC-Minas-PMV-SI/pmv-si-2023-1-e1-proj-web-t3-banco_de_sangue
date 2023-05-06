@@ -50,15 +50,6 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 ### RF-011	O sistema deve permitir que usuários doadores se voluntariem para a doação realizando o cadastro de pré-triagem	
 ![](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/src/public/assets/doc-images/Cadastro%20de%20informa%C3%A7%C3%B5es%20complementarestelas.png)
 
-
-
-### Exemplo
-
-A tela Inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade.
-
-![Exemplo de Wireframe](img/wireframe-example.png)
-
- 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
