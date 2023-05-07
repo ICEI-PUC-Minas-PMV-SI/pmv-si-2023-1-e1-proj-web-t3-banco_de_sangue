@@ -84,7 +84,7 @@
   align-items: center;
 }
 
-.main-header__logo-container > svg {
+.main-header__logo-container > object {
   margin: auto;
 }
 
