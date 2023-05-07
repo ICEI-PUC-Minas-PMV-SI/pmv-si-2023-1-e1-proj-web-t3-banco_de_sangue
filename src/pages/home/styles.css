@@ -128,6 +128,8 @@
 }
 
 .motives-section {
+  max-width: 1280px;
+  margin: auto;
 }
 
 .motives-section__content-container {
@@ -138,9 +140,40 @@
   justify-content: space-between;
 }
 
+.allowed-donation-section {
+  background-color: #EB3738;
+  padding-bottom: 2rem;
+}
+
+.allowed-donation-section p, .allowed-donation-section h3 {
+  color: #ffffff
+}
+
+.allowed-donation-section__intro {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.allowed-donation-section__intro .image-container {
+  margin-bottom: 1.5rem;
+}
+
+.allowed-donation-section__intro__text {
+  max-width: 22.5rem;
+  margin-bottom: 2rem;
+}
+
 .donation-process-section {
   max-width: 1200px;
   margin: auto;
+  padding-top: 2rem;
 }
 
 .donation-process-section > p {
@@ -167,6 +200,7 @@
 
 .donation-process-section__intro__text {
   max-width: 22.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .donation-process-section__content-container {
@@ -203,6 +237,23 @@
   margin-bottom: 1.2rem;
 }
 
+.about-us-section {
+  padding-top: 1.2rem;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us-section article {
+  max-width: 23.75rem;
+}
+
+body > footer {
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 768px) {
   .register-section {
     padding: 0 calc((100vw - 380px) / 2) 2.5rem;
@@ -210,5 +261,17 @@
 
   .donation-process-section__intro {
     margin-bottom: 5.5rem;
+    padding-top: 4rem;
+  }
+
+  .extra-info-section {
+    flex-direction: row;
+  }
+
+  .about-us-section {
+    padding-top: 4rem;
+    height: auto;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
