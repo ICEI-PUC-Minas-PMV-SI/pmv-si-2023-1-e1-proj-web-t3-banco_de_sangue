@@ -9,7 +9,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url('../../public/assets/woman-picture.jpeg');
+  background-image: url("../../public/assets/woman-picture.jpeg");
   background-size: cover;
   z-index: 1;
 }
@@ -20,7 +20,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: #EB3738;
+  background: #eb3738;
   opacity: 0.83;
   z-index: 2;
 }
@@ -113,38 +113,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid #33A0AB;;
+  border-bottom: 1px solid #33a0ab;
 }
 
 .register-section__login-container > a {
-  color: #33A0AB;
+  color: #33a0ab;
   text-decoration: none;
 }
 
 .motives-section {
-  padding: 0 2rem 5rem;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.motives-section__title {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.35rem;
-  line-height: 2rem;
-  text-align: center;
-  color: #514747;
-  margin-bottom: 3.75rem;
 }
 
 .motives-section__content-container {
@@ -155,9 +138,54 @@
   justify-content: space-between;
 }
 
-@media (min-width: 768px) { 
-  .register-section {
-    padding: 0 calc((100vw - 380px)/2) 2.5rem;
-  }
+.donation-process-section {
+  max-width: 1200px;
+  margin: auto;
 }
 
+.donation-process-section > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.12rem;
+  text-align: center;
+  max-width: 17.5rem;
+  color: #514747;
+  margin-bottom: 5.25rem;
+}
+
+.donation-process-section__intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 2rem;
+}
+
+.donation-process-section__intro__text {
+  max-width: 22.5rem;
+}
+
+.donation-process-section__content-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.donation-process-section__content-container > div {
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .register-section {
+    padding: 0 calc((100vw - 380px) / 2) 2.5rem;
+  }
+
+  .donation-process-section__intro {
+    margin-bottom: 5.5rem;
+  }
+}
