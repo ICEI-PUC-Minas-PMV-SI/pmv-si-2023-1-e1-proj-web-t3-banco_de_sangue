@@ -92,6 +92,9 @@
   padding: 0 1.5rem 2rem;
   background-color: #ffffff;
   border-top: 8.5px solid #33a0ab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .register-section__title {
@@ -130,6 +133,9 @@
 .motives-section {
   max-width: 1280px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .motives-section__content-container {
@@ -137,7 +143,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.motives-section__content-container .short-text-image {
+  margin: 0 1.25rem 2rem;
 }
 
 .allowed-donation-section {
@@ -174,6 +184,9 @@
   max-width: 1200px;
   margin: auto;
   padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .donation-process-section > p {
@@ -208,10 +221,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
-.donation-process-section__content-container > div {
-  margin-right: 1rem;
+.donation-process-section__content-container > .short-text-image {
+  margin: 0 1rem 2rem;
 }
 
 .extra-info-section {
@@ -253,6 +267,8 @@
 body > footer {
   margin-bottom: 2rem;
 }
+
+
 
 @media (min-width: 768px) {
   .register-section {
