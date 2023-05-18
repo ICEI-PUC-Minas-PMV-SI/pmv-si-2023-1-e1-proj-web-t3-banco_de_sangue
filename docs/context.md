@@ -1,6 +1,6 @@
 # Introdução
 
-O sistema ABO foi descoberto por **[Karl Landsteiner em 1901](https://www.infoescola.com/sangue/sistema-abo/)**, solucionando um dos grandes problemas da medicina de sua época: transfusões de sangue. Desde então, sua descoberta tem sido empregada em todo o mundo para classificar os tipos sanguíneos humanos (A, B, AB e O) e ajudar os médicos a realizar transfusões de sangue de maneira mais eficaz e segura em seus pacientes.
+O sistema ABO foi descoberto por **[Karl Landsteiner em 1901](https://www.infoescola.com/sangue/sistema-abo/)[[1]](../docs/references.md)**, solucionando um dos grandes problemas da medicina de sua época: transfusões de sangue. Desde então, sua descoberta tem sido empregada em todo o mundo para classificar os tipos sanguíneos humanos (A, B, AB e O) e ajudar os médicos a realizar transfusões de sangue de maneira mais eficaz e segura em seus pacientes.
 
 A descoberta de Landsteiner foi fundamental para a medicina e teve um impacto significativo na saúde pública, ajudando a evitar incompatibilidades entre os tipos sanguíneos e a diminuir as taxas de mortalidade decorrentes de transfusões de sangue. Além disso, o sistema ABO permitiu o desenvolvimento de novas tecnologias, como a criopreservação de sangue e o armazenamento de sangue em bancos de sangue.
 
