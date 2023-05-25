@@ -9,11 +9,47 @@
   <link rel="stylesheet" href="../../styles/global.css" />
   <link rel="stylesheet" href="../../styles/shared.css" />
   <link rel="stylesheet" href="../../styles/components/button/styles.css" />
+  <link rel="stylesheet" href="../../styles/components/input/styles.css" />
   <link rel="stylesheet" href="../../styles/components/short-text-image/styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-cadastro
+  <header class="main-header">
+    <div class="main-header__image"></div>
+    <div class="main-header__image-color"></div>
+    <div class="main-header__content">
+      <h1 class="main-header__content__title">Cadastro</h1>
+      <div class="main-header__logo-container">
+        <object data="../../public/assets/svg/logo.svg"> </object>
+      </div>
+      <span class="main-header__content__text">Banco de doadores de sangue</span>
+    </div>
+    
+  </header>
+ <main>
+  <section class="register-section">
+     <form class="register-section__form">
+      <input class="primary-input" placeholder="Nome completo"/>
+      <input class="primary-input" placeholder="E-mail"/>
+      <div class="register-section__form-input-cellphone-div">
+        <input class="register-section__form-input-cellphone-div__ddd" placeholder="DDD"/>
+        <input class="register-section__form-input-cellphone-div__cellphone"placeholder="Telefone para contato"/>
+      </div>
+      <input class="primary-input" placeholder="Senha"/>
+      <input class="primary-input" placeholder="Confirmar senha"/>
+
+      <div class="register-section__form__footer">
+        <p> Já é doador?</p>
+        <a class="register-section__form__footer__text" >Faça seu login</a>
+      </div>
+     </form>
+    </section>
+    <section class="register-section-button">
+      <button class="primary-button" class="register-section__button">Cadastrar</button>
+      <a class="register-section__text" >Voltar para a home</a>
+    </section>
+  </main>
 </body>
 
 </html>
