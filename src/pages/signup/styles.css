@@ -48,7 +48,7 @@
   line-height: 3.2rem;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 2rem;
+  margin-bottom: 0.7rem;
 }
 
 .main-header__content__text {
@@ -57,15 +57,18 @@
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 2rem;
-  margin-top: 2rem;
+  margin-top: 0.7rem;
   text-align: center;
+  font-weight:500;
+  font-size: 22px;
+  width: 80%;
   color: #ffffff;
 }
 
 
 .main-header__logo-container {
-  width: 119px;
-  height: 119px;
+  width: 100px;
+  height: 100px;
   left: calc(50vw - 59.5px);
   background: #ffffff;
   border-radius: 50%;
@@ -77,13 +80,13 @@
 
 .main-header__logo-container > object {
   margin: auto;
+  width:65px;
 }
 
-main{
+.register {
   height:40vh;
 }
 .register-section {
-  position: relative;
   bottom:100px;
   padding: 0 1.5rem 2rem;
   background-color: #ffffff;
@@ -93,6 +96,10 @@ main{
   min-height:300px;
   position:relative;
   z-index:3;
+  border-top: 4px solid  #514747;
+}
+.register-section__title {
+  display: none;
 }
 
 .register-section__form {
@@ -107,8 +114,8 @@ main{
   border: 3px solid #33A0AB;
   border-radius: 10px;
   background-color: #ffffff;
-
-
+  -webkit-box-shadow: 0px 1px 29px -6px #000000; 
+  box-shadow: 0px 1px 29px -6px #000000;
 }
 
 .register-section__form-input-cellphone-div{
@@ -151,10 +158,12 @@ main{
 .register-section__form__footer__text {
   padding-top: 10px;
   color: #33A0AB;
+  cursor: pointer;
 }
 
 .register-section__text {
   font-weight:600;
+  cursor: pointer;
 }
 
 .register-section-button {
@@ -168,4 +177,57 @@ main{
   /* min-height:300px; */
   position:relative;
   z-index:3;
+}
+
+@media(min-width:1000px){
+  body {
+    display: flex;
+    flex-direction:row;
+    height:100vh;
+  }
+  .main-header{
+    height: 100%;
+    max-height: 100vh;
+  }
+  .main-header__content{
+    display: flex;
+    justify-container: center;
+    align-items: center;
+    padding-top: 28vh;
+    width:50vw;
+  }
+  .register {
+    width:70vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-section {
+    width:400px;
+    position:static;
+    min-height: 0;
+    border: 0;
+  }
+
+  .register-section__title {
+    display: inline-block;
+    margin-bottom:55px;
+    width: 270px;
+    text-align: center;
+    color: #eb3738; 
+  }
+  .register-section__form {
+    position:static;
+    width: 100%;
+
+  }
+  .register-section-button{
+    position:static;
+    width: 380px;
+  }
+
+
 }
