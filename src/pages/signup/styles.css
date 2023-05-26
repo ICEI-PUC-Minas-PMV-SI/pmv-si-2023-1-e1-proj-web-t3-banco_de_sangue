@@ -194,7 +194,7 @@
     justify-container: center;
     align-items: center;
     padding-top: 28vh;
-    width:50vw;
+    width: 60vw;
   }
   .register {
     width:70vw;
@@ -228,6 +228,9 @@
     position:static;
     width: 380px;
   }
-
-
+}
+@media(min-width: 1400px){
+  .main-header__content{
+    width: 70vw;
+  }
 }
