@@ -1,0 +1,71 @@
+h1
+{ color: red;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+  font-style: italic;
+  font-size: 250%;
+  margin: 10px;
+  text-align: center;
+}
+h3, h4, h5, h6, h7, h8, h8, h9, h10
+{
+  color: blue;
+  font-weight: 800;
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+  font-style: italic;
+  line-height:150%;
+  text-align: center ;
+  margin-bottom: 0%;
+  margin-top: 10px;
+  
+}
+p
+{ color:black;
+ font-weight: bold;
+ font-size: 100%;
+ font-family: Arial, Helvetica, sans-serif;
+
+ line-height: 120%;
+ text-align: center;
+ margin-top: 0%;
+ ;
+
+}
+div
+{ color: red;
+  font-size: 120%;
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+  font-style: italic;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+#introduction{
+   color: black;
+   font-size: 100%;
+   font-family: Arial, Helvetica, sans-serif sans-serif;
+   font-style: italic;
+   line-height: 170%;
+   text-align: center;
+   margin-bottom: 30px;
+}
+p:hover{
+   color: blue;
+   p::first-letter
+}
+footer a:hover{
+  color: red;
+}
+a {
+  font-size: 120%;
+  color: blue;
+  margin-left: 45%;
+  margin-top: 20%;
+ 
+}
+.meu-paragrafo{
+  margin-left: 120px;
+  margin-right: 120px;
+
+} 
+
