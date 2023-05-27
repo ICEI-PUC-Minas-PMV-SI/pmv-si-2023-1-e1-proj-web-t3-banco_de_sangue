@@ -4,16 +4,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>login</title>
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  <link rel="stylesheet" href="../../styles/global.css" />
+  <title>Cadastro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../../styles/global.css" />
   <link rel="stylesheet" href="../../styles/shared.css" />
   <link rel="stylesheet" href="../../styles/components/button/styles.css" />
+  <link rel="stylesheet" href="../../styles/components/input/styles.css" />
   <link rel="stylesheet" href="../../styles/components/short-text-image/styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-Login
+  <header class="main-header">
+    <div class="main-header__image"></div>
+    <div class="main-header__image-color"></div>
+    <div class="main-header__content">
+      <h1 class="main-header__content__title">Faça seu login no</h1>
+      <div class="main-header__logo-container">
+        <object data="../../public/assets/svg/logo.svg"> </object>
+      </div>
+      <span class="main-header__content__text">Banco de doadores de sangue</span>
+    </div>
+    
+  </header>
+ <main class="register">
+  <section class="register-section">
+    <h2 class ="register-section__title"> Entre com seus dados abaixo</h2>
+     <form class="register-section__form">
+      <input class="primary-input" placeholder="E-mail"/>
+      <input class="primary-input" placeholder="Senha"/>
+      <div class="register-section__form__footer">
+        <p> Ainda não é doador?</p>
+        <a class="register-section__form__footer__text" >Faça seu cadastro</a>
+      </div>
+     </form>
+    </section>
+    <section class="register-section-button">
+      <button class="primary-button" class="register-section__button" onclick="window.location.href='/src/pages/donor-screen/'">Entrar</button>
+      <a class="register-section__text" onclick="window.location.href='/'">Voltar para a home</a>
+    </section>
+  </main>
 </body>
 
 </html>
