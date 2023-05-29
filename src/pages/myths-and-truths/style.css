@@ -1,71 +1,91 @@
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  margin-bottom: 20px;
+}
+.ajuste-image{
+  margin-top: 1% ;
+  margin-left: 1%;
+  width: 2%;
+}
+.foto{
+  width: 3%;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+.maria{
+  float: right;
+  position: absolute;
+  top: 30px;
+  right: 8px;
+  margin: 7px;
+  font-size: 10px;
+  color: black;
+}
 h1
 { color: red;
   font-weight: 200;
-  font-family: Arial, Helvetica, sans-serif sans-serif;
-  font-style: italic;
-  font-size: 250%;
-  margin: 10px;
+  font-family: 'poppins';
+  font-style: normal;
+  font-size: 200%;
   text-align: center;
 }
 h3, h4, h5, h6, h7, h8, h8, h9, h10
 {
-  color: blue;
-  font-weight: 800;
-  font-size: 130%;
-  font-family: Arial, Helvetica, sans-serif sans-serif;
-  font-style: italic;
-  line-height:150%;
+  color:  #33A0AB;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'poppins';
+  font-style: normal;
+  line-height: 18px;
   text-align: center ;
-  margin-bottom: 0%;
   margin-top: 10px;
-  
 }
 p
-{ color:black;
- font-weight: bold;
- font-size: 100%;
- font-family: Arial, Helvetica, sans-serif;
-
- line-height: 120%;
+{ color: #514747;
+ font-weight: 600;
+ font-size: 16px ;
+ font-family: 'poppins';
+ font-style: normal;
+ line-height: 18px;
  text-align: center;
  margin-top: 0%;
- ;
-
 }
 div
 { color: red;
   font-size: 120%;
-  font-family: Arial, Helvetica, sans-serif sans-serif;
-  font-style: italic;
-  margin-bottom: 10px;
+  font-family: 'poppins';
+  font-style: normal;
+  margin-bottom: 20px;
   text-align: center; 
 }
 #introduction{
    color: black;
-   font-size: 100%;
-   font-family: Arial, Helvetica, sans-serif sans-serif;
-   font-style: italic;
+   font-size: 10px;
+   font-family: 'poppins';
+   font-style: normal;
    line-height: 170%;
    text-align: center;
-   margin-bottom: 30px;
-}
-p:hover{
-   color: blue;
-   p::first-letter
+   margin-bottom: 20px;
 }
 footer a:hover{
   color: red;
 }
 a {
   font-size: 120%;
-  color: blue;
-  margin-left: 45%;
-  margin-top: 20%;
- 
+  color: #33A0AB;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-left: 47%;
+  text-align: justify;
 }
 .meu-paragrafo{
   margin-left: 120px;
   margin-right: 120px;
-
 } 
 
