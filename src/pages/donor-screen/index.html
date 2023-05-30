@@ -6,14 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tela do doador</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  <link rel="stylesheet" href="./src/styles/global.css" />
-  <link rel="stylesheet" href="./src/styles/shared.css" />
-  <link rel="stylesheet" href="./src/styles/components/button/styles.css" />
-  <link rel="stylesheet" href="./src/styles/components/short-text-image/styles.css" />
+  <link rel="stylesheet" href="../../styles/global.css" />
+  <link rel="stylesheet" href="../../styles/shared.css" />
+  <link rel="stylesheet" href="../../styles/components/button/styles.css" />
+  <link rel="stylesheet" href="../../styles/components/short-text-image/styles.css" />
+  <link rel="stylesheet" href="../../styles/components/menu-navegation-desktop/styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-Tela do doador
+<section class="lateral-menu">
+<div class="lateral-menu-header">
+  <div class="lateral-menu-header__logo-container">
+    <object data="../../public/assets/svg/logo.svg"> </object>
+  </div>
+  <span class="lateral-menu-header__logo-text">Banco de doadores de sangue</span>
+</div>
+<aside class="lateral-menu-content">
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/representative-screen'">Canal dos representantes</a>
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'"> Quem pode doar?</a>
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'">Processo de doação</a>
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/blood-types'"> Tipos de sangue</a>
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e verdades</a>
+  <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+</aside>
+</section>
 </body>
 
 </html>
