@@ -1,56 +1,118 @@
-body {
-    background-color: white;       
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
-.header{
-
-    padding-top: 2px;
+a {
+    text-decoration: none;
+    color: black;     
 }
 
-.header-list {
-      display: inline-block;    
-      text-align: justify;
-          
-}   
-
-.button {
-    margin-right: 1100px;
-    float: right;
-    color: #514747;
-    margin-top: 3%;
+body{
+    font-family: "Poppins";
+    margin-top: 1px;
 }
 
-.header__logo-container { 
-    text-align: center;
-    float: center;
-    margin-top: 10px;
-} 
+
+img {
+    width: 20px;
+    height: 20px;
+    color: #514747; 
+    transform: scale(1.5);
+     margin-top: 3%;
+     margin-left: 2%;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav{
+   background-color: #eb3738;;
+   width: 300px;
+   height: 50%;
+   left: -300px;
+   position: absolute;
+   transition: all .5s;
+}
+
+nav::after{
+   content: "BANCO DE DOADORES DE SANGUE";
+   color: white;
+   text-align: center;
+   margin-top: 2PX;
+   font-family: "Poppins";
+}
 
 
-    
-.header__image {
-    border-radius: 100%;
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(300px);
+}
+
+ul{
+   background-color: #33a0ab; 
+    list-style: none;
+    top: 50px;
+    position: absolute;
+    width: 100%;
+   
+}
+
+a {
+   display: block;
+   padding: 20px 5px;
+   color: white;
+}
+
+a:hover {
+    background-color: #33a0ab;
+    color: black;
+}
+
+label {
+    padding: 15px;
+    position: relative;
+    z-index: 1;   
+}
+
+.header-logo {
+    position: absolute;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: 4%;
+    border-radius: 50%;
     border-color: white;
-    float: left;
-    margin-left: 1100px;
-    margin-top: -12%;
-}  
+}
 
-.header__image::after {
+.image-container {
+    border-radius: 50%;
+    border-color: white;
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.image-container::after {
     content: "Maria";
     display: block;
     text-align: center;
-    color: #514747;
-    margin-top: 2px;
+    color: #514747
 }
-      
-.linha{
-    border-color: #33a0ab;;
-    background-color: #33a0ab;;
+
+
+
+  
+hr {
+    border-color: #33a0ab;
+    background-color: #33a0ab;
     height: 8px;
     width: 100%;
-    margin-top: -3%; 
-    text-shadow: -2px -2px -2px #514747;   
+    margin-top: 3%; 
+    text-shadow: 2px 2px 2px #514747;   
 }
 
 .header__content__title {
