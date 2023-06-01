@@ -10,110 +10,127 @@
     <link rel="stylesheet" href="../../styles/shared.css" />
     <link rel="stylesheet" href="../../styles/components/button/styles.css" />
     <link rel="stylesheet" href="../../src/styles/components/short-text-image/styles.css" />
+    <link rel="stylesheet" href="../../styles/components/menu-navegation-desktop/styles.css" />
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header class="header"></header>
-    
-    <ul class="header-list">
 
-      <li>
-        <div class="button"><button>
-          <img src="../../public/assets/icons/hamburguer-menu.png"width="30px" height="30px" alt="botao"></button>
-        </div>
-      </li>
-
-      <li >
-        <div class="header__logo-container">
-          <object data="../../public/assets/svg/logo.svg"></object>
-        </div>
-      </li>
-
-      <li>
-        <div class="header__image">
-          <img src="../../public/assets/woman-picture.jpeg"width="70px" height="70px" alt="">
-        </div>
-      </li>
-
-    </ul>
-         <div class="linha"><hr></div>  
+      <header> 
+        <input type="checkbox" id="chec">
+        <label for="chec">
+         <img src="../../public/assets/icons/hamburguer-menu.png"alt="">
+        </label>
+      
+           <nav>
+           <ul>
+             <li>
+               <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+             </li>
    
-    <div class="header__content__title">Tipos de sangue</div>         
+             <li>
+               <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/representative-screen'">Canal dos representantes</a>
+             </li>
    
+             <li>
+               <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+             </li>
+   
+             <li>
+               <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'"> Quem pode doar?</a>
+             </li>
+   
+             <li>
+               <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'">Processo de doação</a>
+             </li>
+   
+             <li>
+               <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e verdades</a>
+             </li>
+   
+             <li>
+               <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+             </li>
+   
+           </ul>
+         </nav>
+          
+        <object data="../../public/assets/svg/logo.svg" class="header-logo"></object>
+   
+        <img src="../../public/assets/doc-images/woman-picture.jpeg" class="image-container"alt="">
+            
+             <hr> 
+       </header>
+       <h1 class="header__content__title">Tipos de sangue</h1>
+
+      <main class="register">
+
+      <p>O sangue é essencial para o funcionamento adequado do nosso organismo, transportando
+       nutrientes, oxigênio e outros elementos vitais para as células. Existem diferentes tipos de sangue, classificados
+       principalmente de acordo
+       com a presença ou ausência de antígenos específicos nas células vermelhas do sangue. Nesta página, forneceremos uma
+       visão geral dos principais tipos sanguíneos humanos e suas características distintas.</p>
  
-  </header>
 
-  <main class="register">
+      <h3>Tipo A:</h3>
 
-  <p>O sangue é essencial para o funcionamento adequado do nosso organismo, transportando
-  nutrientes, oxigênio e outros elementos vitais para as células. Existem diferentes tipos de sangue, classificados
-  principalmente de acordo
-  com a presença ou ausência de antígenos específicos nas células vermelhas do sangue. Nesta página, forneceremos uma
-  visão geral dos principais tipos sanguíneos humanos e suas características distintas.</p>
- 
-
-
-  <h3>Tipo A:</h3>
-
-  <p>O tipo sanguíneo A possui antígenos A nas células vermelhas do sangue e anticorpos anti-B no plasma.
-  Indivíduos com tipo A podem receber transfusões de sangue dos tipos A ou O (compatível com ambos os antígenos A e
-  B). Pessoas
-  com tipo A podem doar sangue para indivíduos com tipo A ou AB.</p>
+       <p>O tipo sanguíneo A possui antígenos A nas células vermelhas do sangue e anticorpos anti-B no plasma.
+       Indivíduos com tipo A podem receber transfusões de sangue dos tipos A ou O (compatível com ambos os antígenos A e
+       B). Pessoas
+       com tipo A podem doar sangue para indivíduos com tipo A ou AB.</p>
 
 
 
-  <h3>Tipo B:</h3>
+      <h3>Tipo B:</h3>
 
-  <p>O tipo sanguíneo B possui antígenos B nas células vermelhas do sangue e anticorpos anti-A no plasma.
-  Indivíduos com tipo B podem receber transfusões de sangue dos tipos B ou O (compatível com ambos os antígenos B e
-  A). Pessoas
-  com tipo B podem doar sangue para indivíduos com tipo B ou AB.</p>
-
-
-
-  <h3>Tipo AB:</h3>
-
-  <p>O tipo sanguíneo AB possui antígenos A e B nas células vermelhas do sangue e não possui anticorpos anti-A ou
-  anti-B no plasma. Indivíduos com tipo AB podem receber transfusões de sangue de qualquer tipo sanguíneo (compatível
-  com todos os antígenos). Pessoas com tipo AB podem doar sangue apenas para indivíduos com tipo AB.</p>
+      <p>O tipo sanguíneo B possui antígenos B nas células vermelhas do sangue e anticorpos anti-A no plasma.
+       Indivíduos com tipo B podem receber transfusões de sangue dos tipos B ou O (compatível com ambos os antígenos B e
+       com tipo B podem doar sangue para indivíduos com tipo B ou AB.</p>
 
 
 
-  <h3>Tipo O:</h3>
+      <h3>Tipo AB:</h3>
 
-  <p>O tipo sanguíneo O não possui antígenos A ou B nas células vermelhas do sangue, mas possui anticorpos anti-A
-  e anti-B no plasma. Indivíduos com tipo O podem receber transfusões apenas de sangue do tipo O (compatível com a
-  ausência de ambos os antígenos). No entanto, eles podem doar sangue para indivíduos com qualquer tipo
-  sanguíneo (A,B, AB ou O).</p>
+      <p>O tipo sanguíneo AB possui antígenos A e B nas células vermelhas do sangue e não possui anticorpos anti-A ou
+       anti-B no plasma. Indivíduos com tipo AB podem receber transfusões de sangue de qualquer tipo sanguíneo (compatível
+       com todos os antígenos). Pessoas com tipo AB podem doar sangue apenas para indivíduos com tipo AB.</p>
 
 
-  <h3>Fator Rh:</h3>
 
-  Uma pessoa pode ser Rh positivo (Rh+) se tiver o antígeno Rh nas células vermelhas do sangue ou Rh negativo (Rh-) se
-  não tiver o antígeno. Por exemplo, uma pessoa com tipo sanguíneo A e fator Rh positivo seria classificada como "A
-  Rh+".
-  </p>
+      <h3>Tipo O:</h3>
+
+      <p>O tipo sanguíneo O não possui antígenos A ou B nas células vermelhas do sangue, mas possui anticorpos anti-A
+       e anti-B no plasma. Indivíduos com tipo O podem receber transfusões apenas de sangue do tipo O (compatível com a
+       ausência de ambos os antígenos). No entanto, eles podem doar sangue para indivíduos com qualquer tipo
+       sanguíneo (A,B, AB ou O).</p>
+
+
+      <h3>Fator Rh:</h3>
+
+      <p>Uma pessoa pode ser Rh positivo (Rh+) se tiver o antígeno Rh nas células vermelhas do sangue ou Rh negativo (Rh-) se
+       não tiver o antígeno. Por exemplo, uma pessoa com tipo sanguíneo A e fator Rh positivo seria classificada como "A
+       Rh+".
+      </p>
 
 
 
 
-  <h2>Compatibilidade de transfusão:</h2>
+       <h2>Compatibilidade de transfusão:</h2>
 
 
-  <p>É essencial considerar a compatibilidade dos tipos sanguíneos durante as transfusões para evitar reações adversas.
-  Em geral, indivíduos com Rh negativo podem receber sangue Rh positivo, mas o contrário não é possível. Além disso, a
-  compatibilidade entre os grupos sanguíneos ABO deve ser levada em consideração.</p>
+      <p>É essencial considerar a compatibilidade dos tipos sanguíneos durante as transfusões para evitar reações adversas.
+       Em geral, indivíduos com Rh negativo podem receber sangue Rh positivo, mas o contrário não é possível. Além disso, a
+       compatibilidade entre os grupos sanguíneos ABO deve ser levada em consideração.</p>
 
 
 
 
-  <h2>É importante saber que:</h2>
+       <h2>É importante saber que:</h2>
 
-  <p>Conhecer o seu tipo sanguíneo é importante para situações de emergência, transfusões de sangue e
-  compatibilidade com órgãos para transplantes. Os tipos sanguíneos A, B, AB</p>
+      <p>Conhecer o seu tipo sanguíneo é importante para situações de emergência, transfusões de sangue e
+        compatibilidade com órgãos para transplantes. Os tipos sanguíneos A, B, AB</p>
 
- </main>
+    </main>
 
 
     <footer class="rodape">© 2023 Banco de sangue</footer>
