@@ -3,9 +3,10 @@
     margin: 0px;
 }
 
-a {
+.lateral-menu-content__item {
     text-decoration: none;
-    color: black;     
+    color: black; 
+    margin-left: 3%;    
 }
 
 body{
@@ -19,8 +20,8 @@ img {
     height: 20px;
     color: #514747; 
     transform: scale(1.5);
-     margin-top: 3%;
-     margin-left: 2%;
+     margin-top: 2%;
+     margin-left: 1%;
 }
 
 input[type="checkbox"]{
@@ -28,7 +29,7 @@ input[type="checkbox"]{
 }
 
 nav{
-   background-color: #eb3738;;
+   background-color: #eb3738;
    width: 300px;
    height: 50%;
    left: -300px;
@@ -37,10 +38,11 @@ nav{
 }
 
 nav::after{
-   content: "BANCO DE DOADORES DE SANGUE";
+   content: "Banco de doadores de sangue";
    color: white;
-   text-align: center;
-   margin-top: 2PX;
+   position: absolute;
+   margin-top: 7%;
+   margin-left: 4%;
    font-family: "Poppins";
 }
 
@@ -54,19 +56,19 @@ input[type="checkbox"]:checked ~ nav
 ul{
    background-color: #33a0ab; 
     list-style: none;
-    top: 50px;
+    top: 70px;
     position: absolute;
     width: 100%;
    
 }
 
-a {
+.lateral-menu-content__item {
    display: block;
    padding: 20px 5px;
    color: white;
 }
 
-a:hover {
+.lateral-menu-content__item:hover {
     background-color: #33a0ab;
     color: black;
 }
@@ -126,9 +128,10 @@ hr {
   
 h2 {
     font-family: "Poppins";
-    margin: 60px;
+    margin-left: 6px;
     width: 70%;
     color: #514747;
+    padding: 22px;
 }
 
 
@@ -136,28 +139,23 @@ p {
     font-family: "Poppins";
     font-style: normal;
     font-size: 18px;
-    display: inline-block;
-    padding: 16px;
+    padding: 20px;
     color: #514747;    
 }
 
 
 h3 {
     font-family: "Poppins";
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: #514747  
-}
-
+    margin-left: 6px;
+    width: 70%;
+    color: #514747;
+    padding: 22px;
+} 
 
 .rodape {
-    color: #514747;
-    text-align: center;
-    padding: 20px;
-    text-shadow: 2px 2px 2px #514747;
-    letter-spacing: 2px;
+    color: #0b972e;
+    text-align: center;      
 }
 
-@media screen {
-    
-}
+
+
