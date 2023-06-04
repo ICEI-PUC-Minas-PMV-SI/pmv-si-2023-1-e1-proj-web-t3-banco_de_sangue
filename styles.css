@@ -9,7 +9,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url("src/public/assets/woman-picture.jpeg");
+  background-image: url("src/public/assets/doc-images/woman-picture.jpeg");
   background-size: cover;
   z-index: 1;
 }
@@ -151,12 +151,13 @@
 }
 
 .allowed-donation-section {
-  background-color: #EB3738;
+  background-color: #eb3738;
   padding-bottom: 2rem;
 }
 
-.allowed-donation-section p, .allowed-donation-section h3 {
-  color: #ffffff
+.allowed-donation-section p,
+.allowed-donation-section h3 {
+  color: #ffffff;
 }
 
 .allowed-donation-section__intro {
@@ -229,15 +230,16 @@
 }
 
 .extra-info-section {
-  background-color: #EB3738;
+  background-color: #eb3738;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
-.extra-info-section p, .extra-info-section h3 {
-  color: #ffffff
+.extra-info-section p,
+.extra-info-section h3 {
+  color: #ffffff;
 }
 
 .extra-info-section article {
@@ -267,8 +269,6 @@
 body > footer {
   margin-bottom: 2rem;
 }
-
-
 
 @media (min-width: 768px) {
   .register-section {
