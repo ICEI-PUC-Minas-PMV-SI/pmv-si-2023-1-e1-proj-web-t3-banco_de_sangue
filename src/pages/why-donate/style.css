@@ -1,8 +1,3 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
 .lateral-menu-content__item {
     text-decoration: none;
     color: black;
@@ -97,7 +92,6 @@ label {
     margin-right: 2%;
     margin-top: 2%;
 }
-
 .image-container::after {
     content: "Maria";
     display: block;

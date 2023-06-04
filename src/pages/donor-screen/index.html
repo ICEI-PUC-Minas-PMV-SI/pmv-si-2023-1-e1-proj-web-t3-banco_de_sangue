@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./styles-modal.css" />
   <link rel="stylesheet" href="./styles-checkbox.css" />
+  <link rel="stylesheet" href="./styles-header.css" />
 </head>
 
 <body>
@@ -40,7 +41,21 @@
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
     </aside>
   </section>
-  <header class="main-header">page header</header>
+  <header class="main-header">
+    <button class="main-header__menu" id="open-modal-navigate">
+      <object data="../../public/assets/icons/hamburguer-menu.png"> </object>
+    </button>
+    <div class="main-header__logo">
+      <div class="main-header__logo__div">
+        <object data="../../public/assets/svg/logo.svg"> </object>
+      </div>
+    </div>
+    <div class="main-header__icon">
+      <div class="main-header__icon__image"></div>
+      <p class="main-header__icon__text"></p>
+    </div>
+  </header>
+
   <main class="main">
     <section class="main-menu">
       <div class="main-menu__image"></div>
@@ -68,21 +83,23 @@
       </div>
     </section>
     <div id="modal-delete-account" class="modal">
-      <div class="modal-content" class="modal-content__delete">
-        <h1 class="modal-content__title">Apagar conta</h1>
-        <p class="modal-content__text">Tem certeza de que deseja apagar a conta?</p>
-        <div class="modal-content__div">
+      <div class="modal-delete-account__body">
+        <div class="modal-delete-account__body__content">
+          <h1 class="modal-content__title">Apagar conta</h1>
+          <p class="modal-content__text">Tem certeza de que deseja apagar a conta?</p>    
           <div class="register-section__button-div">
-            <button class="register-section__button-div__cancel">Cancelar</button>
-            <button class="register-section__button-div__confirm">Confirmar</button>
+            <button class="register-section__button-div__cancel" id="close-delete-modal-cancel">Cancelar</button>
+            <button class="register-section__button-div__confirm" class="close"
+              id="close-delete-modal-confirm">Confirmar</button>
           </div>
         </div>
       </div>
+
     </div>
-    <div id="modal" class="modal">
+    <div id="modal-edit-account" class="modal">
       <div class="modal-content">
-        <h1 class="modal-content__title">Editar Perfil</h1>
         <div class="modal-content__div">
+        <h1 class="modal-content__title">Editar Perfil</h1>
           <form class="register-section__form">
             <input class="primary-input" placeholder="Nome" />
             <input class="primary-input" placeholder="E-mail" />
@@ -123,6 +140,27 @@
         </div>
       </div>
     </div>
+    <div id="modal-navigate" class="modal">
+      <div class="modal-content__navigate">
+        <div class="modal-navigate-content__div">
+          <aside class="lateral-menu-content">
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/representative-screen'">Canal dos
+              representantes</a>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'"> Quem pode
+              doar?</a>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'">Processo de
+              doação</a>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/blood-types'"> Tipos de sangue</a>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e
+              verdades</a>
+            <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+            <span class="lateral-menu-content__close" >Fechar menu</span>
+          </aside>
+        </div>
+      </div>
+    </div>
     <section class="donor-info">
       <div class="donor-info__data">
         <h3 class="donor-info__data__title">Meus dados:</h3>
@@ -133,6 +171,7 @@
   <script src="script-modal.js"></script>
   <script src="script-donor.js"></script>
   <script src="script-checkbox.js"></script>
+  <script src="script-header.js"></script>
 
 </body>
 
