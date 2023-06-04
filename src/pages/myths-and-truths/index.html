@@ -10,11 +10,14 @@
   <link rel="stylesheet" href="../../styles/shared.css" />
   <link rel="stylesheet" href="../../styles/components/button/styles.css" />
   <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./style-modal.css"/>
+  <link rel="stylesheet" href="../../styles/components/menu-navegation-desktop/styles.css" />
   <link rel="stylesheet" href="../../src/styles/components/short-text-image/styles.css"/>
-  <img src="/hamburguer-menu.png" class="ajuste-image" alt="Banco de Sangue">
+  <img src="/hamburguer-menu.png" id="open-modal" class="ajuste-image" alt="Banco de Sangue">
   <img src="/logo.svg.svg" class="centered-image" alt="logo-final">
-  <img src="/woman-picture.jpeg" class="foto" alt="foto-maria">
+  <img src="../../public/assets/doc-images/woman-picture.jpeg" class="foto" alt="foto-maria">
 </head>
+
 <body>
   <section class="faixa">
    <div class="maria">
@@ -60,6 +63,28 @@
       </div>
       <div><strong style="font-size: 18px; color: red; margin-bottom: 5px;" >Procure o Hemocentro e ajude a salvar vidas!</strong></div>
       <a class="saiba-mais" href="https://prosangue.sp.gov.br/duvidas/default.html" target="_blank">Saiba mais!</a>
-  </section>    
+  </section>  
+  <div id="modal" class="modal">
+    <div class="modal-content__navigate">
+      <div class="modal-navigate-content__div">
+        <aside class="lateral-menu-content">
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/representative-screen'">Canal dos
+            representantes</a>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'"> Quem pode
+            doar?</a>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'">Processo de
+            doação</a>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/blood-types'"> Tipos de sangue</a>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e
+            verdades</a>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+          <span class="lateral-menu-content__close" >Fechar menu</span>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>  
 </body>
 </html>
