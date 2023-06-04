@@ -1,0 +1,75 @@
+.main-header {
+    height: 20vh;
+    position: relative;
+    background-color: white;
+  }
+   
+  .main-header__logo-container {
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    left: calc(50vw - 59.5px);
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    top: 45px;
+  }
+
+  .main-header__logo-container > object {
+    margin: auto;
+  }
+
+  .main-header__hamburguer-menu {
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    left: calc(50vw - 59.5px);
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    top: 45px;
+  }
+
+  .main-header__hamburguer-menu > object {
+    margin: auto;
+  }
+
+  hr.new {
+    border: 3px solid #33A0AB;
+    box-shadow: 0px 1px 29px -6px #000000;
+
+  .text-section {
+    padding: 0 1.5rem 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: #D91106;
+    margin-bottom: 2rem;
+  }
+
+  .text-section__content {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    text-align: justify;
+    color: #514747;
+    margin-bottom: 2rem;
+  }
