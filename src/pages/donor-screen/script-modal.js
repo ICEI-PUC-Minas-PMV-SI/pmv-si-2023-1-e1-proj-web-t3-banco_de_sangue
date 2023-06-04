@@ -49,7 +49,6 @@ openModalNavegate.addEventListener("click", function() {
 });
 
 var closeNavigate = document.getElementsByClassName("lateral-menu-content__close")[0];
-console.log(closeNavigate,'closeNavigate')
 closeNavigate.addEventListener("click", function() {
   modalNavigate.style.display = "none";
 });
