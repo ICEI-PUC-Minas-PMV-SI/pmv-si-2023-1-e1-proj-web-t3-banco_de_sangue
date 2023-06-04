@@ -15,42 +15,75 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header__logo-container">
-      <object data="../../public/assets/svg/logo.svg"> </object>
-    </div>
-    <div class="main-header__menu-hamburguer">
-      <img width="35" height="32"
-        src="../../public/assets/icons/hamburguer-menu.png"> 
-    </div>
-  </header>
-  
+  <header>
+    <input type="checkbox" id="chec">
+    <label for="chec">
+      <img src="../../public/assets/icons/hamburguer-menu.png" alt="">
+    </label>
 
-  <section>
-    <hr class="new">
+    <nav>
+      <ul>
+        <li>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
+        </li>
+
+        <li>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/representative-screen'">Canal
+            dos representantes</a>
+        </li>
+
+        <li>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
+        </li>
+
+        <li>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'"> Quem pode
+            doar?</a>
+        </li>
+
+        <li>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'">Processo de
+            doação</a>
+        </li>
+
+        <li>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e
+            verdades</a>
+        </li>
+
+        <li>
+          <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <object data="../../public/assets/svg/logo.svg" class="header-logo"></object>
+
+    <img src="../../public/assets/doc-images/woman-picture.jpeg" class="image-container" alt="">
+
+    <hr>
+  </header>
+  <h1 class="header__content__title">Por que doar</h1>
+  <div>
     <br>
+    <p>A doação de sangue é um gesto solidário de doar uma pequena quantidade do próprio sangue para salvar a vida de
+      pessoas que se submetem a tratamentos e intervenções médicas de grande porte e complexidade, como transfusões,
+      transplantes, procedimentos oncológicos e cirurgias.</p>
     <br>
-    <h1 class="text-section__title">Por que doar?</h1>
+    <p>Uma única doação pode salvar até quatro vidas. Um simples gesto de amor e solidariedade pode gerar muitos
+      sorrisos. Faça sua parte, independentemente de parentesco entre o doador e quem receberá a doação. </p>
     <br>
+    <p>Queremos lhe mostrar a importância de adotar a cultura solidária da doação regular e espontânea de sangue.</p>
     <br>
-    <br>
-    <br>
-    <div class="text-section__content">
-      <p>A doação de sangue é um gesto solidário de doar uma pequena quantidade do próprio sangue para salvar a vida de
-        pessoas que se submetem a tratamentos e intervenções médicas de grande porte e complexidade, como transfusões,
-        transplantes, procedimentos oncológicos e cirurgias.</p>
-      <br>
-      <p>Uma única doação pode salvar até quatro vidas. Um simples gesto de amor e solidariedade pode gerar muitos
-        sorrisos. Faça sua parte, independentemente de parentesco entre o doador e quem receberá a doação. </p>
-      <br>
-      <p>Queremos lhe mostrar a importância de adotar a cultura solidária da doação regular e espontânea de sangue.</p>
-      <br>
-      <p>Nosso objetivo é manter os estoques de sangue sempre abastecidos e não apenas em datas específicas ou quando
-        algum conhecido precisar. Agora que você entende a importância deste ato de solidariedade, faça seu cadastro
-        conosco.
-      </p>
-    </div>
-  </section>
+    <p>Nosso objetivo é manter os estoques de sangue sempre abastecidos e não apenas em datas específicas ou quando
+      algum conhecido precisar. Agora que você entende a importância deste ato de solidariedade, faça seu cadastro
+      conosco.
+    </p>
+  </div>
+  <footer class="rodape"><a
+    href="https://www.gov.br/saude/pt-br/composicao/saes/sangue#:~:text=A%20doa%C3%A7%C3%A3o%20%C3%A9%20um%20ato,que%20pode%20gerar%20muitos%20sorrisos."
+    target="_blank">Fonte: Ministério da Saúde</a></footer>
 </body>
 
 </html>

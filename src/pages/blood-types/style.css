@@ -105,9 +105,6 @@ label {
     color: #514747
 }
 
-
-
-  
 hr {
     border-color: #33a0ab;
     background-color: #33a0ab;
@@ -150,7 +147,7 @@ h3 {
     width: 70%;
     color: #514747;
     padding: 22px;
-} 
+    } 
 
 .rodape {
     color: #0b972e;
