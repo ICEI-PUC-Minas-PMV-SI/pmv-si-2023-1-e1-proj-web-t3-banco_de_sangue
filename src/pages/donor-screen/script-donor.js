@@ -116,7 +116,6 @@ representatives: [
     cellphone: '35924664211',
     email: 'marcelo@gmail.com',
     bornAt: '01/09/1990',
-    weight: 80,
     password: '12345'
   },
   

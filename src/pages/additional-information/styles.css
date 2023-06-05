@@ -11,7 +11,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url("../../public/assets/woman-picture.jpeg");
+  background-image: url("../../public/assets/doc-images/woman-picture.jpeg");
   background-size: cover;
   z-index: 1;
 }
