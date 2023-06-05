@@ -8,27 +8,33 @@
   z-index: 2;
   
 }
+#myths-and-truths{
+  padding-bottom: 40px;
+}
 .ajuste-image{
   margin-top: 2% ;
   margin-left: 1%;
   width: 2%;
 }
 .foto{
-  width: 3%;
+  width: 4%;
   float: right;
   position: absolute;
   top: 2%;
   right: 0;
   margin: 10px;
+  border-radius: 50%;
 }
 .maria{
   float: right;
   position: absolute;
-  top: -35px;
+  top: -32px;
   right: 8px;
-  margin: 7px;
+  margin: 14px;
   font-size: 10px;
   color: black;
+  font-weight: 600; 
+ 
 }
 h1
 { color: red;
@@ -81,7 +87,7 @@ div
    text-align: center;
    margin-bottom: 20px;
 }
-footer a:hover{
+a:hover{
   color: red;
 }
 a {
@@ -91,6 +97,10 @@ a {
   font-size: 16px;
   text-align: justify;
   text-align: center;
+
+}
+.saiba-mais{
+  ;
 }
 .meu-paragrafo{
   margin-left: 120px;
