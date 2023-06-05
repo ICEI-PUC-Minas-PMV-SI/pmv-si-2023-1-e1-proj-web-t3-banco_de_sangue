@@ -9,18 +9,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |ID    | Descrição do Requisito | Prioridade | Artefato Criado |
 |------|------------------------|------------|-----------------|
 |RF-001 | O sistema deve permitir que usuários, logados ou não, visualizem a página inicial do sistema, em que se explica o intuito do projeto | ALTA | index.html |
-|RF-002 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente à conscientização sobre doação de sangue | ALTA | pasta why-donate |
-|RF-003 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações dos pré-requisitos para doação de sangue | ALTA | pastas who-can-donate  |
-|RF-004 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre o processo de doação de sangue | ALTA |  pasta donation-process|
-|RF-005 | O sistema deve permitir que usuários, logados ou não, visualizem a página FAQ | ALTA | pasta myths-and-truths |
-|RF-006 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre os diferentes tipos de sangue | ALTA |pasta blood-types |
-|RF-007 | O sistema deve permitir que novos usuários doadores gerenciem seu cadastro no sistema | ALTA | pasta donation-screen |
-|RF-008 | O sistema deve permitir que novos usuários representantes dos bancos de sangue gerenciem seu cadastro no sistema | ALTA | pasta representative-screen  |
-|RF-009 | O sistema deve permitir que todos os usuários cadastrados possam realizar o login no sistema | ALTA | pasta signin |
-|RF-011 | O sistema deve permitir que usuários doadores se voluntariem para a doação realizando o cadastro de pré-triagem | ALTA | pasta additional-information  |
-|RF-012 | O sistema deve permitir que os usuários visualizem suas próprias informações de doação de sangue | ALTA |pasta donation-screen |
-|RF-013 | O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue | ALTA | pasta representative-donation-screen e representative-screen |
-|RF-015 | O sistema deve permitir que os usuários solicitem a remoção de suas informações do sistema | BAIXA | donor-screen
+|RF-002 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente à conscientização sobre doação de sangue | ALTA | pasta src/pages/why-donate/index.html |
+|RF-003 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações dos pré-requisitos para doação de sangue | ALTA | pastas src/pages/who-can-donate/index.html  |
+|RF-004 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre o processo de doação de sangue | ALTA |  pasta src/pages/donation-process/index.html|
+|RF-005 | O sistema deve permitir que usuários, logados ou não, visualizem a página FAQ | ALTA | pasta src/pages/myths-and-truths/index.html |
+|RF-006 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre os diferentes tipos de sangue | ALTA |pasta src/pages/blood-types/index.html |
+|RF-007 | O sistema deve permitir que novos usuários doadores gerenciem seu cadastro no sistema | ALTA | pasta src/pages/donation-screen/index.html |
+|RF-008 | O sistema deve permitir que novos usuários representantes dos bancos de sangue gerenciem seu cadastro no sistema | ALTA | pasta src/pages/representative-screen/index.html  |
+|RF-009 | O sistema deve permitir que todos os usuários cadastrados possam realizar o login no sistema | ALTA | pasta src/pages/signin/index.html |
+|RF-011 | O sistema deve permitir que usuários doadores se voluntariem para a doação realizando o cadastro de pré-triagem | ALTA | pasta src/pages/additional-information/index.html  |
+|RF-012 | O sistema deve permitir que os usuários visualizem suas próprias informações de doação de sangue | ALTA |pasta src/pages/donation-screen/index.html |
+|RF-013 | O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue | ALTA | pasta src/pages/representative-donation-screen/index.html e src/pages/representative-screen/index.html |
+|RF-015 | O sistema deve permitir que os usuários solicitem a remoção de suas informações do sistema | BAIXA | src/pages/donor-screen/index.html
 
 ## Descrição das estruturas:
 
