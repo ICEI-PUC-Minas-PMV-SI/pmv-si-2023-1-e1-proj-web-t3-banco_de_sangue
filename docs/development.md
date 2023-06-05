@@ -1,24 +1,5 @@
 # Programação de Funcionalidades
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
-
-Para cada requisito funcional, pode ser entregue um artefato desse tipo.
-
-O professor Rommel Carneiro apresenta alguns exemplos prontos para serem utilizados como referência:
-- Login do sistema: [https://repl.it/@rommelpuc/LoginApp](https://repl.it/@rommelpuc/LoginApp) 
-- Cadastro de Contatos: [https://repl.it/@rommelpuc/Cadastro-de-Contatos](https://repl.it/@rommelpuc/Cadastro-de-Contatos)
-
-
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
-
-## Exemplo
-
 ## Requisitos Atendidos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais que relacionam o escopo do projeto com os artefatos criados:
@@ -27,16 +8,98 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 
 |ID    | Descrição do Requisito | Prioridade | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| O sistema deve exibir as notícias mais populares. | ALTA | index.html |
-|RF-002| Usuários autenticados podem registrar novas notícias. | ALTA | cadastro-noticia.html |
+|RF-001 | O sistema deve permitir que usuários, logados ou não, visualizem a página inicial do sistema, em que se explica o intuito do projeto | ALTA | index.html |
+|RF-002 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente à conscientização sobre doação de sangue | ALTA | pasta why-donate |
+|RF-003 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações dos pré-requisitos para doação de sangue | ALTA | pastas who-can-donate  |
+|RF-004 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre o processo de doação de sangue | ALTA |  pasta donation-process|
+|RF-005 | O sistema deve permitir que usuários, logados ou não, visualizem a página FAQ | ALTA | pasta myths-and-truths |
+|RF-006 | O sistema deve permitir que usuários, logados ou não, visualizem a página referente às informações sobre os diferentes tipos de sangue | ALTA |pasta blood-types |
+|RF-007 | O sistema deve permitir que novos usuários doadores gerenciem seu cadastro no sistema | ALTA | pasta donation-screen |
+|RF-008 | O sistema deve permitir que novos usuários representantes dos bancos de sangue gerenciem seu cadastro no sistema | ALTA | pasta representative-screen  |
+|RF-009 | O sistema deve permitir que todos os usuários cadastrados possam realizar o login no sistema | ALTA | pasta signin |
+|RF-011 | O sistema deve permitir que usuários doadores se voluntariem para a doação realizando o cadastro de pré-triagem | ALTA | pasta additional-information  |
+|RF-012 | O sistema deve permitir que os usuários visualizem suas próprias informações de doação de sangue | ALTA |pasta donation-screen |
+|RF-013 | O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue | ALTA | pasta representative-donation-screen e representative-screen |
+|RF-015 | O sistema deve permitir que os usuários solicitem a remoção de suas informações do sistema | BAIXA | donor-screen
 
 ## Descrição das estruturas:
 
-## Notícia
-|  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
-|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
-| Id             | Numero (Inteiro)  | Identificador único da notícia            | 1                                              |
-| Título         | Texto             | Título da notícia                         | Sistemas de Informação PUC Minas é o melhor                                   |
-| Conteúdo       | Texto             | Conteúdo da notícia                       | Sistemas de Informação da PUC Minas é eleito o melhor curso do Brasil                            |
-| Id do usuário  | Numero (Inteiro)  | Identificador do usuário autor da notícia | 1                                              |
+<br> 
 
+## User
+### Usuários ou doadores cadastrados no banco.
+
+<br> 
+
+|  **Nome**      | **Tipo**          | **Descrição**    | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| id             | Numero (Inteiro)   | Identificador único do usuário | 1            
+| name            | Texto             | Nome do usuário       | Maria Fonseca    |
+| cellphone       | Texto             | Telefone do usuário   | 35991214565      |                      
+| email           | Texto             | E-mail do usuário     | mariaFonseca@gmail.com |
+| bornAt          | Texto             | Data de nascimento    | 25/12/1990       |
+| isHealthNow     | Booleano          | Parâmetro para saber a saúde do usuário  | true |
+| bloodType       | Texto             | Tipo de sangue do usuário                | A+ |
+| city            | Texto             | Cidade onde mora o usuário     | Belo Horizonte|
+| weight          | numero (Real positivo)    | Massa corporal do usuário em kg     | 60 |
+| password        | Texto             | Senha do usuário     | 12345@pUc#2023 |
+| donations       | lista de Objetos            | Lista com doações do usuário | Ver abaixo
+
+
+
+<br>
+<br>
+<br>
+
+
+## Donations
+### Donations é um array de objetos de user contendo todas as doações do usuário e os locais. Segue abaixo a estrutura do objeto donation.
+
+<br> 
+
+
+|  **Nome**      | **Tipo**          | **Descrição**    | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| id             | Numero (Inteiro)   | Identificador único do usuário | 1            
+| date           | Texto              | Data da doação       | 25/12/1990 |
+| email           | Texto             | E-mail do usuário     | mariaFonseca@gmail.com |
+| address          | objeto             | Endereço do hemocentro    | ver abaixo       |
+
+
+<br>
+<br>
+<br>
+
+
+## Donation.address
+### Endereço do hemocentro
+
+<br> 
+
+|  **Nome**      | **Tipo**          | **Descrição**    | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| bloodDonorCenter| Texto             | Nome do hemocentro       | Hospital de santa maria
+| street         | Texto              | Rua do hemocentro        | Rua Maria de Oliveira            
+| number         | Numero(inteiro)    | Numero do hemocentro     | 107            
+| neighborhood   | Texto              | Bairro do homocentro     | Centro            
+| city           | Texto              | Cidade do homocentro     | Santa Maria            
+| state          | Texto              | Estado do homocentro     | Rio Grande do Sul            
+
+
+<br>
+<br>
+<br>
+
+## Representatives
+### Representantes do banco de sangue
+
+<br> 
+
+|  **Nome**      | **Tipo**          | **Descrição**    | **Exemplo**                                    |
+|:--------------:|-------------------|-------------------------------------------|------------------------------------------------|
+| id             | Numero (Inteiro)   | Identificador único do Representante | 1            
+| name            | Texto             | Nome do Representante       | Joana Fortunato    |
+| cellphone       | Texto             | Telefone do Representante   | 1999459145         |                      
+| email           | Texto             | E-mail do Representante     | jfortunayo@bancoDeSangue.com |
+| bornAt          | Texto             | Data de nascimento          | 25/12/1990       |
+| password        | Texto             | Senha do representante      | Pass@bancoD&S4NGu& |
