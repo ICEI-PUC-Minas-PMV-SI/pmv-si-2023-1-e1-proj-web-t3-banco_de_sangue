@@ -13,6 +13,8 @@
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
+link da solução: https://banco-de-sangue.netlify.app/
+
 ## Integrantes
 
 * Breno Henrique Martins Xavier
@@ -43,3 +45,5 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 # Apresentação
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
+
+
