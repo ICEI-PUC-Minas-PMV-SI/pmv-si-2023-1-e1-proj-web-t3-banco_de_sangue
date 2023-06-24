@@ -82,10 +82,18 @@ function editUser(userId, updatedUser) {
     Object.assign(user, updatedUser);
     saveDatabase(database);
   }
-  console.log(database.users.find(user => user.id === userId))
   return database.users.find(user => user.id === userId);
 }
-const mockId = '71931ecb-03e9-4ae3-9876-c2d505c957d0';
+
+function deleteUser(userId) {
+  const database = getDatabase();
+  const userIndex = database.users.findIndex(user => user.id === userId);
+  if (userIndex !== -1) {
+    database.users.splice(userIndex, 1);
+    saveDatabase(database);
+  }
+}
+const mockId = '96c1acf8-57a0-4ec2-af44-0826754f76c9';
 
 
 // ============== INFORMAÇÕES DO DOADOR ===================

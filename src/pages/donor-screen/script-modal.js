@@ -117,7 +117,9 @@ closeButtonDelete.addEventListener("click", function() {
   modalDelete.style.display = "none";
 });
 closeButtonDeleteAndConfirm.addEventListener("click", function() {
+  deleteUser(mockId)
   modalDelete.style.display = "none";
+  window.location.href='/'
 });
 
 window.addEventListener("click", function(event) {
@@ -146,3 +148,11 @@ window.addEventListener("click", function(event) {
     modalNavigate.style.display = "none";
   }
 });
+
+// LOGOUT
+const logoutButton = document.getElementById('logout-button')
+console.log('logoutButton')
+logoutButton.addEventListener("click", function() {
+  console.log('clicou no botão de sair')
+  window.location.href='/'
+})
