@@ -1,62 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/shared.css" />
+    <link rel="stylesheet" href="../../styles/components/button/styles.css" />
+    <link rel="stylesheet" href="../../styles/components/input/styles.css" />
+    <link
+      rel="stylesheet"
+      href="../../styles/components/short-text-image/styles.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cadastro</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../../styles/global.css" />
-  <link rel="stylesheet" href="../../styles/shared.css" />
-  <link rel="stylesheet" href="../../styles/components/button/styles.css" />
-  <link rel="stylesheet" href="../../styles/components/input/styles.css" />
-  <link rel="stylesheet" href="../../styles/components/short-text-image/styles.css" />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-
-<body>
-  <header class="main-header">
-    <div class="main-header__image"></div>
-    <div class="main-header__image-color"></div>
-    <div class="main-header__content">
-      <h1 class="main-header__content__title">Cadastro</h1>
-      <div class="main-header__logo-container">
-        <object data="../../public/assets/svg/logo.svg"> </object>
+  <body>
+    <header class="main-header">
+      <div class="main-header__image"></div>
+      <div class="main-header__image-color"></div>
+      <div class="main-header__content">
+        <h1 class="main-header__content__title">Cadastro</h1>
+        <div class="main-header__logo-container">
+          <object data="../../public/assets/svg/logo.svg"></object>
+        </div>
+        <span class="main-header__content__text"
+          >Banco de doadores de sangue</span
+        >
       </div>
-      <span class="main-header__content__text">Banco de doadores de sangue</span>
-    </div>
-
-  </header>
-  <main class="register">
-    <section class="register-section">
-      <h2 class="register-section__title"> Entre com seus dados abaixo</h2>
-      <form class="register-section__form">
-        <input class="primary-input" placeholder="Nome completo" />
-        <input class="primary-input" placeholder="E-mail" />
-        <div class="register-section__form-input-cellphone-div">
-          <input class="register-section__form-input-cellphone-div__ddd" placeholder="DDD" />
-          <input class="register-section__form-input-cellphone-div__cellphone" placeholder="Telefone para contato" />
-        </div>
-        <input class="primary-input" placeholder="Senha" />
-        <input class="primary-input" placeholder="Confirmar senha" />
-
-        <div class="register-section__form__footer">
-          <p> Já é doador?</p>
-          <a class="register-section__form__footer__text" onclick="window.location.href='/src/pages/signin/'">Faça seu
-            login</a>
-        </div>
-      </form>
-    </section>
-    <section class="register-section-button">
-      <button class="primary-button" class="register-section__button"
-        onclick="window.location.href='/src/pages/donor-screen/'">Cadastrar</button>
-      <a class="register-section__text" onclick="window.location.href='/index.html'">Voltar para a home</a>
-    </section>
-  </main>
-</body>
-
+    </header>
+    <main class="register">
+      <section class="register-section">
+        <h2 class="register-section__title">Entre com seus dados abaixo</h2>
+        <form class="register-section__form" id="sign-up-form">
+          <input
+            class="primary-input"
+            placeholder="Nome completo"
+            name="name"
+            onkeyup="inputOnKeyup(event)"
+          />
+          <input
+            class="primary-input"
+            placeholder="E-mail"
+            name="email"
+            onkeyup="inputOnKeyup(event)"
+          />
+          <div class="register-section__form-input-cellphone-div">
+            <input
+              class="register-section__form-input-cellphone-div__ddd primary-input"
+              placeholder="DDD"
+              name="ddd"
+              type="number"
+              maxlength="3"
+              max="3"
+              onkeyup="inputOnKeyup(event)"
+            />
+            <input
+              class="register-section__form-input-cellphone-div__cellphone primary-input"
+              placeholder="Telefone para contato"
+              name="phone"
+              type="number"
+              onkeyup="inputOnKeyup(event)"
+            />
+          </div>
+          <input
+            class="primary-input"
+            type="password"
+            placeholder="Senha"
+            name="password"
+            onkeyup="inputOnKeyup(event)"
+          />
+          <input
+            class="primary-input"
+            type="password"
+            placeholder="Confirmar senha"
+            name="passwordConfirm"
+            onkeyup="inputOnKeyup(event)"
+          />
+          <div class="register-section__form__footer">
+            <p>Já é doador?</p>
+            <a
+              class="register-section__form__footer__text"
+              onclick="window.location.href='/src/pages/signin/'"
+              >Faça seu login</a
+            >
+          </div>
+        </form>
+      </section>
+      <section class="register-section-button">
+        <button class="primary-button" name="sign-up-button">Cadastrar</button>
+        <a
+          class="register-section__text"
+          onclick="window.location.href='/index.html'"
+          >Voltar para a home</a
+        >
+      </section>
+    </main>
+    <script src="../../commons/local-storage/index.js"></script>
+    <script src="../../commons/utils/UUID.js"></script>
+    <script src="../../commons/repository/users.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
