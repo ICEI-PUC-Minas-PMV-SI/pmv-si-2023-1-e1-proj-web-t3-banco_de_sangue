@@ -1,52 +1,32 @@
-const inputOnKeyup = (event) => {
-  event.target.classList.remove("primary-input--error");
-};
-
 // Funções de validação
 
 const isEmpty = (value) => value === "";
-
-const validateEmail = (email) => {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const hasEmailError = !emailRegex.test(email);
-
-  if (hasEmailError) {
-    renderErrorFeedback("email");
-  }
-
-  return hasEmailError;
-};
 
 const validatePassword = (password, passwordConfirm) => {
   const hasPasswordError = password !== passwordConfirm;
 
   if (hasPasswordError) {
-    renderErrorFeedback("password");
-    renderErrorFeedback("passwordConfirm");
+    addInputErrorFeedback("password");
+    addInputErrorFeedback("passwordConfirm");
   }
 
   return hasPasswordError;
 };
 
-const validateFields = (payload) => {
+const hasEmptyFields = (payload) => {
   let hasError = false;
 
   for (key in payload) {
     if (isEmpty(payload[key])) {
       hasError = true;
-      renderErrorFeedback(key);
+      addInputErrorFeedback(key);
     }
   }
 
   return hasError;
 };
 
-const renderErrorFeedback = (fieldName) => {
-  const field = document.querySelector(
-    `#sign-up-form input[name="${fieldName}"]`
-  );
-  field.classList.add("primary-input--error");
-};
+// Funções úteis ao submit
 
 const getPayloadFromEvent = (event) => {
   const name = event.target.name.value;
@@ -68,12 +48,16 @@ const getPayloadFromEvent = (event) => {
 
 const signupFormOnSubmit = (event) => {
   const payload = getPayloadFromEvent(event);
-  const hasError = validateFields(payload);
-  const emailError = validateEmail(payload.email);
+  const hasError = hasEmptyFields(payload);
+  const emailError = isInvalidEmail(payload.email);
   const passwordError = validatePassword(
     payload.password,
     payload.passwordConfirm
   );
+
+  if (emailError) {
+    addInputErrorFeedback("email");
+  }
 
   if (hasError || emailError || passwordError) {
     return;
@@ -91,25 +75,18 @@ const signupFormOnSubmit = (event) => {
   window.location.assign("../signin/index.html");
 };
 
-const getSignupForm = () => document.getElementById("sign-up-form");
-
-const bindSignupFormOnSubmit = () => {
-  const form = document.getElementById("sign-up-form");
-  form.addEventListener("submit", signupFormOnSubmit);
-};
-
 const signupButtonOnClick = () => {
-  const form = getSignupForm();
+  const form = document.getElementById("signup-form");
   const submitEvent = new Event("submit", { bubbles: true, cancelable: true });
   form.dispatchEvent(submitEvent);
 };
 
-const bindSignupButtonOnClick = () => {
-  const button = document.querySelector('button[name="sign-up-button"]');
-  button.addEventListener("click", signupButtonOnClick);
-};
-
 document.addEventListener("DOMContentLoaded", () => {
-  bindSignupFormOnSubmit();
-  bindSignupButtonOnClick();
+  // Registrando função callback para o formulário
+  const form = document.getElementById("signup-form");
+  form.addEventListener("submit", signupFormOnSubmit);
+
+  // Registrando função callback para o botão
+  const button = document.querySelector('button[name="signup-button"]');
+  button.addEventListener("click", signupButtonOnClick);
 });

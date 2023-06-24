@@ -38,18 +38,18 @@
     <main class="register">
       <section class="register-section">
         <h2 class="register-section__title">Entre com seus dados abaixo</h2>
-        <form class="register-section__form" id="sign-up-form">
+        <form class="register-section__form" id="signup-form">
           <input
             class="primary-input"
             placeholder="Nome completo"
             name="name"
-            onkeyup="inputOnKeyup(event)"
+            onkeydown="removeErrorOnKeydown(event)"
           />
           <input
             class="primary-input"
             placeholder="E-mail"
             name="email"
-            onkeyup="inputOnKeyup(event)"
+            onkeydown="removeErrorOnKeydown(event)"
           />
           <div class="register-section__form-input-cellphone-div">
             <input
@@ -59,14 +59,14 @@
               type="number"
               maxlength="3"
               max="3"
-              onkeyup="inputOnKeyup(event)"
+              onkeydown="removeErrorOnKeydown(event)"
             />
             <input
               class="register-section__form-input-cellphone-div__cellphone primary-input"
               placeholder="Telefone para contato"
               name="phone"
               type="number"
-              onkeyup="inputOnKeyup(event)"
+              onkeydown="removeErrorOnKeydown(event)"
             />
           </div>
           <input
@@ -74,14 +74,14 @@
             type="password"
             placeholder="Senha"
             name="password"
-            onkeyup="inputOnKeyup(event)"
+            onkeydown="removeErrorOnKeydown(event)"
           />
           <input
             class="primary-input"
             type="password"
             placeholder="Confirmar senha"
             name="passwordConfirm"
-            onkeyup="inputOnKeyup(event)"
+            onkeydown="removeErrorOnKeydown(event)"
           />
 
           <label class="representative-radio-label"
@@ -120,7 +120,7 @@
         </form>
       </section>
       <section class="register-section-button">
-        <button class="primary-button" name="sign-up-button">Cadastrar</button>
+        <button class="primary-button" name="signup-button">Cadastrar</button>
         <a
           class="register-section__text"
           onclick="window.location.href='/index.html'"
@@ -130,8 +130,15 @@
     </main>
     <script src="../../commons/local-storage/index.js"></script>
     <script src="../../commons/utils/UUID.js"></script>
+    <script src="../../commons/utils/email.js"></script>
+    <script src="../../commons/utils/input.js"></script>
     <script src="../../commons/repository/users.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hashes/1.0.5/hashes.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jshashes/1.0.8/hashes.min.js"
+      integrity="sha512-1HyPmPHvi5wFUctYkBhwOYgXmMdbPrDaXKBrbGRI3o1CQkTKazG/RKqR8QwVIjTDOQ3uAOPOFkEbzi99Td6yiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../../commons/encrypt/index.js"></script>
     <script src="index.js"></script>
   </body>
