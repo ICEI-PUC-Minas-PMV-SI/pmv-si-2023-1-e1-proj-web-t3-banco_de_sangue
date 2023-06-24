@@ -246,7 +246,7 @@ const buttonCreateDonation = document.getElementById('create-donation');
 buttonCreateDonation.addEventListener('click', function() {
   const mockdonation = { 
     date: '25/11/2022',
-    donationConfirmed: false,
+    donationConfirmed: true,
     address: {
       bloodDonorCenter: 'Hospital de santa Maria',
       street: 'Rua Maria Oliveira',
@@ -257,7 +257,7 @@ buttonCreateDonation.addEventListener('click', function() {
     } 
 }
     //Não esquecer de trocar o id por um id salvo no banco
-  createDonation('71931ecb-03e9-4ae3-9876-c2d505c957d0', mockdonation)
+  createDonation('fc5e0cd4-7041-43f3-b844-6a8e99dca0b7', mockdonation)
     console.log('create-donation!');
   });
 
