@@ -149,6 +149,7 @@
   margin-bottom: 0.6rem;
   font-size: 14px;
   color: #514747;
+  cursor: pointer;
 }
 .donation-data__container__donation-card__date {
   padding: 5px;

@@ -246,9 +246,9 @@ const buttonCreateDonation = document.getElementById('create-donation');
 buttonCreateDonation.addEventListener('click', function() {
   const mockdonation = { 
     date: '25/11/2022',
-    donationConfirmed: true,
+    donationConfirmed: false,
     address: {
-      bloodDonorCenter: 'Hospital de santa Maria',
+      bloodDonorCenter: 'Hospital de nova hamburgo',
       street: 'Rua Maria Oliveira',
       number: 12,
       neighborhood: 'center',

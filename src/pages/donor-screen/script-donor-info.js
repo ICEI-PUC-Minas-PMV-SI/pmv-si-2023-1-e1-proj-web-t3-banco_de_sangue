@@ -20,6 +20,85 @@ const renderUserIsNotADonator = (donationData) => {
   })
 }
 
+const openDonationDetails = (donation) => {
+  const donationCard = document.getElementById(donation.id)
+  donationCard.addEventListener('click', function() {
+ 
+    const mainBody = document.getElementsByClassName("main")[0]
+    const createModalDonationDetails = document.createElement("div")
+    mainBody.appendChild(createModalDonationDetails)
+    createModalDonationDetails.classList = "modal"
+    createModalDonationDetails.id = `modal-donation-info-of-donation-${donation.id}`
+    createModalDonationDetails.style.display = "block";
+
+    const modalDonationDetailsBody = document.createElement("div")
+    modalDonationDetailsBody.classList = "modal-delete-account__body"
+    createModalDonationDetails.appendChild(modalDonationDetailsBody)
+
+    const modalDonationDetailsBodyContent = document.createElement("div")
+    modalDonationDetailsBodyContent.classList = "modal-donation-info__content"
+    modalDonationDetailsBody.appendChild(modalDonationDetailsBodyContent)
+   
+
+    const buttonCloseModal = document.createElement("button")
+    buttonCloseModal.innerHTML = "X"
+    buttonCloseModal.classList = "modal-donation-info__content__button-close"
+    buttonCloseModal.addEventListener("click", function() {
+      location.reload();
+    })
+    modalDonationDetailsBodyContent.appendChild(buttonCloseModal)
+  
+    const modalTitle = document.createElement('h1')
+    modalTitle.innerHTML = 'Detalhes da doação'
+    modalTitle.classList = 'modal-donation-info__content__title'
+    modalDonationDetailsBodyContent.appendChild(modalTitle)
+
+    const textBloodDonorCenter = document.createElement('p')
+    textBloodDonorCenter.innerHTML = `<b>Hemocentro:</b> ${donation.address.bloodDonorCenter}`
+    textBloodDonorCenter.classList = 'modal-donation-info__content__text'
+    modalDonationDetailsBodyContent.appendChild(textBloodDonorCenter)
+    
+    const textDonationDate = document.createElement('p')
+    textDonationDate.innerHTML = `<b>Data:</b> ${donation.date}`
+    textDonationDate.classList = 'modal-donation-info__content__text'
+    modalDonationDetailsBodyContent.appendChild(textDonationDate)
+
+    const textDonationTime = document.createElement('p')
+    textDonationTime.innerHTML = `<b>Horário:</b> ${donation.time ??'Não definido'}`
+    textDonationTime.classList = 'modal-donation-info__content__text'
+    modalDonationDetailsBodyContent.appendChild(textDonationTime)
+
+    const textDonationZipCode = document.createElement('p')
+    textDonationZipCode.innerHTML = `<b>Cep do hemocentro:</b> ${donation.date}`
+    textDonationZipCode.classList = 'modal-donation-info__content__text'
+    modalDonationDetailsBodyContent.appendChild(textDonationZipCode)
+    
+    const donorCenterAddress = 
+      `${donation.address.street},
+       numero ${donation.address.number},
+       ${donation.address.neighborhood}.
+       ${donation.address.city}-${donation.address.state}`
+  
+    const textDonationAddress = document.createElement('p')
+    textDonationAddress.innerHTML = `<b>Endereço hemocentro:</b> ${donorCenterAddress}`
+    textDonationAddress.classList = 'modal-donation-info__content__text'
+    modalDonationDetailsBodyContent.appendChild(textDonationAddress)
+
+    const textDonationStatus = document.createElement('p')
+    textDonationStatus.classList = 'modal-donation-info__content__text'
+    textDonationStatus.classList = 'donation-modal-status'
+    modalDonationDetailsBodyContent.appendChild(textDonationStatus)
+
+    if(donation.donationConfirmed === true){
+      textDonationStatus.style.color = '#33A0AB'
+      textDonationStatus.innerHTML = 'COLETADO'
+    } else {
+      textDonationStatus.style.color = '#EB3738'
+      textDonationStatus.innerHTML = 'DOAÇÃO AGENDADA'
+    }
+  });
+}
+
 const renderDonationInfo = (donationData) => {
   const renderDonationDataHeader = document.createElement('h1')
   renderDonationDataHeader.classList.add("donation-data__header");
@@ -35,7 +114,8 @@ const renderDonationInfo = (donationData) => {
 ).map((donation) => {
     const renderDonationCard = document.createElement('div')
     renderDonationCard.classList.add("donation-data__container__donation-card");
-    
+    renderDonationCard.id = donation.id
+
     const renderDonationCardDate = document.createElement('p')
     renderDonationCardDate.classList.add("donation-data__container__donation-card__date");
     renderDonationCardDate.innerHTML = donation.date;
@@ -58,10 +138,12 @@ const renderDonationInfo = (donationData) => {
     renderDonationCard.appendChild(renderDonationCardStatus)
     
     renderDonationDataContainer.appendChild(renderDonationCard)
+
+    openDonationDetails(donation)
   })
 }
 
-
+// ========= FUNÇÕES PARA MANIPULAR OS DADOS DO LOCALSTORAGE =============
 const getDatabase = () =>  {
   const databaseString = localStorage.getItem('database');
   return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
@@ -99,7 +181,8 @@ function deleteUser(userId) {
 const mockId = 'fc5e0cd4-7041-43f3-b844-6a8e99dca0b7';
 
 
-// ============== INFORMAÇÕES DO DOADOR ===================
+// ============== RENDERIZAR INFORMAÇÕES DO DOADOR ===================
+
 const user = getUserById(mockId)
 const userFirstName = user.name.split(' ')[0]
 

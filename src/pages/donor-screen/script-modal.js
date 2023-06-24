@@ -151,8 +151,9 @@ window.addEventListener("click", function(event) {
 
 // LOGOUT
 const logoutButton = document.getElementById('logout-button')
-console.log('logoutButton')
 logoutButton.addEventListener("click", function() {
   console.log('clicou no botão de sair')
   window.location.href='/'
 })
+
+
