@@ -15,6 +15,9 @@ const renderUserIsNotADonator = (donationData) => {
   renderDonationButton.classList.add("primary-button");
   renderDonationButton.innerHTML = 'Quero ser doador'
   donationData.appendChild(renderDonationButton)
+  renderDonationButton.addEventListener("click", function() {
+    window.location.href='/src/pages/additional-information'
+  })
 }
 
 const renderDonationInfo = (donationData) => {
@@ -93,7 +96,7 @@ function deleteUser(userId) {
     saveDatabase(database);
   }
 }
-const mockId = '96c1acf8-57a0-4ec2-af44-0826754f76c9';
+const mockId = '81381fa2-141c-4ca0-a892-ca000198a565';
 
 
 // ============== INFORMAÇÕES DO DOADOR ===================

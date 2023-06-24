@@ -186,11 +186,10 @@ buttonCreateUser.addEventListener('click', function() {
     email: 'jmagui@gmail.com',
     bornAt: '25/09/1980',
     password: '12345',
-    bloodType: 'A+',
-    isHealthNow: true,
-    city: 'Santa Maria',
-    weight: 60
-
+    // bloodType: 'A+',
+    // isHealthNow: true,
+    // city: 'Santa Maria',
+    // weight: 60
   }
   createUser(mockUser)
     console.log('create-user!');
