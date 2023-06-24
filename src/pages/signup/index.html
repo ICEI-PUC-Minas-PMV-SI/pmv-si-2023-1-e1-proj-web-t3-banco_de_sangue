@@ -83,6 +83,32 @@
             name="passwordConfirm"
             onkeyup="inputOnKeyup(event)"
           />
+
+          <label class="representative-radio-label"
+            >Quer ser representante?</label
+          >
+          <div class="radio-options">
+            <div class="radio-options__option">
+              <input
+                type="radio"
+                id="yes"
+                name="isRepresentative"
+                value="yes"
+              />
+              <label for="yes">Sim</label>
+            </div>
+            <div class="radio-options__option">
+              <input
+                type="radio"
+                id="no"
+                name="isRepresentative"
+                value="no"
+                checked
+              />
+              <label for="no">Não</label>
+            </div>
+          </div>
+
           <div class="register-section__form__footer">
             <p>Já é doador?</p>
             <a
@@ -105,6 +131,8 @@
     <script src="../../commons/local-storage/index.js"></script>
     <script src="../../commons/utils/UUID.js"></script>
     <script src="../../commons/repository/users.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hashes/1.0.5/hashes.min.js"></script>
+    <script src="../../commons/encrypt/index.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

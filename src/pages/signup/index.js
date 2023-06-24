@@ -2,6 +2,8 @@ const inputOnKeyup = (event) => {
   event.target.classList.remove("primary-input--error");
 };
 
+// Funções de validação
+
 const isEmpty = (value) => value === "";
 
 const validateEmail = (email) => {
@@ -26,13 +28,6 @@ const validatePassword = (password, passwordConfirm) => {
   return hasPasswordError;
 };
 
-const renderErrorFeedback = (fieldName) => {
-  const field = document.querySelector(
-    `#sign-up-form input[name="${fieldName}"]`
-  );
-  field.classList.add("primary-input--error");
-};
-
 const validateFields = (payload) => {
   let hasError = false;
 
@@ -46,6 +41,13 @@ const validateFields = (payload) => {
   return hasError;
 };
 
+const renderErrorFeedback = (fieldName) => {
+  const field = document.querySelector(
+    `#sign-up-form input[name="${fieldName}"]`
+  );
+  field.classList.add("primary-input--error");
+};
+
 const getPayloadFromEvent = (event) => {
   const name = event.target.name.value;
   const email = event.target.email.value;
@@ -53,7 +55,15 @@ const getPayloadFromEvent = (event) => {
   const phone = event.target.phone.value;
   const password = event.target.password.value;
   const passwordConfirm = event.target.passwordConfirm.value;
-  return { name, phone, email, ddd, password, passwordConfirm };
+  return {
+    name,
+    phone,
+    email,
+    ddd,
+    password,
+    passwordConfirm,
+    isRepresentative: event.target.isRepresentative.value === "yes",
+  };
 };
 
 const signupFormOnSubmit = (event) => {
@@ -69,7 +79,14 @@ const signupFormOnSubmit = (event) => {
     return;
   }
 
-  createUser(payload);
+  const { passwordConfirm, password, ...payloadRest } = payload;
+
+  const user = {
+    ...payloadRest,
+    password: encrypt(password),
+  };
+
+  createUser(user);
 
   window.location.assign("../signin/index.html");
 };
