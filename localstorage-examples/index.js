@@ -181,15 +181,16 @@ function deleteRepresentative(representativeId) {
 const buttonCreateUser = document.getElementById('create-user');
 buttonCreateUser.addEventListener('click', function() {
   const mockUser = {
-    name: 'Maria Elsébio da Fonseca',
+    name: 'Alberto Guimaraes',
     cellphone: '35991214565',
-    email: 'mariaFonseca@gmail.com',
-    bornAt: '25/12/1990',
-    isHealthNow: true,
-    bloodType: 'A+',
-    city: 'Santa Maria',
-    weight: 60,
+    email: 'jmagui@gmail.com',
+    bornAt: '25/09/1980',
     password: '12345',
+    bloodType: 'A+',
+    isHealthNow: true,
+    city: 'Santa Maria',
+    weight: 60
+
   }
   createUser(mockUser)
     console.log('create-user!');
@@ -257,7 +258,7 @@ buttonCreateDonation.addEventListener('click', function() {
     } 
 }
     //Não esquecer de trocar o id por um id salvo no banco
-  createDonation('f4331be7-ab71-4cfd-991a-8c36e61b8f95', mockdonation)
+  createDonation('71931ecb-03e9-4ae3-9876-c2d505c957d0', mockdonation)
     console.log('create-donation!');
   });
 

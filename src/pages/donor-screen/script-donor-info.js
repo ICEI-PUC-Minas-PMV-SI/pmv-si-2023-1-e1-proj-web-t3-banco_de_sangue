@@ -1,126 +1,4 @@
-let db = {
-  users: [{
-    id: 1,
-    name: 'Maria Elsébio da Fonseca',
-    cellphone: '35991214565',
-    email: 'mariaFonseca@gmail.com',
-    bornAt: '25/12/1990',
-    isHealthNow: true,
-    bloodType: 'A+',
-    city: 'Santa Maria',
-    weight: 60,
-    password: '12345',
-    donations:[
-      {
-        id: 1,
-        date: '25/11/2022',
-        donationConfirmed: false,
-        address: {
-          bloodDonorCenter: 'Hospital de santa Maria',
-          street: 'Rua Maria Oliveira',
-          number: 12,
-          neighborhood: 'center',
-          city: 'Santa Maria',
-          state: 'RS'                
-        }
-      },
-      {
-        id: 2,
-        date: '25/11/2022',
-        donationConfirmed: true,
-        address: {
-          bloodDonorCenter: 'Hospital de santa Maria',
-          street: 'Rua Maria Oliveira',
-          number: 12,
-          neighborhood: 'center',
-          city: 'Santa Maria',
-          state: 'RS'                
-        }
-      },
-      {
-        id: 3,
-        date: '25/11/2022',
-        donationConfirmed: false,
-        address: {
-          bloodDonorCenter: 'Hospital de santa Maria',
-          street: 'Rua Maria Oliveira',
-          number: 12,
-          neighborhood: 'center',
-          city: 'Santa Maria',
-          state: 'RS'                
-        }
-      },
-      {
-        id: 4,
-        date: '25/11/2022',
-        donationConfirmed: false,
-        address: {
-          bloodDonorCenter: 'Hospital de santa Maria',
-          street: 'Rua Maria Oliveira',
-          number: 12,
-          neighborhood: 'center',
-          city: 'Santa Maria',
-          state: 'RS'                
-        }
-      },
-      {
-        id: 5,
-        date: '25/11/2022',
-        donationConfirmed: true,
-        address: {
-          bloodDonorCenter: 'Hospital de santa Maria',
-          street: 'Rua Maria Oliveira',
-          number: 12,
-          neighborhood: 'center',
-          city: 'Santa Maria',
-          state: 'RS'                
-        }
-      },
-      {
-        id: 6,
-        date: '25/11/2022',
-        donationConfirmed: false,
-        address: {
-          bloodDonorCenter: 'Hospital de santa Maria',
-          street: 'Rua Maria Oliveira',
-          number: 12,
-          neighborhood: 'center',
-          city: 'Santa Maria',
-          state: 'RS'                
-        }
-      }
-    ],
-  }, {
-    id: 2,
-    name: 'joão Magalhaes',
-    cellphone: '35914614461',
-    email: 'jmagalhaes@gmail.com',
-    bornAt: '01/11/1990',
-    isHealthNow: true,
-    bloodType: 'O-',
-    city: 'Belo Orizonte',
-    weight: 80,
-    password: '12345',
-    donations: []
-  },{
-    id: 3,
-    name: 'Mario Vergara',
-    cellphone: '1999851256',
-    email: 'vergara@gmail.com',
-  }
-],
-representatives: [
-  {
-    id: 1,
-    name: 'Marcelo Campos',
-    cellphone: '35924664211',
-    email: 'marcelo@gmail.com',
-    bornAt: '01/09/1990',
-    password: '12345'
-  },
-  
-]
-}
+// =========== Funções ===========
 
 const renderUserIsNotADonator = (donationData) => {
   const renderYouReNotADonator = document.createElement('div')
@@ -179,10 +57,39 @@ const renderDonationInfo = (donationData) => {
     renderDonationDataContainer.appendChild(renderDonationCard)
   })
 }
-const mockId = 1;
 
-// INFORMAÇÕES DO DOADOR
-const user = db.users.find((user) => user.id === mockId)
+
+const getDatabase = () =>  {
+  const databaseString = localStorage.getItem('database');
+  return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
+}
+
+const saveDatabase = (database) => {
+  const databaseString = JSON.stringify(database);
+  localStorage.setItem('database', databaseString);
+}
+
+function getUserById(userId) {
+  const database = getDatabase();
+  const user = database.users.find(user => user.id === userId);
+  return user;
+}
+
+function editUser(userId, updatedUser) {
+  const database = getDatabase();
+  const user = database.users.find(user => user.id === userId);
+  if (user) {
+    Object.assign(user, updatedUser);
+    saveDatabase(database);
+  }
+  console.log(database.users.find(user => user.id === userId))
+  return database.users.find(user => user.id === userId);
+}
+const mockId = '71931ecb-03e9-4ae3-9876-c2d505c957d0';
+
+
+// ============== INFORMAÇÕES DO DOADOR ===================
+const user = getUserById(mockId)
 const userFirstName = user.name.split(' ')[0]
 
 const mainMenuTitle = document.getElementsByClassName('main-menu__title')[0];
@@ -191,17 +98,19 @@ mainMenuTitle.innerHTML = messageToWrite;
 
 const donorInfoData = document.getElementsByClassName('donor-info__data')[0];
 
-
+// nome do usuario
 const renderDonorName = document.createElement('p')
 renderDonorName.classList.add("donor-info__data__text");
 renderDonorName.innerHTML = `<b>Nome: </b>${user.name}`
 donorInfoData.appendChild(renderDonorName)
 
+// telefone
 const renderDonorCellphone = document.createElement('p')
 renderDonorCellphone.classList.add("donor-info__data__text");
 renderDonorCellphone.innerHTML = `<b>Telefone: </b>${user.cellphone}`
 donorInfoData.appendChild(renderDonorCellphone)
 
+// e-mail
 const RenderDonorEmail = document.createElement('p')
 RenderDonorEmail.classList.add("donor-info__data__text");
 RenderDonorEmail.innerHTML = `<b>E-mail: </b>${user.email}`
@@ -235,14 +144,15 @@ if(user.bloodType){
   donorInfoData.appendChild(renderBloodType)
 }
 
-// INFORMAÇÕES SOBRE DOAÇÃO
+
+// ==================  INFORMAÇÕES SOBRE DOAÇÃO ==================
 
 const donationData = document.getElementsByClassName('donation-data')[0];
 
 if(!user.bloodType || !user.bornAt || !user.isHealthNow || !user.city){
   renderUserIsNotADonator(donationData)
 }
-else if(!user.donations.length){
+else if(!user.donations){
   const renderYouReNotADonator = document.createElement('div')
   renderYouReNotADonator.classList.add("donation-data__you-re-not-a-donator");
   renderYouReNotADonator.innerHTML = '<p>Suas doações vão aparecer aqui assim que fizermos o primeiro agendamento :)</p>'
