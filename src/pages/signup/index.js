@@ -7,7 +7,10 @@ const validatePassword = (password, passwordConfirm) => {
 
   if (hasPasswordError) {
     addInputErrorFeedback("password");
-    addInputErrorFeedback("passwordConfirm");
+    addInputErrorFeedback(
+      "passwordConfirm",
+      "As senhas inseridas não são iguais!"
+    );
   }
 
   return hasPasswordError;
@@ -56,7 +59,7 @@ const signupFormOnSubmit = (event) => {
   );
 
   if (emailError) {
-    addInputErrorFeedback("email");
+    addInputErrorFeedback("email", "Insira um email válido!");
   }
 
   if (hasError || emailError || passwordError) {
