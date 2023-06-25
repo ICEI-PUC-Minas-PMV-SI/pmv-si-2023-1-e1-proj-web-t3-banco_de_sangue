@@ -124,14 +124,19 @@
   justify-content: space-between;
 }
 
-.register-section__form-input-cellphone-div__ddd {
-  width: 5rem;
+.nested-input {
+  display: flex;
+  flex-direction: column;
 }
 
-.register-section__form-input-cellphone-div__cellphone {
-  width: 30rem;
-  margin-left: 1rem;
+.nested-input.ddd {
+  width: 30%;
 }
+
+.nested-input.phone {
+  width: 60%;
+}
+
 .register-section__form__footer {
   display: flex;
   flex-direction: column;
