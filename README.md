@@ -23,7 +23,7 @@ link da solução: https://banco-de-sangue.netlify.app/
 * Geraldo Daniel Soriano Freire
 * Gilberto Modesto
 * Ramon de Almeida Lima
-teste
+
 ## Orientador
 
 * Luciana de Nardin
