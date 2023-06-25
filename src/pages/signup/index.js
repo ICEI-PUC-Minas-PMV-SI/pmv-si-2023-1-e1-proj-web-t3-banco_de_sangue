@@ -2,7 +2,23 @@
 
 const isEmpty = (value) => value === "";
 
-const validatePassword = (password, passwordConfirm) => {
+const validateIfEmailHasError = (email) => {
+  if (isInvalidEmail(email)) {
+    addInputErrorFeedback("email", "Insira um email válido!");
+    return true;
+  }
+
+  const userInDB = findUserByEmail(email);
+
+  if (userInDB) {
+    addInputErrorFeedback("email", "Já existe uma conta com este email!");
+    return true;
+  }
+
+  return false;
+};
+
+const validateIfPasswordHasError = (password, passwordConfirm) => {
   const hasPasswordError = password !== passwordConfirm;
 
   if (hasPasswordError) {
@@ -52,15 +68,11 @@ const getPayloadFromEvent = (event) => {
 const signupFormOnSubmit = (event) => {
   const payload = getPayloadFromEvent(event);
   const hasError = hasEmptyFields(payload);
-  const emailError = isInvalidEmail(payload.email);
-  const passwordError = validatePassword(
+  const emailError = validateIfEmailHasError(payload.email);
+  const passwordError = validateIfPasswordHasError(
     payload.password,
     payload.passwordConfirm
   );
-
-  if (emailError) {
-    addInputErrorFeedback("email", "Insira um email válido!");
-  }
 
   if (hasError || emailError || passwordError) {
     return;
