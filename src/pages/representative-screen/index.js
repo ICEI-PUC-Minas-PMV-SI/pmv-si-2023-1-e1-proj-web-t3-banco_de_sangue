@@ -1,5 +1,6 @@
 const deleteAccount = () => {
   const { userId } = getSignedInUser();
+  signOut();
   deleteUser(userId);
   window.location.assign('../../index.html');
 };
