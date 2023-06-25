@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(235, 55, 56, 0.7);
+}
+
+.modal-content {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.modal-content__title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.modal-content__text {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.register-section__form {
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-section__button-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-section__button-div__cancel {
+  background-color: #eb3738;
+  border: 2px solid #514747;
+  width: 140px;
+  height: 50px;
+  margin-top: 10%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.register-section__button-div__confirm {
+  background-color: #33a0ab;
+  border: 2px solid #514747;
+  width: 140px;
+  height: 50px;
+  margin-top: 10%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.modal-delete-account__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-delete-account__body__content {
+  background: #ffffff;
+  padding: 0 12px 18px;
+  border-radius: 10px;
+  border: 2px solid #33a0ab;
+}

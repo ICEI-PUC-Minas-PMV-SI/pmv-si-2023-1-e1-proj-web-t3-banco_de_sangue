@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela do representante</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link rel="stylesheet" href="../../styles/global.css" />
     <link rel="stylesheet" href="../../styles/shared.css" />
-    <link
-      rel="stylesheet"
-      href="../../styles/components/mobile-nav-bar/styles.css"
-    />
+    <link rel="stylesheet" href="../../styles/components/mobile-nav-bar/styles.css" />
+    <link rel="stylesheet" href="../../styles/components/modal/styles.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="scripts.js" defer></script>
   </head>
@@ -29,10 +24,7 @@
         <object data="../../public/assets/svg/logo.svg"></object>
       </div>
       <div class="nav-container__profile-image">
-        <img
-          src="../../public/assets/doc-images/woman-picture.jpeg"
-          alt="profile picture"
-        />
+        <img src="../../public/assets/doc-images/woman-picture.jpeg" alt="profile picture" />
         <span>Maria</span>
       </div>
     </nav>
@@ -42,15 +34,15 @@
       <div class="actions-container">
         <h3>Bem vinda, Maria!</h3>
         <div class="actions-container__icons">
-          <div class="action">
+          <button class="action">
             <object data="../../public/assets/icons/edit-icon.png"></object>
-          </div>
-          <div class="action">
+          </button>
+          <button class="action">
             <object data="../../public/assets/icons/logout-icon.png"></object>
-          </div>
-          <div class="action">
+          </button>
+          <button class="action" id="delete-account-modal">
             <object data="../../public/assets/icons/trash-icon.png"></object>
-          </div>
+          </button>
         </div>
       </div>
     </section>
@@ -131,5 +123,11 @@
         </div>
       </div>
     </section>
+    <script src="../../commons/local-storage/index.js"></script>
+    <script src="../../commons/signin/index.js"></script>
+    <script src="../../commons/utils/input.js"></script>
+    <script src="../../commons/repository/users.js"></script>
+    <script src="../../commons/interface/delete-acount-modal.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
