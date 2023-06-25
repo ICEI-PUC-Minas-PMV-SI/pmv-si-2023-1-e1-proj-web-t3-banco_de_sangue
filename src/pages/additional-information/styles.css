@@ -160,7 +160,7 @@
   body {
     display: flex;
     flex-direction:row;
-    height:100vh;
+    max-height:100vh;
   }
   .main-header{
     height: 100%;

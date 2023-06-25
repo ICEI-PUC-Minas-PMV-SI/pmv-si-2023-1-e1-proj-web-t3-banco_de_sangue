@@ -1,8 +1,9 @@
 // =========== Funções ===========
 
-const renderUserIsNotADonator = (donationData) => {
+const renderUserIsNotADonator = (donationData, userId) => {
   const renderYouReNotADonator = document.createElement('div')
   renderYouReNotADonator.classList.add("donation-data__you-re-not-a-donator");
+  renderYouReNotADonator.style.maxHeight = "30vh"
   renderYouReNotADonator.innerHTML = '<p>Você ainda não é um doador :(</p>'
   donationData.appendChild(renderYouReNotADonator)
 
@@ -178,7 +179,7 @@ function deleteUser(userId) {
     saveDatabase(database);
   }
 }
-const mockId = 'fc5e0cd4-7041-43f3-b844-6a8e99dca0b7';
+const mockId = 'ade47afa-fdbf-4d03-b866-1c54a44e7aeb';
 
 
 // ============== RENDERIZAR INFORMAÇÕES DO DOADOR ===================
@@ -220,7 +221,7 @@ if(user.bornAt){
 if(user.city){
   const renderUserCity = document.createElement('p')
   renderUserCity.classList.add("donor-info__data__text");
-  renderUserCity.innerHTML = `<b>City: </b>${user.city}`
+  renderUserCity.innerHTML = `<b>Cidade: </b>${user.city}`
   donorInfoData.appendChild(renderUserCity)
 }
 
@@ -244,7 +245,7 @@ if(user.bloodType){
 const donationData = document.getElementsByClassName('donation-data')[0];
 
 if(!user.bloodType || !user.bornAt || !user.isHealthNow || !user.city){
-  renderUserIsNotADonator(donationData)
+  renderUserIsNotADonator(donationData, user.id)
 }
 else if(!user.donations){
   const renderYouReNotADonator = document.createElement('div')
