@@ -5,10 +5,18 @@ const deleteAccount = () => {
   window.location.assign('../../index.html');
 };
 
+const logoutAccount = () => {
+  signOut();
+  window.location.assign('../signin/index.html');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Registrando função callback para o botão
-  const button = document.getElementById('delete-account-modal');
-  button.addEventListener('click', () => {
+  const deleteAccountbutton = document.getElementById('delete-account-button');
+  deleteAccountbutton.addEventListener('click', () => {
     addDeleteAccountModalToDOM(deleteAccount);
   });
+
+  const logoutButton = document.getElementById('logout-account-button');
+  logoutButton.addEventListener('click', logoutAccount);
 });
