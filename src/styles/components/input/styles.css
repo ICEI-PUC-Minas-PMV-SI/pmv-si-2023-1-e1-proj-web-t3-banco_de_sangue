@@ -11,3 +11,11 @@
 .primary-input--error {
   border: 1px solid #eb3738;
 }
+
+.input-error-message {
+  margin: 0 0 6px 2px;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #eb3738;
+}
