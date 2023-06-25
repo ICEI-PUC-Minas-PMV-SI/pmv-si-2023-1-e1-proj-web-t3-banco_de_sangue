@@ -12,34 +12,6 @@ window.addEventListener("click", function(event) {
   }
 });
 
-//MODAL DE ENCERRAR CONTA
-
-var openModalButtonDelete = document.getElementById("open-modal-delete-account");
-var modalDelete = document.getElementById("modal-delete-account");
-
-var closeButtonDelete = document.getElementById("close-delete-modal-cancel");
-var closeButtonDeleteAndConfirm = document.getElementById("close-delete-modal-confirm");
-
-
-openModalButtonDelete.addEventListener("click", function() {
-  modalDelete.style.display = "block";
-});
-
-
-closeButtonDelete.addEventListener("click", function() {
-  modalDelete.style.display = "none";
-});
-closeButtonDeleteAndConfirm.addEventListener("click", function() {
-  modalDelete.style.display = "none";
-});
-
-window.addEventListener("click", function(event) {
-  if (event.target === modalDelete) {
-    modalDelete.style.display = "none";
-  }
-});
-
-
 //MODAL ABRIR MENU DE NAVEGAÇÃO
 var openModalNavegate = document.getElementById("open-modal-navigate");
 var modalNavigate = document.getElementById("modal-navigate");
