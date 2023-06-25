@@ -1,4 +1,4 @@
-const userDBKey = "base-blood-user-db";
+const userDBKey = 'base-blood-user-db';
 
 const getAllUsers = () => {
   return getItemLocalStorage(userDBKey) || [];
@@ -13,6 +13,12 @@ const createUser = (user) => {
   user.id = generateUUID();
   users.push(user);
   updateAllUsers(users);
+};
+
+const deleteUser = (userId) => {
+  const users = getAllUsers();
+  const usersUpdated = users.filter((user) => user.id !== userId);
+  updateAllUsers(usersUpdated);
 };
 
 const findUserByEmail = (email) => {
