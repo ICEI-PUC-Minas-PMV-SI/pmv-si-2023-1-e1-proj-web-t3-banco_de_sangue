@@ -131,3 +131,50 @@
   border-radius: 50px;
   height:30px;
 }      
+
+.modal-donation-info__content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #33A0AB;
+}
+.modal-donation-info__content__title {
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+  width: 100%;
+  text-align:center;
+  color: #514747;
+}
+.modal-donation-info__content__text {
+  font-size: 1;
+  color: #514747;
+  max-width:300px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.modal-donation-info__content__text > b {
+
+}
+.donation-modal-status{
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.modal-donation-info__content__button-close {
+  background: none;
+  border: none;
+  margin-left: 95%;
+  font-size:20px;
+  font-weight:600;
+  color: #EB3738;
+  width:25px;
+  height:25px;
+  border-radius: 100%;
+  color: #EB3738;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer
+}

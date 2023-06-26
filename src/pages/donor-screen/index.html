@@ -27,9 +27,6 @@
       <span class="lateral-menu-header__logo-text">Banco de doadores de sangue</span>
     </div>
     <aside class="lateral-menu-content">
-      <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
-      <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/representative-screen'">Canal dos
-        representantes</a>
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'"> Quem pode
         doar?</a>
@@ -60,7 +57,7 @@
     <section class="main-menu">
       <div class="main-menu__image"></div>
       <div class="main-menu__image-color"></div>
-      <h1 class="main-menu__title">Bem vinda, </h1>
+      <h1 class="main-menu__title">Bem vinda </h1>
       <div class="main-menu__action">
         <div class="main-menu__action__div">
           <button class="main-menu__action__button" id="open-modal">
@@ -69,7 +66,7 @@
           <p class="main-menu__action__text">Editar Perfil</p>
         </div>
         <div class="main-menu__action__div">
-          <button class="main-menu__action__button">
+          <button class="main-menu__action__button" id="logout-button">
             <object data="../../public/assets/icons/logout-icon.png"> </object>
           </button>
           <p class="main-menu__action__text">Deslogar</p>
@@ -90,7 +87,7 @@
           <div class="register-section__button-div">
             <button class="register-section__button-div__cancel" id="close-delete-modal-cancel">Cancelar</button>
             <button class="register-section__button-div__confirm" class="close"
-              id="close-delete-modal-confirm">Confirmar</button>
+              id="close-delete-modal-confirm" >Confirmar</button>
           </div>
         </div>
       </div>
@@ -100,14 +97,15 @@
       <div class="modal-content">
         <div class="modal-content__div">
         <h1 class="modal-content__title">Editar Perfil</h1>
-          <form class="register-section__form">
-            <input class="primary-input" placeholder="Nome" />
-            <input class="primary-input" placeholder="E-mail" />
-            <input class="primary-input" placeholder="Telefone" />
-            <input class="primary-input" placeholder="Peso" />
-            <input class="primary-input" placeholder="Data de nascimento" />
+          <div class="register-section__form">
+            <input class="primary-input" type="text" placeholder="Nome" id="edit-profile-name" />
+            <input class="primary-input" type="email" placeholder="E-mail" id="edit-profile-email" />
+            <input class="primary-input" placeholder="Telefone" id="edit-profile-cellphone"/>
+            <input class="primary-input" type="number" placeholder="Peso" id="edit-profile-weight"/>
+            <input class="primary-input" type="date" placeholder="Data de nascimento" id="edit-profile-born-at"/>
+            <input class="primary-input" type="text" placeholder="Cidade" id="edit-profile-city"/>
             <p class="register-section__check-text">Qual seu tipo sanguineo?</p>
-            <select class="primary-input" id="tipo-sanguineo" name="tipo-sanguineo">
+            <select class="primary-input" name="tipo-sanguineo" id="edit-profile-blood-type">
               <option value="Não sei/Não informado">Não sei</option>
               <option value="O+">O+</option>
               <option value="0-">0-</option>
@@ -120,23 +118,23 @@
             </select>
             <div class="register-section__check">
               <p class="register-section__check-text">Está se sentindo bem?</p>
-              <label class="custom-checkbox">
+              <label class="custom-checkbox" >
                 Sim
-                <input type="checkbox" name="checkbox1" onchange="uncheckOther(this)">
+                <input type="checkbox" name="checkbox1" id="checkbox-is-health" onchange="uncheckOther(this)">
                 <span class="checkmark"></span>
               </label>
 
               <label class="custom-checkbox">
                 Não
-                <input type="checkbox" name="checkbox2" onchange="uncheckOther(this)">
+                <input type="checkbox" name="checkbox2" id="checkbox-is-not-health" onchange="uncheckOther(this)">
                 <span class="checkmark"></span>
               </label>
             </div>
             <div class="register-section__button-div">
-              <button class="register-section__button-div__cancel">Cancelar</button>
-              <button class="register-section__button-div__confirm">Confirmar</button>
+              <button class="register-section__button-div__cancel" id="button-cancel-edit-profile">Cancelar</button>
+              <button class="register-section__button-div__confirm" id="button-confirm-edit-profile">Confirmar</button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -161,6 +159,7 @@
         </div>
       </div>
     </div>
+    </div>
     <section class="donor-info">
       <div class="donor-info__data">
         <h3 class="donor-info__data__title">Meus dados:</h3>
@@ -168,10 +167,11 @@
     </section>
     <section class="donation-data"></section>
   </main>
-  <script src="script-modal.js"></script>
-  <script src="script-donor.js"></script>
+  <script src="../../commons/local-storage/index.js"></script>
+  <script src="script-donor-info.js"></script>
   <script src="script-checkbox.js"></script>
   <script src="script-header.js"></script>
+  <script src="script-modal.js"></script>
 
 </body>
 

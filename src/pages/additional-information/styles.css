@@ -160,11 +160,11 @@
   body {
     display: flex;
     flex-direction:row;
-    height:100vh;
+    max-height:100vh;
   }
   .main-header{
     height: 100%;
-    max-height: 100vh;
+    height: 100vh;
   }
   .main-header__content{
     display: flex;

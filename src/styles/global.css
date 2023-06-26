@@ -31,3 +31,7 @@ h5,
 h6 {
   font-weight: bold;
 }
+
+input {
+  outline: 0;
+}

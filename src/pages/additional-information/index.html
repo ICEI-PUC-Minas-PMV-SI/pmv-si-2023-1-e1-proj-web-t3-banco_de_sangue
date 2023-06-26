@@ -31,7 +31,6 @@
     </div>
     <aside class="lateral-menu-content">
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donor-screen'">Perfil</a>
-      <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/representative-screen'">Canal dos representantes</a>
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/why-donate'">Por que doar?</a>
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/who-can-donate'"> Quem pode doar?</a>
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/donation-process'">Processo de doação</a>
@@ -54,12 +53,12 @@
     <section class="register-section">
       <h2 class="register-section__title"> Entre com seus dados abaixo</h2>
       <form class="register-section__form">
-        <input class="primary-input" placeholder="Peso" />
-        <input class="primary-input" placeholder="Data de nascimento" />
-        <input class="primary-input" placeholder="Data da ultima doação" />
-        <input class="primary-input" placeholder="Cidade onde mora atualmente" />
+        <input class="primary-input" id="weight" placeholder="Peso" />
+        <input class="primary-input" id="born-at" placeholder="Data de nascimento" type="date"/>
+        <input class="primary-input" id="last-donation" placeholder="Data da ultima doação" type="date" />
+        <input class="primary-input" id="city" placeholder="Cidade onde mora atualmente" />
         <p class="register-section__check-text">Qual seu tipo sanguineo?</p>
-        <select class="primary-input" id="tipo-sanguineo" name="tipo-sanguineo">
+        <select class="primary-input" id="blood-type" id="tipo-sanguineo" name="tipo-sanguineo">
           <option value="Não sei/Não informado">Não sei</option>
           <option value="O+">O+</option>
           <option value="0-">0-</option>
@@ -74,24 +73,25 @@
           <p class="register-section__check-text">Está se sentindo bem?</p>
           <label class="custom-checkbox">
             Sim
-            <input type="checkbox" name="checkbox1" onchange="uncheckOther(this)">
+            <input type="checkbox" name="checkbox1" id='checkbox-is-health' onchange="uncheckOther(this)">
             <span class="checkmark"></span>
           </label>
 
           <label class="custom-checkbox">
             Não
-            <input type="checkbox" name="checkbox2" onchange="uncheckOther(this)">
+            <input type="checkbox" name="checkbox2" id='checkbox-is-not-health' onchange="uncheckOther(this)">
             <span class="checkmark"></span>
           </label>
         </div>
       </form>
     </section>
     <section class="register-section-button">
-      <button class="primary-button" class="register-section__button"
-        onclick="window.location.href='/src/pages/donor-screen/'">Cadastrar</button>
+      <button class="primary-button" id="submit-additional-information" class="register-section__button">Cadastrar</button>
       <a class="register-section__text" onclick="window.location.href='/index.html'">Voltar para a home</a>
     </section>
   </main>
 </body>
+<script src="../../commons/local-storage/index.js"></script>
+<script src="script-info.js"></script>
 
 </html>
