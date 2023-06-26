@@ -1,9 +1,9 @@
 
 const mockId = '';
 
-
-// ==============SAUDAÇÃO AO REPRESENTANTE=============
-const user = getUserBuId(mockId);
+// ============== RENDERIZAR INFORMAÇÕES DO REPRESENTANTE ===================
+// ============== SAUDAÇÃO AO REPRESENTANTE =============
+const user = getItemLocalStorage('base-blood-user-db')[0];
 const userFirstName = user.name.split(' ')[0];
 
 const saluteRepresentative = document.getElementsByClassName('salute-representative')[0];
