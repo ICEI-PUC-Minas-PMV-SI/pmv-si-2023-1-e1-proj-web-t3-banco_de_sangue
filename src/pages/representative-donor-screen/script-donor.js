@@ -192,10 +192,25 @@ const renderDonationInfo = (donationData) => {
   })
 }
 
-const mockId = 1;
+const { userId } = getItemLocalStorage('base-blood-signin');
 
+const getDatabase = () =>  {
+  const databaseString = localStorage.getItem('base-blood-user-db');
+  return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
+}
+
+const saveDatabase = (database) => {
+  const databaseString = JSON.stringify(database);
+  localStorage.setItem('base-blood-user-db', databaseString);
+}
+
+function getUserById(userId) {
+  const database = getDatabase();
+  const user = database.find(user => user.id === userId);
+  return user;
+}
 // INFORMAÇÕES DO DOADOR
-const user = db.users.find((user) => user.id === mockId)
+const user = getUserById(userId)
 const donorInfoData = document.getElementsByClassName('donor-info__data')[0];
 
 

@@ -14,34 +14,34 @@ function generateUUID() {
 
 // Função para obter o banco de dados do localStorage
 function getDatabase() {
-  const databaseString = localStorage.getItem('database');
+  const databaseString = localStorage.getItem('base-blood-user-db');
   return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
 }
 
 // Função para salvar o banco de dados no localStorage
 function saveDatabase(database) {
   const databaseString = JSON.stringify(database);
-  localStorage.setItem('database', databaseString);
+  localStorage.setItem('base-blood-user-db', databaseString);
 }
 
 // Função para listar todos os usuários
 function listUsers() {
   const database = getDatabase();
-  console.log(database.users)
-  return database.users;
+  console.log(database)
+  return database;
 }
 
 // Função para buscar um usuário pelo ID
 function getUserById(userId) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
   console.log(user)
   return user;
 }
 
 function getUsersByCity(city) {
   const database = getDatabase();
-  const users = database.users 
+  const users = database 
 
   // Filtra os doadores com base na cidade
   const filteredUsers = users.filter(function(donor) {
@@ -58,28 +58,28 @@ function createUser(newUser) {
   const database = getDatabase();
   const userId = generateUUID();
   newUser.id = userId;
-  database.users.push(newUser);
+  database.push(newUser);
   saveDatabase(database);
 }
 
 // Função para editar um usuário existente
 function editUser(userId, updatedUser) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
   if (user) {
     Object.assign(user, updatedUser);
     saveDatabase(database);
   }
-  console.log(database.users.find(user => user.id === userId))
-  return database.users.find(user => user.id === userId);
+  console.log(database.find(user => user.id === userId))
+  return database.find(user => user.id === userId);
 }
 
 // Função para excluir um usuário e suas doações
 function deleteUser(userId) {
   const database = getDatabase();
-  const userIndex = database.users.findIndex(user => user.id === userId);
+  const userIndex = database.findIndex(user => user.id === userId);
   if (userIndex !== -1) {
-    database.users.splice(userIndex, 1);
+    database.splice(userIndex, 1);
     saveDatabase(database);
   }
 }
@@ -87,7 +87,7 @@ function deleteUser(userId) {
 // Função para criar uma doação vinculada a um usuário
 function createDonation(userId, newDonation) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
   if (user) {
     if (!user.donations) {
       user.donations = [];
@@ -101,7 +101,7 @@ function createDonation(userId, newDonation) {
 
 function editDonation(userId, donationId, updatedDonation) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
   const donation = user ? user.donations.find(donation => donationId === donation.id) : {}
   if (donation) {
     Object.assign(donation, updatedDonation);
@@ -114,7 +114,7 @@ function editDonation(userId, donationId, updatedDonation) {
 // Função para excluir uma doação
 function deleteDonation(userId, donationId) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
 
   const donationIndex = user.donations.findIndex(donation => donation.id === donationId);
   if (donationIndex !== -1) {
@@ -257,7 +257,7 @@ buttonCreateDonation.addEventListener('click', function() {
     } 
 }
     //Não esquecer de trocar o id por um id salvo no banco
-  createDonation('fc5e0cd4-7041-43f3-b844-6a8e99dca0b7', mockdonation)
+  createDonation('08572449-3e33-4535-9827-7f3c4b31cfef', mockdonation)
     console.log('create-donation!');
   });
 

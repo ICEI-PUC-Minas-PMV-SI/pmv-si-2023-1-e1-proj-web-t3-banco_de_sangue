@@ -1,3 +1,4 @@
+console.log('here')
 const setItemLocalStorage = (key, item) => {
   localStorage.setItem(key, JSON.stringify(item));
 };
