@@ -217,7 +217,7 @@ const buttonGetUserById = document.getElementById('get-user-by-id');
 buttonGetUserById.addEventListener('click', function() {
 
     //Não esquecer de trocar o id por um id salvo no banco
-    getUserById('f4331be7-ab71-4cfd-991a-8c36e61b8f95')
+    getUserById('06604822-c966-4c93-8948-4ea4fa181717')
     console.log('get-users!');
 });
   
