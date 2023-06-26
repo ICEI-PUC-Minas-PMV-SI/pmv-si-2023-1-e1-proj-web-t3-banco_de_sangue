@@ -181,15 +181,15 @@ function deleteRepresentative(representativeId) {
 const buttonCreateUser = document.getElementById('create-user');
 buttonCreateUser.addEventListener('click', function() {
   const mockUser = {
-    name: 'Maria Elsébio da Fonseca',
+    name: 'Alberto Guimaraes',
     cellphone: '35991214565',
-    email: 'mariaFonseca@gmail.com',
-    bornAt: '25/12/1990',
-    isHealthNow: true,
-    bloodType: 'A+',
-    city: 'Santa Maria',
-    weight: 60,
+    email: 'jmagui@gmail.com',
+    bornAt: '25/09/1980',
     password: '12345',
+    // bloodType: 'A+',
+    // isHealthNow: true,
+    // city: 'Santa Maria',
+    // weight: 60
   }
   createUser(mockUser)
     console.log('create-user!');
@@ -248,7 +248,7 @@ buttonCreateDonation.addEventListener('click', function() {
     date: '25/11/2022',
     donationConfirmed: false,
     address: {
-      bloodDonorCenter: 'Hospital de santa Maria',
+      bloodDonorCenter: 'Hospital de nova hamburgo',
       street: 'Rua Maria Oliveira',
       number: 12,
       neighborhood: 'center',
@@ -257,7 +257,7 @@ buttonCreateDonation.addEventListener('click', function() {
     } 
 }
     //Não esquecer de trocar o id por um id salvo no banco
-  createDonation('f4331be7-ab71-4cfd-991a-8c36e61b8f95', mockdonation)
+  createDonation('fc5e0cd4-7041-43f3-b844-6a8e99dca0b7', mockdonation)
     console.log('create-donation!');
   });
 

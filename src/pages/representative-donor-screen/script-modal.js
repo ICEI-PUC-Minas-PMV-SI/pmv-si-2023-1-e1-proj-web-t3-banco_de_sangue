@@ -1,4 +1,37 @@
 //MODAL DE EDITAR CONTA
+const buttonSubmitProfileChanges = document.getElementById('button-confirm-edit-profile')
+buttonSubmitProfileChanges.addEventListener('click', function() {
+  const inputEditName = document.getElementById('edit-profile-name').value
+  const inputEditEmail = document.getElementById('edit-profile-email').value
+  const inputEditCellphone = document.getElementById('edit-profile-cellphone').value
+  const inputEditWeight = Number(document.getElementById('edit-profile-weight').value)
+  const inputEditBornAt = document.getElementById('edit-profile-born-at').value
+  const inputEditBloodType = document.getElementById('edit-profile-blood-type').value
+  const inputEditCity = document.getElementById('edit-profile-city').value
+
+  const verifyAndReplace = (newValue, currentValue) => {
+    const wrongValues = ['', 0, null]
+    if (wrongValues.includes(newValue)) {
+      return currentValue
+    }
+    return newValue
+  }
+  newProfile.name = verifyAndReplace(inputEditName, newProfile.name)
+  newProfile.email = verifyAndReplace(inputEditEmail, newProfile.email)
+  newProfile.cellphone = verifyAndReplace(inputEditCellphone, newProfile.cellphone)
+  newProfile.weight = verifyAndReplace(inputEditWeight, newProfile.weight)
+  newProfile.bornAt = verifyAndReplace(inputEditBornAt, newProfile.bornAt)
+  newProfile.bloodType = verifyAndReplace(inputEditBloodType, newProfile.bloodType)
+  newProfile.city = verifyAndReplace(inputEditCity, newProfile.city)
+
+  if(newProfile.bornAt.includes('-')) {
+    const splitData = newProfile.bornAt.split('-');
+    const formatedBornAt = splitData[2] + '/' + splitData[1] + '/' + splitData[0];
+    newProfile.bornAt = formatedBornAt 
+  }
+  editUser(user.id, newProfile)
+  location.reload();
+})
 
 var openModalButton = document.getElementById("open-modal");
 var modal = document.getElementById("modal-edit-account");
