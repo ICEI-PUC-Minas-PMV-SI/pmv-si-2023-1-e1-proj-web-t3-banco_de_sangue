@@ -159,16 +159,16 @@ if (openModalEditSchedule) {
   });  
 }
 
-const closeScheduleClose = document.getElementById('schedule-modal-close__close')
-const closeScheduleConfirm = document.getElementById('schedule-modal-close__confirm')
-const closeScheduleCancel = document.getElementById('schedule-modal-close__cancel')
-closeScheduleClose.addEventListener("click", function() {
+const closeScheduleDonation = document.getElementById('schedule-modal-close__close')
+const closeScheduleConfirmDonation = document.getElementById('schedule-modal-close__confirm')
+const closeScheduleCancelDonation = document.getElementById('schedule-modal-close__cancel')
+closeScheduleDonation.addEventListener("click", function() {
   modalEditSchedule.style.display = "none";
 });
-closeScheduleConfirm.addEventListener("click", function() {
+closeScheduleConfirmDonation.addEventListener("click", function() {
   modalEditSchedule.style.display = "none";
 });
-closeScheduleCancel.addEventListener("click", function() {
+closeScheduleCancelDonation.addEventListener("click", function() {
   modalEditSchedule.style.display = "none";
 });
 window.addEventListener("click", function(event) {
