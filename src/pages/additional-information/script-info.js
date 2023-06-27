@@ -36,7 +36,10 @@ function uncheckOther(checkbox) {
   }
 }
 
-const user  = getItemLocalStorage('base-blood-user-db')[0];
+const userInfo  = getItemLocalStorage('base-blood-signin')
+const user = getUserById(userInfo.userId)
+const userFirstName = user.name.split(' ')[0]
+
 let isHealthNow = ''
 const inputCheckboxIsHealth = document.getElementById('checkbox-is-health')
 inputCheckboxIsHealth.addEventListener('click', function() {

@@ -181,7 +181,8 @@ function deleteUser(userId) {
 
 // ============== RENDERIZAR INFORMAÇÕES DO DOADOR ===================
 
-const user  = getItemLocalStorage('base-blood-user-db')[0];
+const userInfo  = getItemLocalStorage('base-blood-signin')
+const user = getUserById(userInfo.userId)
 const userFirstName = user.name.split(' ')[0]
 
 const mainMenuTitle = document.getElementsByClassName('main-menu__title')[0];

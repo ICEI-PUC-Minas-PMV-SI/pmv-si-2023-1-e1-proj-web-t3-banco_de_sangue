@@ -9,7 +9,6 @@ let newProfile  = {
   city: null
 }
 
-console.log(user)
 // Buscando conta no banco
 const buttonOpenModal = document.getElementById('open-modal')
 buttonOpenModal.addEventListener('click', function() {
@@ -97,6 +96,12 @@ inputCheckboxIsNotHealth.addEventListener('click', function() {
   newProfile.isHealthNow = false 
 })
 
+if(user.isHealthNow){
+  inputCheckboxIsHealth.checked = true
+}
+else {
+  inputCheckboxIsNotHealth.checked = true
+}
 // cancelar edição da conta
 const cancelEditAccountButton = document.getElementById('button-cancel-edit-profile')
   cancelEditAccountButton.addEventListener('click', function() {
