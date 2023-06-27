@@ -1,4 +1,19 @@
-//MODAL DE EDITAR CONTA
+
+
+// ABRIR MODAL DE EDITAR CONTA
+var openModalButton = document.getElementById("open-modal");
+var modal = document.getElementById("modal-edit-account");
+
+openModalButton.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+window.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Editar conta
 const buttonSubmitProfileChanges = document.getElementById('button-confirm-edit-profile')
 buttonSubmitProfileChanges.addEventListener('click', function() {
   const inputEditName = document.getElementById('edit-profile-name').value
@@ -18,7 +33,7 @@ buttonSubmitProfileChanges.addEventListener('click', function() {
   }
   newProfile.name = verifyAndReplace(inputEditName, newProfile.name)
   newProfile.email = verifyAndReplace(inputEditEmail, newProfile.email)
-  newProfile.cellphone = verifyAndReplace(inputEditCellphone, newProfile.cellphone)
+  newProfile.phone = verifyAndReplace(inputEditCellphone, newProfile.cellphone)
   newProfile.weight = verifyAndReplace(inputEditWeight, newProfile.weight)
   newProfile.bornAt = verifyAndReplace(inputEditBornAt, newProfile.bornAt)
   newProfile.bloodType = verifyAndReplace(inputEditBloodType, newProfile.bloodType)
@@ -33,6 +48,22 @@ buttonSubmitProfileChanges.addEventListener('click', function() {
   location.reload();
 })
 
+// Buscando valor das checkbox para editar conta
+const inputCheckboxIsHealth = document.getElementById('checkbox-is-health')
+inputCheckboxIsHealth.addEventListener('click', function() {
+  newProfile.isHealthNow = true 
+})
+const inputCheckboxIsNotHealth = document.getElementById('checkbox-is-not-health')
+inputCheckboxIsNotHealth.addEventListener('click', function() {
+  newProfile.isHealthNow = false 
+})
+
+// cancelar edição da conta
+const cancelEditAccountButton = document.getElementById('button-cancel-edit-profile')
+  cancelEditAccountButton.addEventListener('click', function() {
+  location.reload();
+}) 
+
 var openModalButton = document.getElementById("open-modal");
 var modal = document.getElementById("modal-edit-account");
 
@@ -46,7 +77,6 @@ window.addEventListener("click", function(event) {
 });
 
 //MODAL DE ENCERRAR CONTA
-
 var openModalButtonDelete = document.getElementById("open-modal-delete-account");
 var modalDelete = document.getElementById("modal-delete-account");
 
@@ -63,7 +93,9 @@ closeButtonDelete.addEventListener("click", function() {
   modalDelete.style.display = "none";
 });
 closeButtonDeleteAndConfirm.addEventListener("click", function() {
+  deleteUser(user.id)
   modalDelete.style.display = "none";
+  window.location.href='/'
 });
 
 window.addEventListener("click", function(event) {

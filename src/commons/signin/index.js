@@ -9,3 +9,11 @@ const signInUser = (user) => {
     userId: user.id,
   });
 };
+
+const signOut = () => {
+  const signIn = getSignedInUser();
+
+  if (signIn) {
+    removeItemFromLocalStorage(signinKey)
+  }
+};
