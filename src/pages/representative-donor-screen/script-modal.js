@@ -57,17 +57,18 @@ window.addEventListener("click", function(event) {
 });
 
 // MODAL EDITAR AGENDAMENTO
-var openModalEditSchedule = document.getElementById("open-modal-edit-schedule");
-console.log(openModalEditSchedule)
-var modalEditSchedule = document.getElementById("modal-edit-schedule");
+const openModalEditSchedule = document.getElementById("open-modal-edit-schedule");
+const modalEditSchedule = document.getElementById("modal-edit-schedule");
 
-openModalEditSchedule.addEventListener("click", function() {
-  modalEditSchedule.style.display = "block";
-});
+if (openModalEditSchedule) {
+  openModalEditSchedule.addEventListener("click", function() {
+    modalEditSchedule.style.display = "block";
+  });  
+}
 
-var closeScheduleClose = document.getElementById('schedule-modal-close__close')
-var closeScheduleConfirm = document.getElementById('schedule-modal-close__confirm')
-var closeScheduleCancel = document.getElementById('schedule-modal-close__cancel')
+const closeScheduleClose = document.getElementById('schedule-modal-close__close')
+const closeScheduleConfirm = document.getElementById('schedule-modal-close__confirm')
+const closeScheduleCancel = document.getElementById('schedule-modal-close__cancel')
 closeScheduleClose.addEventListener("click", function() {
   modalEditSchedule.style.display = "none";
 });

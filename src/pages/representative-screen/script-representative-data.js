@@ -5,7 +5,6 @@
 const userId = getSignedInUser()
 const user = findUserById(userId.userId)
 
-console.log ('user',user)
 const userFirstName = user.name.split(' ')[0];
 
 const saluteRepresentative = document.getElementsByClassName('salute-representative')[0];

@@ -17,6 +17,12 @@ function getDatabase() {
     return database;
   }
 
+  function redirectRepresentitiveToDonorInfo(donorId) {
+    const donorCard = document.getElementById(donorId)
+    donorCard.addEventListener('click', function() {
+      window.location.assign(`../representative-donor-screen/index.html?donorId=${donorId}`)
+    })
+  }
   const users = listUsers();
   const donors = users.filter(user => user.isRepresentative === false)
   const donorSection = document.getElementsByClassName("donators-section")[0]
@@ -38,4 +44,6 @@ function getDatabase() {
       <span>Última doação: ${donor.lastDonation || 'não informado'}</span>
     </div>
     `
+
+    redirectRepresentitiveToDonorInfo(donor.id)
   })

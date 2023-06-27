@@ -1,5 +1,4 @@
 function uncheckOther(checkbox) {
-  console.log(checkbox)
   if (checkbox.checked) {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
     checkboxes.forEach(function(el) {
