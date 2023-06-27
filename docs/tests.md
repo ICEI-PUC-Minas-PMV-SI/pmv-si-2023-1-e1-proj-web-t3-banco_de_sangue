@@ -18,7 +18,7 @@ A documentação dos testes é dividida nas seguintes seções:
 
 # Teste de Software
 
-Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
+Nesta seção são documentados os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
 
 ## Plano de Testes de Software
 
