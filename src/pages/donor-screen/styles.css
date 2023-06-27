@@ -151,6 +151,9 @@
   color: #514747;
   cursor: pointer;
 }
+.register-section__form__p{
+  margin-top:4px;
+}
 .donation-data__container__donation-card__date {
   padding: 5px;
   border-right: 2px solid #33a0ab;

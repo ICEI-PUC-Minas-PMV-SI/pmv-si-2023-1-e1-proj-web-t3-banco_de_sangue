@@ -246,7 +246,7 @@ const buttonCreateDonation = document.getElementById('create-donation');
 buttonCreateDonation.addEventListener('click', function() {
   const mockdonation = { 
     date: '25/11/2022',
-    donationConfirmed: false,
+    donationConfirmed: true,
     address: {
       bloodDonorCenter: 'Hospital de nova hamburgo',
       street: 'Rua Maria Oliveira',
@@ -257,7 +257,7 @@ buttonCreateDonation.addEventListener('click', function() {
     } 
 }
     //Não esquecer de trocar o id por um id salvo no banco
-  createDonation('08572449-3e33-4535-9827-7f3c4b31cfef', mockdonation)
+  createDonation('71d210e5-1540-4a05-a1c9-c8aa57808b8b', mockdonation)
     console.log('create-donation!');
   });
 
