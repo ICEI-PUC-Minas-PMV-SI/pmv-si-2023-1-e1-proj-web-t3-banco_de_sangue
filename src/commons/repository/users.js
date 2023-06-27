@@ -25,3 +25,9 @@ const findUserByEmail = (email) => {
   const users = getAllUsers();
   return users.find((user) => user.email === email);
 };
+
+const findUserById = (userId) => {
+  const users = getAllUsers();
+  return users.find((user) => user.id === userId);
+};
+

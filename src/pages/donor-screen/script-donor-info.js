@@ -1,5 +1,4 @@
 // =========== Funções ===========
-
 const renderUserIsNotADonator = (donationData, userId) => {
   const renderYouReNotADonator = document.createElement('div')
   renderYouReNotADonator.classList.add("donation-data__you-re-not-a-donator");
@@ -146,45 +145,43 @@ const renderDonationInfo = (donationData) => {
 
 // ========= FUNÇÕES PARA MANIPULAR OS DADOS DO LOCALSTORAGE =============
 const getDatabase = () =>  {
-  const databaseString = localStorage.getItem('database');
+  const databaseString = localStorage.getItem('base-blood-user-db');
   return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
 }
 
 const saveDatabase = (database) => {
   const databaseString = JSON.stringify(database);
-  localStorage.setItem('database', databaseString);
+  localStorage.setItem('base-blood-user-db', databaseString);
 }
 
 function getUserById(userId) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
   return user;
 }
 
 function editUser(userId, updatedUser) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
   if (user) {
     Object.assign(user, updatedUser);
     saveDatabase(database);
   }
-  return database.users.find(user => user.id === userId);
+  return database.find(user => user.id === userId);
 }
 
 function deleteUser(userId) {
   const database = getDatabase();
-  const userIndex = database.users.findIndex(user => user.id === userId);
+  const userIndex = database.findIndex(user => user.id === userId);
   if (userIndex !== -1) {
-    database.users.splice(userIndex, 1);
+    database.splice(userIndex, 1);
     saveDatabase(database);
   }
 }
-const mockId = 'ade47afa-fdbf-4d03-b866-1c54a44e7aeb';
-
 
 // ============== RENDERIZAR INFORMAÇÕES DO DOADOR ===================
 
-const user = getUserById(mockId)
+const user  = getItemLocalStorage('base-blood-user-db')[0];
 const userFirstName = user.name.split(' ')[0]
 
 const mainMenuTitle = document.getElementsByClassName('main-menu__title')[0];
@@ -202,7 +199,7 @@ donorInfoData.appendChild(renderDonorName)
 // telefone
 const renderDonorCellphone = document.createElement('p')
 renderDonorCellphone.classList.add("donor-info__data__text");
-renderDonorCellphone.innerHTML = `<b>Telefone: </b>${user.cellphone}`
+renderDonorCellphone.innerHTML = `<b>Telefone: </b>(${user.ddd}) ${user.phone}`
 donorInfoData.appendChild(renderDonorCellphone)
 
 // e-mail

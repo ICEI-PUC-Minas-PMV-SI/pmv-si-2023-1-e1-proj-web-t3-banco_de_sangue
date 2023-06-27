@@ -1,14 +1,8 @@
 const deleteAccount = () => {
-  const { userId } = getSignedInUser();
-  signOut();
+  const userId = window.location.search.split('id=')[1].split('&')[0];
   deleteUser(userId);
-  window.location.assign('../../index.html');
+  window.location.assign('../representative-screen/index.html');
 };
-
-const logoutAccount = () => {
-  signOut();
-  window.location.assign('../signin/index.html');
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   // Registrando função callback para o botão
@@ -17,6 +11,4 @@ document.addEventListener('DOMContentLoaded', () => {
     addDeleteAccountModalToDOM(deleteAccount);
   });
 
-  const logoutButton = document.getElementById('logout-account-button');
-  logoutButton.addEventListener('click', logoutAccount);
 });

@@ -1,27 +1,28 @@
 const getDatabase = () =>  {
-  const databaseString = localStorage.getItem('database');
-  return databaseString ? JSON.parse(databaseString) : { users: [], representatives: [] };
+  const databaseString = localStorage.getItem('base-blood-user-db');
+  return databaseString ? JSON.parse(databaseString) : {};
 }
 
 const saveDatabase = (database) => {
   const databaseString = JSON.stringify(database);
-  localStorage.setItem('database', databaseString);
+  localStorage.setItem('base-blood-user-db', databaseString);
 }
 
 function getUserById(userId) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
   return user;
 }
 
 function editUser(userId, updatedUser) {
   const database = getDatabase();
-  const user = database.users.find(user => user.id === userId);
+  const user = database.find(user => user.id === userId);
+  
   if (user) {
     Object.assign(user, updatedUser);
     saveDatabase(database);
   }
-  return database.users.find(user => user.id === userId);
+  return database.find(user => user.id === userId);
 }
 
 function uncheckOther(checkbox) {
@@ -35,8 +36,7 @@ function uncheckOther(checkbox) {
   }
 }
 
-const mockId = 'ade47afa-fdbf-4d03-b866-1c54a44e7aeb';
-
+const user  = getItemLocalStorage('base-blood-user-db')[0];
 let isHealthNow = ''
 const inputCheckboxIsHealth = document.getElementById('checkbox-is-health')
 inputCheckboxIsHealth.addEventListener('click', function() {
@@ -76,7 +76,7 @@ submitAdditionalInformation.addEventListener('click', function() {
         alert('Preencha todos os campos!')
         return 
       }
-      editUser(mockId, additionalInfo)
+      editUser(user.id, additionalInfo)
       window.location.href='/src/pages/donor-screen/'  
       alert('Informações complementares coletadas com sucesso! Entraremos em contato em breve!')
 

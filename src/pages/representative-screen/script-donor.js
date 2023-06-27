@@ -26,7 +26,7 @@ function getDatabase() {
     const donorCard = document.createElement("div")
     donorCard.classList = "donators-section__donator-card"
     donorSection.appendChild(donorCard)
-
+    donorCard.id = donor.id
 
   
     donorCard.innerHTML = `

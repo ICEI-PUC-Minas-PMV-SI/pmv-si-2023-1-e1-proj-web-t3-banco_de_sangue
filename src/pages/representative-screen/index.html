@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="scripts.js" defer></script>
   </head>
-
   <body>
     <nav class="nav-container">
       <div class="burger-menu">
@@ -32,30 +31,27 @@
       <div class="actions-section__image"></div>
       <div class="actions-section__image-color"></div>
       <div class="actions-container">
-        <h3>Bem vinda, Maria!</h3>
+        <h3 class="salute-representative">Bem<!-- vinda, Maria!--></h3>
         <div class="actions-container__icons">
           <button class="action">
             <object data="../../public/assets/icons/edit-icon.png"></object>
           </button>
-          <button class="action">
+          <button class="action" id="logout-account-button">
             <object data="../../public/assets/icons/logout-icon.png"></object>
           </button>
-          <button class="action" id="delete-account-modal">
+          <button class="action" id="delete-account-button">
             <object data="../../public/assets/icons/trash-icon.png"></object>
           </button>
         </div>
       </div>
     </section>
-    <section class="profile-info-section">
-      <h5>Meus dados</h5>
-      <span><b>Nome: </b>Maria Elsébio da Fonseca</span>
-      <span><b>Telefone: </b>(35)99121-4565</span>
-      <span><b>E-mail: </b>mariaFonseca@gmail.com</span>
+    <section class="representative-info-section">
+      <div class="representative-info__data">
+        <h5 class="representative-info__data__title">Meus dados:</h5>
+      </div>
     </section>
     <section class="donators-section">
       <h4>Doadores</h4>
-     
-      
     </section>
     <script src="../../commons/local-storage/index.js"></script>
     <script src="../../commons/signin/index.js"></script>
@@ -64,5 +60,6 @@
     <script src="../../commons/interface/delete-acount-modal.js"></script>
     <script src="index.js"></script>
     <script src="script-donor.js"></script>
+    <script src="script-representative-data.js"></script>
   </body>
 </html>
