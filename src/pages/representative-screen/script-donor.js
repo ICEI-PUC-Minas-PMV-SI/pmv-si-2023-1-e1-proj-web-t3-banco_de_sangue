@@ -20,7 +20,7 @@ function getDatabase() {
   function redirectRepresentitiveToDonorInfo(donorId) {
     const donorCard = document.getElementById(donorId)
     donorCard.addEventListener('click', function() {
-      window.location.assign(`../representative-donor-screen/index.html?donorId=${donorId}`)
+      window.location.assign(`../representative-donor-screen/index.html?id=${donorId}`)
     })
   }
   const users = listUsers();

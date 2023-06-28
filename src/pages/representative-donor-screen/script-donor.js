@@ -69,7 +69,7 @@ const renderDonationInfo = (donationData) => {
 
 // INFORMAÇÕES DO DOADOR
 const urlParams = new URLSearchParams(window.location.search);
-var donorId = urlParams.get('donorId');
+var donorId = urlParams.get('id');
 const user = findUserById(donorId)
 const donorInfoData = document.getElementsByClassName('donor-info__data')[0];
 
