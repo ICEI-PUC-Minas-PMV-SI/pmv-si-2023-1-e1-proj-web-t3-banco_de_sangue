@@ -14,10 +14,8 @@
     <link rel="stylesheet" href="../../styles/shared.css" />
     <link rel="stylesheet" href="../../styles/components/button/styles.css" />
     <link rel="stylesheet" href="../../styles/components/input/styles.css" />
-    <link
-      rel="stylesheet"
-      href="../../styles/components/short-text-image/styles.css"
-    />
+    <link rel="stylesheet" href="../../styles/components/radio/styles.css" />
+    <link rel="stylesheet" href="../../styles/components/short-text-image/styles.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
@@ -30,9 +28,7 @@
         <div class="main-header__logo-container">
           <object data="../../public/assets/svg/logo.svg"></object>
         </div>
-        <span class="main-header__content__text"
-          >Banco de doadores de sangue</span
-        >
+        <span class="main-header__content__text">Banco de doadores de sangue</span>
       </div>
     </header>
     <main class="register">
@@ -45,12 +41,7 @@
             name="name"
             onkeydown="removeErrorOnKeydown(event)"
           />
-          <input
-            class="primary-input"
-            placeholder="E-mail"
-            name="email"
-            onkeydown="removeErrorOnKeydown(event)"
-          />
+          <input class="primary-input" placeholder="E-mail" name="email" onkeydown="removeErrorOnKeydown(event)" />
           <div class="register-section__form-input-cellphone-div">
             <div class="nested-input ddd">
               <input
@@ -88,36 +79,21 @@
             onkeydown="removeErrorOnKeydown(event)"
           />
 
-          <label class="representative-radio-label"
-            >Quer ser representante?</label
-          >
+          <label class="radio-label">Quer ser representante?</label>
           <div class="radio-options">
             <div class="radio-options__option">
-              <input
-                type="radio"
-                id="yes"
-                name="isRepresentative"
-                value="yes"
-              />
+              <input type="radio" id="yes" name="isRepresentative" value="yes" />
               <label for="yes">Sim</label>
             </div>
             <div class="radio-options__option">
-              <input
-                type="radio"
-                id="no"
-                name="isRepresentative"
-                value="no"
-                checked
-              />
+              <input type="radio" id="no" name="isRepresentative" value="no" checked />
               <label for="no">Não</label>
             </div>
           </div>
 
           <div class="register-section__form__footer">
             <p>Já é doador?</p>
-            <a
-              class="register-section__form__footer__text"
-              onclick="window.location.href='/src/pages/signin/'"
+            <a class="register-section__form__footer__text" onclick="window.location.href='/src/pages/signin/'"
               >Faça seu login</a
             >
           </div>
@@ -125,11 +101,7 @@
       </section>
       <section class="register-section-button">
         <button class="primary-button" name="signup-button">Cadastrar</button>
-        <a
-          class="register-section__text"
-          onclick="window.location.href='/index.html'"
-          >Voltar para a home</a
-        >
+        <a class="register-section__text" onclick="window.location.href='/index.html'">Voltar para a home</a>
       </section>
     </main>
     <script src="../../commons/local-storage/index.js"></script>
