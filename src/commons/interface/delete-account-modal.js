@@ -1,4 +1,4 @@
-const closeModal = () => {
+const closeDeleteAccountModal = () => {
   const modalElement = document.getElementById('modal-delete-account');
   modalElement.style.display = 'none';
 };
@@ -14,7 +14,7 @@ const _createDeleteAccountModal = (onConfirmClick) => {
             <button 
               id="close-delete-modal-cancel"
               class="register-section__button-div__cancel" 
-              onclick="(${closeModal})()"
+              onclick="(${closeDeleteAccountModal})()"
             >
               Cancelar
             </button>
