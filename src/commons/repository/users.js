@@ -31,3 +31,18 @@ const findUserById = (userId) => {
   return users.find((user) => user.id === userId);
 };
 
+const updateUser = (userUpdated) => {
+  const users = getAllUsers();
+
+  const usersUpdated = users.map((user) => {
+    if (user.id === userUpdated.id) {
+      return ({
+        ...user,
+        ...userUpdated
+      })
+    }
+    return user;
+  })
+
+  updateAllUsers(usersUpdated);
+}
