@@ -10,6 +10,11 @@ const logoutAccount = () => {
   window.location.assign('../signin/index.html');
 }
 
+const editAccount = () => {
+  const { userId } = getSignedInUser();
+  addEditAccountModalToDOM(userId)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Registrando função callback para o botão
   const deleteAccountbutton = document.getElementById('delete-account-button');
@@ -19,4 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const logoutButton = document.getElementById('logout-account-button');
   logoutButton.addEventListener('click', logoutAccount);
+
+  const editButton = document.getElementById('edit-account-button');
+  editButton.addEventListener('click', editAccount);
 });

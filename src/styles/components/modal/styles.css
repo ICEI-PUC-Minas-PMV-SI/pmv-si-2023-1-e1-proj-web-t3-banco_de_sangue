@@ -19,6 +19,14 @@
   margin-top: 10%;
 }
 
+.generic-modal-content__div {
+  max-width: 700px;
+  min-width: 320px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #33a0ab;
+}
+
 .generic-modal-content__title {
   text-align: center;
   margin-top: 20px;
