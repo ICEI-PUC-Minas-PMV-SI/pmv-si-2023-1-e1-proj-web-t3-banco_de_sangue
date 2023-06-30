@@ -65,7 +65,7 @@
   justify-content: center;
 }
 
-.profile-info-section {
+.representative-info-section {
   width: 100%;
   padding: 26px 32px;
   display: flex;
@@ -73,7 +73,7 @@
   align-items: start;
 }
 
-.profile-info-section h5 {
+.representative-info-section h5 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
@@ -84,7 +84,7 @@
   margin-bottom: 8px;
 }
 
-.profile-info-section span {
+.representative-info-section span {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -95,7 +95,7 @@
   margin-bottom: 6px;
 }
 
-.profile-info-section span b {
+.representative-info-section span b {
   font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
@@ -129,6 +129,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .donators-section__donator-card .background-illustration {

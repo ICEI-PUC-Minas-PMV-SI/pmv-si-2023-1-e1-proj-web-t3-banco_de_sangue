@@ -83,7 +83,7 @@ label {
   left: 50%;
   width: 70px;
   height: 70px;
-  margin-top: 4%;
+  margin-top: 3%;
   border-radius: 50%;
   border-color: white;
 }
@@ -140,4 +140,4 @@ p {
 .rodape {
   color: #0b972e;
   padding: 20px;
-  }
+}

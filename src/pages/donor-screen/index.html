@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -36,6 +36,8 @@
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e
         verdades</a>
       <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+
+      <a class="lateral-menu-content__item" onclick="window.location.href='/index.html'">Voltar para a home</a>
     </aside>
   </section>
   <header class="main-header">
@@ -102,6 +104,7 @@
             <input class="primary-input" type="email" placeholder="E-mail" id="edit-profile-email" />
             <input class="primary-input" placeholder="Telefone" id="edit-profile-cellphone"/>
             <input class="primary-input" type="number" placeholder="Peso" id="edit-profile-weight"/>
+            <p class="register-section__check-text">Data de nascimento</p>
             <input class="primary-input" type="date" placeholder="Data de nascimento" id="edit-profile-born-at"/>
             <input class="primary-input" type="text" placeholder="Cidade" id="edit-profile-city"/>
             <p class="register-section__check-text">Qual seu tipo sanguineo?</p>
@@ -154,24 +157,34 @@
             <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/myths-and-truths'">Mitos e
               verdades</a>
             <a class="lateral-menu-content__item" onclick="window.location.href='/src/pages/about-us'">Quem somos?</a>
+            
+            <a class="lateral-menu-content__item" onclick="window.location.href='/index.html'">Voltar para a home</a>
             <span class="lateral-menu-content__close" >Fechar menu</span>
           </aside>
         </div>
       </div>
-    </div>
-    </div>
-    <section class="donor-info">
-      <div class="donor-info__data">
-        <h3 class="donor-info__data__title">Meus dados:</h3>
       </div>
+      </div>
+      <section class="donor-info">
+         <div class="donor-info__data">
+         <h3 class="donor-info__data__title">Meus dados:</h3>
+      </div>
+      </section>
+      <section class="donation-data"></section>
+    </main>
     </section>
     <section class="donation-data"></section>
   </main>
+  <script src="../../commons/local-storage/index.js"></script>
   <script src="script-donor-info.js"></script>
   <script src="script-checkbox.js"></script>
   <script src="script-header.js"></script>
   <script src="script-modal.js"></script>
 
-</body>
+    <script src="script-donor-info.js"></script>
+    <script src="script-checkbox.js"></script>
+    <script src="script-header.js"></script>
+    <script src="script-modal.js"></script>
 
+  </body>
 </html>

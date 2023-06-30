@@ -1,4 +1,68 @@
-//MODAL DE EDITAR CONTA
+
+
+// ABRIR MODAL DE EDITAR CONTA
+var openModalButton = document.getElementById("open-modal");
+var modal = document.getElementById("modal-edit-account");
+
+openModalButton.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+window.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+// Editar conta
+const buttonSubmitProfileChanges = document.getElementById('button-confirm-edit-profile')
+buttonSubmitProfileChanges.addEventListener('click', function() {
+  const inputEditName = document.getElementById('edit-profile-name').value
+  const inputEditEmail = document.getElementById('edit-profile-email').value
+  const inputEditCellphone = document.getElementById('edit-profile-cellphone').value
+  const inputEditWeight = Number(document.getElementById('edit-profile-weight').value)
+  const inputEditBornAt = document.getElementById('edit-profile-born-at').value
+  const inputEditBloodType = document.getElementById('edit-profile-blood-type').value
+  const inputEditCity = document.getElementById('edit-profile-city').value
+
+  const verifyAndReplace = (newValue, currentValue) => {
+    const wrongValues = ['', 0, null]
+    if (wrongValues.includes(newValue)) {
+      return currentValue
+    }
+    return newValue
+  }
+  newProfile.name = verifyAndReplace(inputEditName, newProfile.name)
+  newProfile.email = verifyAndReplace(inputEditEmail, newProfile.email)
+  newProfile.phone = verifyAndReplace(inputEditCellphone, newProfile.cellphone)
+  newProfile.weight = verifyAndReplace(inputEditWeight, newProfile.weight)
+  newProfile.bornAt = verifyAndReplace(inputEditBornAt, newProfile.bornAt)
+  newProfile.bloodType = verifyAndReplace(inputEditBloodType, newProfile.bloodType)
+  newProfile.city = verifyAndReplace(inputEditCity, newProfile.city)
+
+  if(newProfile.bornAt.includes('-')) {
+    const splitData = newProfile.bornAt.split('-');
+    const formatedBornAt = splitData[2] + '/' + splitData[1] + '/' + splitData[0];
+    newProfile.bornAt = formatedBornAt 
+  }
+  editUser(user.id, newProfile)
+  location.reload();
+})
+
+// Buscando valor das checkbox para editar conta
+const inputCheckboxIsHealth = document.getElementById('checkbox-is-health')
+inputCheckboxIsHealth.addEventListener('click', function() {
+  newProfile.isHealthNow = true 
+})
+const inputCheckboxIsNotHealth = document.getElementById('checkbox-is-not-health')
+inputCheckboxIsNotHealth.addEventListener('click', function() {
+  newProfile.isHealthNow = false 
+})
+
+// cancelar edição da conta
+const cancelEditAccountButton = document.getElementById('button-cancel-edit-profile')
+  cancelEditAccountButton.addEventListener('click', function() {
+  location.reload();
+}) 
 
 var openModalButton = document.getElementById("open-modal");
 var modal = document.getElementById("modal-edit-account");
@@ -11,6 +75,35 @@ window.addEventListener("click", function(event) {
     modal.style.display = "none";
   }
 });
+
+//MODAL DE ENCERRAR CONTA
+var openModalButtonDelete = document.getElementById("open-modal-delete-account");
+var modalDelete = document.getElementById("modal-delete-account");
+
+var closeButtonDelete = document.getElementById("close-delete-modal-cancel");
+var closeButtonDeleteAndConfirm = document.getElementById("close-delete-modal-confirm");
+
+
+openModalButtonDelete.addEventListener("click", function() {
+  modalDelete.style.display = "block";
+});
+
+
+closeButtonDelete.addEventListener("click", function() {
+  modalDelete.style.display = "none";
+});
+closeButtonDeleteAndConfirm.addEventListener("click", function() {
+  deleteUser(user.id)
+  modalDelete.style.display = "none";
+  window.location.href='/'
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target === modalDelete) {
+    modalDelete.style.display = "none";
+  }
+});
+
 
 //MODAL ABRIR MENU DE NAVEGAÇÃO
 var openModalNavegate = document.getElementById("open-modal-navigate");
@@ -57,24 +150,25 @@ window.addEventListener("click", function(event) {
 });
 
 // MODAL EDITAR AGENDAMENTO
-var openModalEditSchedule = document.getElementById("open-modal-edit-schedule");
-console.log(openModalEditSchedule)
-var modalEditSchedule = document.getElementById("modal-edit-schedule");
+const openModalEditSchedule = document.getElementById("open-modal-edit-schedule");
+const modalEditSchedule = document.getElementById("modal-edit-schedule");
 
-openModalEditSchedule.addEventListener("click", function() {
-  modalEditSchedule.style.display = "block";
-});
+if (openModalEditSchedule) {
+  openModalEditSchedule.addEventListener("click", function() {
+    modalEditSchedule.style.display = "block";
+  });  
+}
 
-var closeScheduleClose = document.getElementById('schedule-modal-close__close')
-var closeScheduleConfirm = document.getElementById('schedule-modal-close__confirm')
-var closeScheduleCancel = document.getElementById('schedule-modal-close__cancel')
-closeScheduleClose.addEventListener("click", function() {
+const closeScheduleDonation = document.getElementById('schedule-modal-close__close')
+const closeScheduleConfirmDonation = document.getElementById('schedule-modal-close__confirm')
+const closeScheduleCancelDonation = document.getElementById('schedule-modal-close__cancel')
+closeScheduleDonation.addEventListener("click", function() {
   modalEditSchedule.style.display = "none";
 });
-closeScheduleConfirm.addEventListener("click", function() {
+closeScheduleConfirmDonation.addEventListener("click", function() {
   modalEditSchedule.style.display = "none";
 });
-closeScheduleCancel.addEventListener("click", function() {
+closeScheduleCancelDonation.addEventListener("click", function() {
   modalEditSchedule.style.display = "none";
 });
 window.addEventListener("click", function(event) {

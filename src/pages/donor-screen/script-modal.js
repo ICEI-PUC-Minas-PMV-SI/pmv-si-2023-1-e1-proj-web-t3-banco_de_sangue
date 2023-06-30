@@ -12,7 +12,6 @@ let newProfile  = {
 // Buscando conta no banco
 const buttonOpenModal = document.getElementById('open-modal')
 buttonOpenModal.addEventListener('click', function() {
-  const user = getUserById(mockId)
   newProfile.name = user.name
   newProfile.email = user.email
   newProfile.cellphone = user.cellphone
@@ -25,11 +24,14 @@ buttonOpenModal.addEventListener('click', function() {
 
 
 // Adicionando valor padrão dos inputs
-const splitData = user.bornAt.split('/');
-const formatedBornAt = splitData[2] + '-' + splitData[0] + '-' + splitData[1]; 
+let formatedBornAt = ''
+if(user.bornAt) {
+  const splitData = user.bornAt.split('/');
+  formatedBornAt = splitData[2] + '-' + splitData[0] + '-' + splitData[1]; 
+}
 const inputEditName = document.getElementById('edit-profile-name').value = user.name
 const inputEditEmail = document.getElementById('edit-profile-email').value = user.email
-const inputEditCellphone = document.getElementById('edit-profile-cellphone').value = user.cellphone
+const inputEditCellphone = document.getElementById('edit-profile-cellphone').value = user.phone 
 const inputEditWeight = document.getElementById('edit-profile-weight').value = user.weight
 const inputEditBornAt = document.getElementById('edit-profile-born-at').value = formatedBornAt
 const inputEditBloodType = document.getElementById('edit-profile-blood-type').value = user.bloodType
@@ -69,7 +71,7 @@ buttonSubmitProfileChanges.addEventListener('click', function() {
   }
   newProfile.name = verifyAndReplace(inputEditName, newProfile.name)
   newProfile.email = verifyAndReplace(inputEditEmail, newProfile.email)
-  newProfile.cellphone = verifyAndReplace(inputEditCellphone, newProfile.cellphone)
+  newProfile.phone = verifyAndReplace(inputEditCellphone, newProfile.cellphone)
   newProfile.weight = verifyAndReplace(inputEditWeight, newProfile.weight)
   newProfile.bornAt = verifyAndReplace(inputEditBornAt, newProfile.bornAt)
   newProfile.bloodType = verifyAndReplace(inputEditBloodType, newProfile.bloodType)
@@ -94,6 +96,12 @@ inputCheckboxIsNotHealth.addEventListener('click', function() {
   newProfile.isHealthNow = false 
 })
 
+if(user.isHealthNow){
+  inputCheckboxIsHealth.checked = true
+}
+else {
+  inputCheckboxIsNotHealth.checked = true
+}
 // cancelar edição da conta
 const cancelEditAccountButton = document.getElementById('button-cancel-edit-profile')
   cancelEditAccountButton.addEventListener('click', function() {
@@ -117,7 +125,7 @@ closeButtonDelete.addEventListener("click", function() {
   modalDelete.style.display = "none";
 });
 closeButtonDeleteAndConfirm.addEventListener("click", function() {
-  deleteUser(mockId)
+  deleteUser(user.id)
   modalDelete.style.display = "none";
   window.location.href='/'
 });
@@ -152,7 +160,6 @@ window.addEventListener("click", function(event) {
 // LOGOUT
 const logoutButton = document.getElementById('logout-button')
 logoutButton.addEventListener("click", function() {
-  console.log('clicou no botão de sair')
   window.location.href='/'
 })
 
