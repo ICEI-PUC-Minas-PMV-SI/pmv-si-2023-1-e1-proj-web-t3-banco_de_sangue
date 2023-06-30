@@ -7,6 +7,8 @@ const closeEditAccountModal = () => {
 };
 
 const onEditAccountFormSubmit = (event, user) => {
+  event.preventDefault();
+
   if (event.target.name.value === '') {
     addInputErrorFeedback('name');
     return;
@@ -27,6 +29,8 @@ const onEditAccountFormSubmit = (event, user) => {
     bloodType: event.target.bloodType.value,
     isHealthNow: event.target.isHealthNow.value === 'yes',
   })
+
+  window.location.reload();
 }
 
 const _createEditAccountModal = (user) => {
@@ -60,7 +64,14 @@ const _createEditAccountModal = (user) => {
               value="${user.phone}"
               onkeydown="(${removeErrorOnKeydown})(event)"
             />
-            <input class="primary-input" type="number" placeholder="Peso" name="weight" value="${user.weight || ''}"/>
+            <input 
+              class="primary-input"
+              type="number"
+              placeholder="Peso"
+              name="weight"
+              value="${user.weight || ''}"
+              step=".01"
+            />
             <input class="primary-input" type="date" placeholder="Data de nascimento" name="bornAt" value="${user.bornAt}" />
             <input class="primary-input" type="text" placeholder="Cidade" name="city" value="${user.city || ''}" />
             <p class="register-section__check-text">Qual seu tipo sanguineo?</p>
