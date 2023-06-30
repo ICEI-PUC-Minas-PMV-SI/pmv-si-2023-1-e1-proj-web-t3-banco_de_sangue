@@ -10,7 +10,7 @@ const removeErrorMessageBellowInput = (fieldName) => {
 };
 
 const removeErrorOnKeydown = (event) => {
-  event.target.classList.remove("primary-input--error");
+  event.target.classList.remove('primary-input--error');
   removeErrorMessageBellowInput(event.target.name);
 };
 
