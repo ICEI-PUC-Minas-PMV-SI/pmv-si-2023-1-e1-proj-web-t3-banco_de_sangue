@@ -46,7 +46,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a: "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades" e "Quem somos".
 **Requisitos associados** | RF-002 RF-003 RF-004 RF-005 RF-006
 **Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas de forma clara e de fácil entendimento, motivando o usuário a doar sangue.<br>
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Dados de entrada** | Navegação até as telas supracitadas.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT04 - Acesso às informações sobre doação de sangue**
