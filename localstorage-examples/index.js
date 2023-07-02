@@ -1,4 +1,4 @@
-'// Função que gera um id unico para o usuário
+'// Função que gera um id unico para o usuário'
 function generateUUID() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     var r = Math.random() * 16 | 0,
@@ -257,7 +257,7 @@ buttonCreateDonation.addEventListener('click', function() {
     } 
 }
     //Não esquecer de trocar o id por um id salvo no banco
-  createDonation('954cd0b4-7449-43d8-adf1-8be93145e3a4', mockdonation)
+  createDonation('23e21271-95a7-4150-9ff0-ce28d7259ec0', mockdonation)
     console.log('create-donation!');
   });
 

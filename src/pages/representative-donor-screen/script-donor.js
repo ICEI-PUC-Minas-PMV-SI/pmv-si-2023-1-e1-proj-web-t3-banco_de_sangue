@@ -43,7 +43,7 @@ function editUser(userId, updatedUser) {
 const renderUserIsNotADonator = (donationData) => {
   const renderYouReNotADonator = document.createElement('div')
   renderYouReNotADonator.classList.add("donation-data__you-re-not-a-donator");
-  renderYouReNotADonator.innerHTML = '<p>Esse usuário ainda não terminou o cadastro :(</p>'
+  renderYouReNotADonator.innerHTML = '<p>Esse usuário ainda não tem doações :(</p>'
   donationData.appendChild(renderYouReNotADonator)
 
   const getScheduleButton = document.getElementById('schedule-div')
@@ -171,7 +171,6 @@ const renderDonationInfo = (donationData) => {
   renderDonationDataContainer.classList.add("donation-data__container");
   donationData.appendChild(renderDonationDataContainer)
 
- 
   user.donations.sort((a, b) =>
     a.donationConfirmed === b.donationConfirmed ? 0 : a.donationConfirmed ? 1 : -1
   ).map((donation) => {
@@ -281,6 +280,8 @@ if (user.bloodType) {
 const donationData = document.getElementsByClassName('donation-data')[0];
 
 if (!user.bloodType || !user.bornAt || !user.isHealthNow || !user.city) {
+  console.log(user)
+  console.log('here')
   renderUserIsNotADonator(donationData)
 }
 else if (!user.donations) {

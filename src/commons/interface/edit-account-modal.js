@@ -24,7 +24,7 @@ const onEditAccountFormSubmit = (event, user) => {
     name: event.target.name.value,
     phone: event.target.phone.value,
     weight: event.target.weight.value,
-    bornAt: event.target.bornAt.value,
+    bornAt: event.target.bornAt.value !== '' ? event.target.bornAt.value : user.bornAt,
     city: event.target.city.value,
     bloodType: event.target.bloodType.value,
     isHealthNow: event.target.isHealthNow.value === 'yes',

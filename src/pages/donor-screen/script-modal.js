@@ -160,7 +160,8 @@ window.addEventListener("click", function(event) {
 // LOGOUT
 const logoutButton = document.getElementById('logout-button')
 logoutButton.addEventListener("click", function() {
-  window.location.href='/'
+  signOut();
+  window.location.assign('../signin/index.html');
 })
 
 
