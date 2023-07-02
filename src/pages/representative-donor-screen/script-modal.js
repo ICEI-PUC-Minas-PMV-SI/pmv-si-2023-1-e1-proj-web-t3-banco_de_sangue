@@ -42,31 +42,3 @@ window.addEventListener("click", function(event) {
     modalSchedule.style.display = "none";
   }
 });
-
-// MODAL EDITAR AGENDAMENTO
-const openModalEditSchedule = document.getElementById("open-modal-edit-schedule");
-const modalEditSchedule = document.getElementById("modal-edit-schedule");
-
-if (openModalEditSchedule) {
-  openModalEditSchedule.addEventListener("click", function() {
-    modalEditSchedule.style.display = "block";
-  });  
-}
-
-const closeScheduleDonation = document.getElementById('schedule-modal-close__close')
-const closeScheduleConfirmDonation = document.getElementById('schedule-modal-close__confirm')
-const closeScheduleCancelDonation = document.getElementById('schedule-modal-close__cancel')
-closeScheduleDonation.addEventListener("click", function() {
-  modalEditSchedule.style.display = "none";
-});
-closeScheduleConfirmDonation.addEventListener("click", function() {
-  modalEditSchedule.style.display = "none";
-});
-closeScheduleCancelDonation.addEventListener("click", function() {
-  modalEditSchedule.style.display = "none";
-});
-window.addEventListener("click", function(event) {
-  if (event.target === modalEditSchedule) {
-    modalEditSchedule.style.display = "none";
-  }
-});
