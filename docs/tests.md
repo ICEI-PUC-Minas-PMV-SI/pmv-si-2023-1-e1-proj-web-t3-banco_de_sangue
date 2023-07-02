@@ -27,17 +27,17 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT01 - Criar conta parte 1**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha, Estado e Cidade e clica no botão "Continuar".<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.
+**Procedimento**  | 1) Usuário deve acessar o link do site do seguinte endereço: https://banco-de-sangue.netlify.app/<br>2) Ao entrar na página principal o usuário deve clicar no botão "Cadastra-se" e criar seu login.<br>3) Usuário deve preencher os campos solicitados, incluindo: nome completo, e-mail,  DDD e telefone, senha, confirmar senha, escolher (sim ou não) para ser um representante,<br> 4) Em seguida clica no botão "Cadastrar".
 **Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
+**Resultado esperado** | A aplicação deve verifica se os dados são válidos e informa ao usuário caso haja algum problema.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT02 - Criar conta parte 2**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Procedimento**  | 1) Usuário informa nome, sobrenome, e-mail, DDD e telefone, senha, confirmar senha, escolhe (sim ou não) se quer ser um representante.<br>2) Em seguida clica no botão "cadastrar".
 **Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
+**Resultado esperado** | Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
