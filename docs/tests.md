@@ -65,11 +65,11 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de "editar perfil".
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT06 - Acesso às informações sobre doação de sangue**
+**Caso de Teste** | **CT06 - O sistema deve permitir que todos os usuários cadastrados possam realizar o login no sistema**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário cadastrado acessa a tela principal através do link: https://banco-de-sangue.netlify.app/, em seguiga clica em fazer login.<br>2) O usuário informa e-mail, senha clica no botão entrar.<br>3) Usuario logado, pode acessa as informações no menu au lado e navegar nas páginas correspondentes a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos", "voltar para home".
 **Requisitos associados** | RF-009
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Resultado esperado** | 1) O usuário consegue acessar e editar as suas informações.<br> 2) A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
@@ -81,17 +81,17 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro de informações complementares.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT08 - Acesso às informações sobre doação de sangue**
+**Caso de Teste** | **CT08 - Visualização das próprias informações sobre doação de sangue**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Procedimento**  | 1)O usuário acessa a aplicação e faz login com email e senha.<br>2) Na tela seguinte já estará tendo acesso às suas doações realizadas.
 **Requisitos associados** | RF-12
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado esperado** | O usuário consegue acessar as suas informações sobre as doações realizadas.
+**Dados de entrada** | Inserção de dados para login.
 **Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT09 - O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue**
  :--------------: | ------------
-**Procedimento**  |  1) O sistema deve permitir que o representante gerenciem informções de doadores de sangue.<br>2)As informações disponíveis são: Nome completo, e-mail, telefone, peso, tipo sanguineo, cidade, data de nascimento, estar sentindo bem (sim ou não).
+**Procedimento**  |  1) O sistema deve permitir que o representante gerencie informações de doadores de sangue.<br>2)As informações disponíveis são: Nome completo, e-mail, telefone, peso, tipo sanguineo, cidade, data de nascimento, estar sentindo bem (sim ou não).
 **Requisitos associados** | RF-013
 **Resultado esperado** | 1) O repesentante consegue acessar as informações sobre o doador de sangue.<br> 2) As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada doador. 
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
