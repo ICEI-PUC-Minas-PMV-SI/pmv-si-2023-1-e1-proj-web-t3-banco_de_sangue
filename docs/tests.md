@@ -36,7 +36,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Caso de Teste** | **CT02 - Criar conta parte 2**
  :--------------: | ------------
 **Procedimento**  | 1) Usuário informa nome, sobrenome, e-mail, DDD e telefone, senha, confirmar senha, escolhe (sim ou não) se quer ser um representante.<br>2) Em seguida clica no botão "cadastrar".
-**Requisitos associados** | RF-001
+**Requisitos associados** | RF-002
 **Resultado esperado** | Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
