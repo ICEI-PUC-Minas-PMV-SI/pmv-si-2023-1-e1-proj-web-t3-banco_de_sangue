@@ -35,7 +35,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT02 - O usuários logados ou não, visualizem a página referente à conscientização sobre doação de sangue**
  :--------------: | ------------
-**Procedimento**  | 1) Na tala principal o usuário clica no botão saiba mais das informações sobre por que doar e tirar suas duvidas e ficar conciente sobre doação de sangue.
+**Procedimento**  | 1) Na tala principal o usuário clica no botão saiba mais das informações sobre "por que doar" e tira suas duvidas e fica conciente sobre doação de sangue.
 **Requisitos associados** | RF-002
 **Resultado esperado** | Usuario conciente e bem informado sobre doação de sangue.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
