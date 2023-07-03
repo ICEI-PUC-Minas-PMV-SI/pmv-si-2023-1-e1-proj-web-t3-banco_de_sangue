@@ -132,9 +132,7 @@
 }
 .register-section__check-text {
   color: #514747;
-  margin-top:10px;
-  margin-bottom:6px;
-
+  margin-top: 0.3rem;
 
 }
 .register-section__text {
@@ -191,7 +189,7 @@
 
   .register-section__title {
     display: inline-block;
-    margin-bottom:55px;
+    margin-bottom: 1rem;
     width: 270px;
     text-align: center;
     color: #eb3738; 
@@ -199,6 +197,7 @@
   .register-section__form {
     position:static;
     width: 100%;
+    padding-top: 2%;
 
   }
   .register-section-button{
