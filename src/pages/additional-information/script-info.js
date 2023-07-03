@@ -80,7 +80,7 @@ submitAdditionalInformation.addEventListener('click', function() {
         return 
       }
       editUser(user.id, additionalInfo)
-      window.location.href='/src/pages/donor-screen/'  
+      window.location.assign('../donor-screen/index.html');
       alert('Informações complementares coletadas com sucesso! Entraremos em contato em breve!')
 
 })
