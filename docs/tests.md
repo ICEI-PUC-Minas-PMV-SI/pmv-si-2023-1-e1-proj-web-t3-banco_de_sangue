@@ -41,6 +41,77 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT03 - Acesso às informações sobre doação de sangue**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a: "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades" e "Quem somos".
+**Requisitos associados** | RF-002 RF-003 RF-004 RF-005 RF-006
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas de forma clara e de fácil entendimento, motivando o usuário a doar sangue.<br>
+**Dados de entrada** | Navegação até as telas supracitadas.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT04 - Acesso às informações sobre doação de sangue**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Requisitos associados** | RF-007
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT05 - Autogerenciamento das próprias informações por novos usuários representantes de banco de sangue**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Requisitos associados** | RF-008
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT06 - Acesso às informações sobre doação de sangue**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário cadastrado acessa a tela principal através do link: https://banco-de-sangue.netlify.app/, em seguiga clica em fazer login.<br>2) O usuário informa e-mail, senha clica no botão entrar.<br>3) Usuario logado, pode acessa as informações no menu au lado e navegar nas páginas correspondentes a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos", "voltar para home".
+**Requisitos associados** | RF-009
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT07 - Acesso às informações sobre doação de sangue**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Requisitos associados** | RF-011
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT08 - Acesso às informações sobre doação de sangue**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Requisitos associados** | RF-12
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT09 - O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue**
+ :--------------: | ------------
+**Procedimento**  |  1) O sistema deve permitir que o representante gerenciem informções de doadores de sangue.<br>2)As informações disponíveis são: Nome completo, e-mail, telefone, peso, tipo sanguineo, cidade, data de nascimento, estar sentindo bem (sim ou não).
+**Requisitos associados** | RF-013
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT10 - Acesso às informações sobre doação de sangue**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Requisitos associados** | RF-015
+**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado obtido** | Sucesso.
+
+
+
+
+
+
+
+
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
