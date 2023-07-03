@@ -16,7 +16,7 @@ const renderUserIsNotADonator = (donationData, userId) => {
   renderDonationButton.innerHTML = 'Quero ser doador'
   donationData.appendChild(renderDonationButton)
   renderDonationButton.addEventListener("click", function() {
-    window.location.href='/src/pages/additional-information'
+    window.location.assign('../additional-information/index.html');
   })
 }
 
@@ -69,15 +69,15 @@ const openDonationDetails = (donation) => {
     modalDonationDetailsBodyContent.appendChild(textDonationTime)
 
     const textDonationZipCode = document.createElement('p')
-    textDonationZipCode.innerHTML = `<b>Cep do hemocentro:</b> ${donation.date}`
+    textDonationZipCode.innerHTML = `<b>Cep do hemocentro:</b> ${donation.address.cep}`
     textDonationZipCode.classList = 'modal-donation-info__content__text'
     modalDonationDetailsBodyContent.appendChild(textDonationZipCode)
     
     const donorCenterAddress = 
       `${donation.address.street},
-       numero ${donation.address.number},
-       ${donation.address.neighborhood}.
-       ${donation.address.city}-${donation.address.state}`
+        ${donation.address.number},
+       ${donation.address.neighborhood},
+       ${donation.address.city}, ${donation.address.state}`
   
     const textDonationAddress = document.createElement('p')
     textDonationAddress.innerHTML = `<b>Endereço hemocentro:</b> ${donorCenterAddress}`
@@ -109,38 +109,38 @@ const renderDonationInfo = (donationData) => {
   renderDonationDataContainer.classList.add("donation-data__container");
   donationData.appendChild(renderDonationDataContainer)
 
-  user.donations.sort((a, b) =>
-  a.donationConfirmed === b.donationConfirmed ? 0 : a.donationConfirmed ? 1 : -1
-).map((donation) => {
-    const renderDonationCard = document.createElement('div')
-    renderDonationCard.classList.add("donation-data__container__donation-card");
-    renderDonationCard.id = donation.id
+  user.donations
+    .sort((a, b) => a.donationConfirmed === b.donationConfirmed ? 0 : a.donationConfirmed ? 1 : -1)
+    .map((donation) => {
+      const renderDonationCard = document.createElement('div')
+      renderDonationCard.classList.add("donation-data__container__donation-card");
+      renderDonationCard.id = donation.id
 
-    const renderDonationCardDate = document.createElement('p')
-    renderDonationCardDate.classList.add("donation-data__container__donation-card__date");
-    renderDonationCardDate.innerHTML = donation.date;
-    renderDonationCard.appendChild(renderDonationCardDate)
+      const renderDonationCardDate = document.createElement('p')
+      renderDonationCardDate.classList.add("donation-data__container__donation-card__date");
+      renderDonationCardDate.innerHTML = donation.date;
+      renderDonationCard.appendChild(renderDonationCardDate)
 
-    const renderDonationCardAddress = document.createElement('p')
-    renderDonationCardAddress.classList.add("donation-data__container__donation-card__address");
-    renderDonationCardAddress.innerHTML = donation.address.bloodDonorCenter;
-    renderDonationCard.appendChild(renderDonationCardAddress)
+      const renderDonationCardAddress = document.createElement('p')
+      renderDonationCardAddress.classList.add("donation-data__container__donation-card__address");
+      renderDonationCardAddress.innerHTML = donation.address.bloodDonorCenter;
+      renderDonationCard.appendChild(renderDonationCardAddress)
 
-    const renderDonationCardStatus = document.createElement('span')
-    if (donation.donationConfirmed){
-      renderDonationCardStatus.classList.add("donation-data__container__donation-card__confimed");
-      renderDonationCardStatus.innerHTML = 'Coletado'
-    }
-    else{
-      renderDonationCardStatus.classList.add("donation-data__container__donation-card__scheduled");
-      renderDonationCardStatus.innerHTML = 'Agendado'
-    }
-    renderDonationCard.appendChild(renderDonationCardStatus)
-    
-    renderDonationDataContainer.appendChild(renderDonationCard)
+      const renderDonationCardStatus = document.createElement('span')
+      if (donation.donationConfirmed){
+        renderDonationCardStatus.classList.add("donation-data__container__donation-card__confimed");
+        renderDonationCardStatus.innerHTML = 'Coletado'
+      }
+      else{
+        renderDonationCardStatus.classList.add("donation-data__container__donation-card__scheduled");
+        renderDonationCardStatus.innerHTML = 'Agendado'
+      }
+      renderDonationCard.appendChild(renderDonationCardStatus)
+      
+      renderDonationDataContainer.appendChild(renderDonationCard)
 
-    openDonationDetails(donation)
-  })
+      openDonationDetails(donation)
+    })
 }
 
 // ========= FUNÇÕES PARA MANIPULAR OS DADOS DO LOCALSTORAGE =============

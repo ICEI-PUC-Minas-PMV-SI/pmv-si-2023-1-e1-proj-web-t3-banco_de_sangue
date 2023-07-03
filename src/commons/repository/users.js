@@ -46,3 +46,24 @@ const updateUser = (userUpdated) => {
 
   updateAllUsers(usersUpdated);
 }
+
+const createUserDonations = (userId, donation) => {
+  const userToUpdate = findUserById(userId)
+  const donations = userToUpdate.donations || []
+  const updatedDonations = [...donations, donation]
+
+  const updatedUser = {
+    ...userToUpdate,
+    donations: updatedDonations
+  };
+
+  const users = getAllUsers();
+  const usersUpdated = users.map((user) => {
+    if (user.id === userId) {
+      return updatedUser;
+    }
+    return user;
+  })
+
+  updateAllUsers(usersUpdated);
+}
