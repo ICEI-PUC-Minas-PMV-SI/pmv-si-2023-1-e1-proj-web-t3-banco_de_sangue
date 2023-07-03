@@ -57,7 +57,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT05 - Gerenciamento das próprias informações por novos usuários representantes de banco de sangue**
+**Caso de Teste** | **CT05 - Autogerenciamento das próprias informações por novos usuários representantes de banco de sangue**
  :--------------: | ------------
 **Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
 **Requisitos associados** | RF-008
