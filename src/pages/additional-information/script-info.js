@@ -1,3 +1,5 @@
+verifyLoggedUser();
+
 const getDatabase = () =>  {
   const databaseString = localStorage.getItem('base-blood-user-db');
   return databaseString ? JSON.parse(databaseString) : {};

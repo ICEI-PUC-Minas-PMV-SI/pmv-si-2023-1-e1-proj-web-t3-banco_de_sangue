@@ -97,6 +97,8 @@ const signupButtonOnClick = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  verifyUserIsAlreadyLogged();
+  
   // Registrando função callback para o formulário
   const form = document.getElementById("signup-form");
   form.addEventListener("submit", signupFormOnSubmit);

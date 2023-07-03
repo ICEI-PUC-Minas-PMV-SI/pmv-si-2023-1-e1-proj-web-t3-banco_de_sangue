@@ -1,3 +1,5 @@
+verifyLoggedUser();
+
 // =========== Funções ===========
 const renderUserIsNotADonator = (donationData, userId) => {
   const renderYouReNotADonator = document.createElement('div')
@@ -170,14 +172,6 @@ function editUser(userId, updatedUser) {
   return database.find(user => user.id === userId);
 }
 
-function deleteUser(userId) {
-  const database = getDatabase();
-  const userIndex = database.findIndex(user => user.id === userId);
-  if (userIndex !== -1) {
-    database.splice(userIndex, 1);
-    saveDatabase(database);
-  }
-}
 
 // ============== RENDERIZAR INFORMAÇÕES DO DOADOR ===================
 

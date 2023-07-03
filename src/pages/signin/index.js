@@ -58,6 +58,8 @@ const signinButtonOnClick = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  verifyUserIsAlreadyLogged();
+  
   // Registrando função callback para o formulário
   const form = document.getElementById("signin-form");
   form.addEventListener("submit", signinFormOnSubmit);

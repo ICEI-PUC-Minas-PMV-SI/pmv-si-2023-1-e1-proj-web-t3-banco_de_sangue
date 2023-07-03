@@ -16,6 +16,8 @@ const editAccount = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  verifyRepresentativeUser();
+  
   // Registrando função callback para o botão
   const deleteAccountbutton = document.getElementById('delete-account-button');
   deleteAccountbutton.addEventListener('click', () => {
