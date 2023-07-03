@@ -25,11 +25,11 @@ Nesta seção são documentados os testes de software que verificam a correta im
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
 
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - usuários logados ou não, visualizem a página inicial do sistema**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário deve acessar o link do site do seguinte endereço: https://banco-de-sangue.netlify.app/<br>2) Ao entrar na página principal o usuário deve clicar no botão "Cadastra-se" e criar seu login.<br>3) Usuário deve preencher os campos solicitados, incluindo: nome completo, e-mail,  DDD e telefone, senha, confirmar senha, escolher (sim ou não) para ser um representante,<br> 4) Em seguida clica no botão "Cadastrar".
+**Procedimento**  | 1) Usuário pode acessar o link do site no seguinte endereço: https://banco-de-sangue.netlify.app/<br>2) Ao entrar na página principal o usuário pode visualizar toda apagina e clicar nos botões saiba mais das seguintes opões: "Por que doar?", "quem pode doar", "processo de doação de sangue", "mitos e verdade sobre doaçao", "tipos de sangue", "quem somos".
 **Requisitos associados** | RF-001
-**Resultado esperado** | A aplicação deve verifica se os dados são válidos e informa ao usuário caso haja algum problema.
+**Resultado esperado** | O usuário fica bem informado antes de fazer seu cadastro.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
