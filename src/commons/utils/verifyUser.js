@@ -1,5 +1,4 @@
 const verifyLoggedUser = () => {
-  console.log('entrou')
   const loggedUser = getSignedInUser();
 
   if (!loggedUser || !loggedUser?.userId) {
