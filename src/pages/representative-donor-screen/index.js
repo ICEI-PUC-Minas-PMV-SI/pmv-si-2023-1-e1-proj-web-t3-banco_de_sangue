@@ -9,6 +9,11 @@ const editAccount = () => {
   addEditAccountModalToDOM(userId)
 }
 
+const scheduleDonation = () => {
+  const userId = window.location.search.split('id=')[1].split('&')[0];
+  addScheduleDonationModalToDOM(userId)
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   // Registrando função callback para o botão
@@ -19,4 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const editButton = document.getElementById('edit-account-button');
   editButton.addEventListener('click', editAccount);
+  
+  const scheduleDonationButton = document.getElementById('schedule-donation-button');
+  scheduleDonationButton.addEventListener('click', scheduleDonation);
 });

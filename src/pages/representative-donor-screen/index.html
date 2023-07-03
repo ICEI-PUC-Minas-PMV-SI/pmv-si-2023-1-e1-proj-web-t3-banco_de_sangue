@@ -82,7 +82,7 @@
             <p class="main-menu__action__text">Encerrar</p>
           </div>
           <div class="main-menu__action__div" id="schedule-div">
-            <button class="main-menu__action__button" id="open-modal-schedule-donation">
+            <button class="main-menu__action__button" id="schedule-donation-button">
               <object data="../../public/assets/icons/schedule-icon.png"></object>
             </button>
             <p class="main-menu__action__text">Agendar</p>
@@ -105,29 +105,6 @@
                 Fechar
               </button>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="modal-schedule-donation" class="modal">
-        <div class="modal-content">
-          <div class="modal-content__div">
-            <h1 class="modal-content__title">Agendar doação</h1>
-            <form class="register-section__form">
-              <p>Data</p>
-              <input class="primary-input" placeholder="Data" type="date" />
-              <p>Horario</p>
-              <input class="primary-input" placeholder="Horario" type="time" />
-              <input class="primary-input" placeholder="Cep do hemocentro" />
-              <input class="primary-input" placeholder="Numero do hemocentro" />
-              <input class="primary-input" placeholder="Nome da rua do hemocentro" />
-              <input class="primary-input" placeholder="Nome da cidade do hemocentro" />
-
-              <div class="register-section__button-div">
-                <button type="button" class="register-section__button-div__cancel-schedule">Cancelar</button>
-                <button type="button" class="register-section__button-div__confirm-schedule">Confirmar</button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -172,11 +149,13 @@
       <section class="donation-data"></section>
     </main>
     <script src="../../commons/local-storage/index.js"></script>
+    <script src="../../commons/utils/UUID.js"></script>
     <script src="../../commons/repository/users.js"></script>
     <script src="../../commons/signin/index.js"></script>
     <script src="../../commons/utils/input.js"></script>
     <script src="../../commons/interface/delete-account-modal.js"></script>
     <script src="../../commons/interface/edit-account-modal.js"></script>
+    <script src="../../commons/interface/schedule-donation-modal.js"></script>
     <script src="script-donor.js"></script>
     <script src="script-header.js"></script>
     <script src="script-modal.js"></script>
