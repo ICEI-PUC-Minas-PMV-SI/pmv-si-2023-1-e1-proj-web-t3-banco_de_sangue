@@ -97,12 +97,12 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT10 - Acesso às informações sobre doação de sangue**
+**Caso de Teste** | **CT10 - Remoção de informação do sistema**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador ele consegue remover sua conta através do botão "Encerrar".<br>2) Após  clicar encerrar aparecera uma outra tela pedindo para ele confirmar a remoção de sua conta.
 **Requisitos associados** | RF-015
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado esperado** | O usuário consegue remover sua conta.
+**Dados de entrada** | Faz o Login e ao entrar na página do doador clica no Encerrar.
 **Resultado obtido** | Sucesso.
 
 
