@@ -61,7 +61,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
  :--------------: | ------------
 **Procedimento**  | 1) O usuário acessa a aplicação, e faz login com email e senha já cadastrados anteriormente.<br>2) Na tela seguinte deverá ser clicado no botão representado com um lápis para edição do perfil<br>.3) No formulário de "Editar perfil" o usuário deverá fazer as alterações nos campos possíveis.<br>4) Após a edição das informações o usuário deverá clicar no botão de "Confirmar".
 **Requisitos associados** | RF-008
-**Resultado esperado** | O usuário representante do banco de sangue consegue acessar as suas informações, realizar alterações e salvá-las..
+**Resultado esperado** | O usuário representante do banco de sangue consegue acessar as suas informações, realizar alterações e salvá-las.
 **Dados de entrada** | Inserção de dados válidos no formulário de "editar perfil".
 **Resultado obtido** | Sucesso.
 
