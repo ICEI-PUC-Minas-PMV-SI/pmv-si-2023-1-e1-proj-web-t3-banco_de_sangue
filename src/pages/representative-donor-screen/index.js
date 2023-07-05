@@ -27,6 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const editButton = document.getElementById('edit-account-button');
   editButton.addEventListener('click', editAccount);
   
-  const scheduleDonationButton = document.getElementById('schedule-donation-button');
+  const scheduleDonationButton = document.getElementById('open-modal-schedule-donation');
   scheduleDonationButton.addEventListener('click', scheduleDonation);
 });
