@@ -2,17 +2,17 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: Banco de doadores de sangue
 authors:
-  - family-names: Xavier
+  - family-names: Henrique Martins Xavier
     given-names: Breno
   - family-names: de Lacerda Tetzner
     given-names: Bruno
-  - family-names: Cintra
-    given-names: Camila
-  - family-names: Freire
+  - family-names: Cintra de Oliveira
+    given-names: Camilla
+  - family-names: Daniel Soriano Freire
     given-names: Geraldo
   - family-names: Modesto
     given-names: Gilberto
-  - family-names: Lima
+  - family-names: de Almeida Lima
     given-names: Ramon
   - name-suffix: Professora
     affiliation: PUC Minas
