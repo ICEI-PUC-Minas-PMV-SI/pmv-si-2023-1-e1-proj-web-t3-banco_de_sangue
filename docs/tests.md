@@ -47,7 +47,7 @@ Nesta seção são documentados os testes de software que verificam a correta im
 
 **Caso de Teste** | **CT04 - Acesso à aplicação por usuários cadastrados**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário cadastrado acessa a tela principal através do link: https://banco-de-sangue.netlify.app/. Em seguida clica em fazer login.<br>2) O usuário informa e-mail e senha e clica no botão "Entrar".<br>3) Pronto! Usuário logado.
+**Procedimento**  | 1) O usuário cadastrado acessa a tela principal através do link: https://banco-de-sangue.netlify.app/.<br>2) Clica em "Fazer login".<br>3) O usuário informa e-mail e senha e clica no botão "Entrar".<br>4) Pronto! Usuário logado.
 **Requisitos associados** | RF-009
 **Resultado esperado** | O usuário consegue fazer login na aplicação.
 **Dados de entrada** | Inserção de dados válidos no formulário de login.
