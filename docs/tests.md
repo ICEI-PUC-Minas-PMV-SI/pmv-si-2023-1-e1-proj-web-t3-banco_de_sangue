@@ -125,13 +125,13 @@ Nesta seção são documentados os testes de software que verificam a correta im
 |*Caso de Teste*                                 |*TC-07 - Gerenciamento de informações de doadores de sangue por rerpresentantes de banco de sangue*                                         |
 |---|---|
 |Requisito Associado | RF-013 - Usuários, representantes de banco de sangue, logados, conseguem gerenciar dados da conta de doadores.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-013.mkv | 
 
 
 |*Caso de Teste*                                 |*TC-08 - Encerramento da própria conta do sistema pelo usuário*                                         |
 |---|---|
 |Requisito Associado | RF-015 - Usuários, doador ou representante do banco de sangue, logados conseguem remover sua conta da aplicação.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-015.mkv | 
 
 
 
