@@ -31,7 +31,7 @@ Nesta seção são documentados os testes de software que verificam a correta im
 
 **Caso de Teste** | **CT02 - Autogerenciamento de informações pelos doadores**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário previamente cadastrado como doador, acessa a aplicação e faz login com email e senha.>2) Na tela seguinte, o usuário clica no botão de "Editar" representado por um lápis.<br>3) Inserir os dados editáveis no formulário: Telefone, Peso, Data de Nascimento, Cidade, Tipo Sanguíneo e Responder à pergunta: "Está se sentido bem?" (Sim ou Não).<br>4) Clicar em "Confirmar".
+**Procedimento**  | 1) O usuário previamente cadastrado como doador, acessa a aplicação e faz login com email e senha.<br>2) Na tela seguinte, o usuário clica no botão de "Editar" representado por um lápis.<br>3) Inserir os dados editáveis no formulário: Telefone, Peso, Data de Nascimento, Cidade, Tipo Sanguíneo e Responder à pergunta: "Está se sentido bem?" (Sim ou Não).<br>4) Clicar em "Confirmar".
 **Requisitos associados** | RF-007
 **Resultado esperado** | O usuário consegue gerenciar os dados da sua conta.
 **Dados de entrada** | Inserir informações no formulário de "Editar Perfil". 
