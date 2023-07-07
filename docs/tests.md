@@ -31,7 +31,7 @@ Nesta seção são documentados os testes de software que verificam a correta im
 
 **Caso de Teste** | **CT02 - Autogerenciamento de informações pelos doadores**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador, consegue gerenciar seu cadastro através do botão "Editar Perfil".<br>2) O usuário gerenciará seus dados como: Nome, Telefone, E-mail, Data de Nascimento, Cidade, Peso e Tipo de Sangue clicando em "Editar Perfil".<br>3) Após as alterações clicar em "Confirmar".
+**Procedimento**  | 1) O usuário previamente cadastrado como doador, acessa a aplicação e faz login com email e senha.>2) Na tela seguinte, o usuário clica no botão de "Editar" representado por um lápis.<br>3) Inserir os dados editáveis no formulário: Telefone, Peso, Data de Nascimento, Cidade, Tipo Sanguíneo e Responder à pergunta: "Está se sentido bem?" (Sim ou Não).<br>4) Clicar em "Confirmar".
 **Requisitos associados** | RF-007
 **Resultado esperado** | O usuário consegue gerenciar os dados da sua conta.
 **Dados de entrada** | Inserir informações no formulário de "Editar Perfil". 
@@ -39,7 +39,7 @@ Nesta seção são documentados os testes de software que verificam a correta im
 
 **Caso de Teste** | **CT03 - Autogerenciamento do cadastro por novos usuários representantes de banco de sangue**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário previamente cadastrado como representante de banco de sangue, cessa a aplicação e faz login com email e senha.<br>2) Na tela seguinte o usuário clica no botão de "Editar" representado por um lápis.<br>3) Inserir os dados editáveis no formulário: Telefone, Peso, Data de Nascimento, Cidade, Tipo Sanguíneo e Responder à pergunta: "Está se sentido bem?" (Sim ou Não).<br>4) Clicar em "Confirmar".
+**Procedimento**  | 1) O usuário previamente cadastrado como representante de banco de sangue, acessa a aplicação e faz login com email e senha.<br>2) Na tela seguinte, o usuário clica no botão de "Editar" representado por um lápis.<br>3) Inserir os dados editáveis no formulário: Telefone, Peso, Data de Nascimento, Cidade, Tipo Sanguíneo e Responder à pergunta: "Está se sentido bem?" (Sim ou Não).<br>4) Clicar em "Confirmar".
 **Requisitos associados** | RF-008
 **Resultado esperado** | O usuário consegue acessar as informações do seu cadastro e modificá-las e salvá-las.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
