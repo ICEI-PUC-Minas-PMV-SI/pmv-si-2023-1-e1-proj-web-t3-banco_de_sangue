@@ -33,7 +33,7 @@ Nesta seção são documentados os testes de software que verificam a correta im
  :--------------: | ------------
 **Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador, consegue gerenciar seu cadastro através do botão "Editar Perfil".<br>2) O usuário gerenciará seus dados como, Nome, Telefone, E-mail, Data de nascimento, Cidade, Peso e Tipo Sangue clicando em "Editar Perfil". 3) Após as alterações clicar em "Confirmar".
 **Requisitos associados** | RF-007
-**Resultado esperado** | O usuário consegue gerenciar sua os dados da sua conta.
+**Resultado esperado** | O usuário consegue gerenciar os dados da sua conta.
 **Dados de entrada** | Inserir informações no formulário de "Editar Perfil". 
 **Resultado obtido** | Sucesso.
 
@@ -85,26 +85,59 @@ Nesta seção são documentados os testes de software que verificam a correta im
 **Dados de entrada** | Faz o Login e ao entrar na página do doador clica no botão "Encerrar".
 **Resultado obtido** | Sucesso.
 
-
-
-
-
-
-
-
 ## Registro dos Testes de Software
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
-
-|*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
+|*Caso de Teste*                                 |*TC-01 - Acesso às informações sobre doação de sangue*                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
+|Requisito Associado | RF-001, RF-002, RF-003, RF-004, RF-005 e RF-006 - Usuários, logados ou não, tem acesso às informações sobre doação de sangue: "INtuito do projeto", "Conscientização sobre a doação de sangue", "Pré-requisitos para doação de sangue", "Mitos e Verdades", "Tipos de sangue".|
 |Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
 
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
+|*Caso de Teste*                                 |*TC-02 - Autogerenciamento da conta do doador*                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
+|Requisito Associado | RF-007 - Usuários logados conseguem gerenciar dados da sua conta.|
 |Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+|*Caso de Teste*                                 |*TC-03 - Autogerenciamento da conta do representante do banco de sangue*                                         |
+|---|---|
+|Requisito Associado | RF-008 - Usuários, representantes do banco de sangue, logados, conseguem gerenciar dados da sua conta.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+|*Caso de Teste*                                 |*TC-04 - Acesso à aplicação por usuários doadores cadastrados*                                         |
+|---|---|
+|Requisito Associado | RF-009 - Usuários, doadores, cadastrados, conseguem logar na aplicação.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+|*Caso de Teste*                                 |*TC-05 - Usuário cadastrado insere informações complementares para tornar-se doador*                                         |
+|---|---|
+|Requisito Associado | RF-011 - Usuários, doadores,  logados conseguem inserir informações complementares ao seu cadastro.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+|*Caso de Teste*                                 |*TC-06 - Usuário cadastrado tem acesso às informações de doações anteriores*                                         |
+|---|---|
+|Requisito Associado | RF-012 - Usuários, doadores, logados conseguem visualizar informações sobre suas doações.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+|*Caso de Teste*                                 |*TC-07 - Gerenciamento da conta dos doadores por representante do banco de sangue*                                         |
+|---|---|
+|Requisito Associado | RF-013 - Usuários, representantes de banco de sangue, logados, conseguem gerenciar dados da conta de doadores.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+|*Caso de Teste*                                 |*TC-08 - Usuário cadastrado consegue remover sua conta*                                         |
+|---|---|
+|Requisito Associado | RF-015 - Usuários, doador ou representante do banco de sangue, logados conseguem remover sua conta da aplicação.|
+|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+
+
+
+
+
+
 
 
 ## Avaliação dos Testes de Software
