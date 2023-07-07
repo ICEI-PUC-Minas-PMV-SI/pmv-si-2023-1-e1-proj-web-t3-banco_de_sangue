@@ -90,36 +90,36 @@ Nesta seção são documentados os testes de software que verificam a correta im
 |*Caso de Teste*                                 |*TC-01 - Acesso às informações sobre doação de sangue*                                         |
 |---|---|
 |Requisito Associado | RF-001, RF-002, RF-003, RF-004, RF-005 e RF-006 - Usuários, logados ou não, tem acesso às informações sobre doação de sangue: "INtuito do projeto", "Conscientização sobre a doação de sangue", "Pré-requisitos para doação de sangue", "Mitos e Verdades", "Tipos de sangue".|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-001%20-%20RF-002%20RF-003%20-%20RF-004%20-%20RF-005%20-%20RF-006.mkv| 
 
 |*Caso de Teste*                                 |*TC-02 - Autogerenciamento de informações pelos doadores*                                         |
 |---|---|
 |Requisito Associado | RF-007 - Usuários logados conseguem gerenciar dados da sua conta.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-007.mkv| 
 
 
 |*Caso de Teste*                                 |*TC-03 - Autogerenciamento do cadastro por novos usuários representantes de banco de sangue*                                         |
 |---|---|
 |Requisito Associado | RF-008 - Usuários, representantes do banco de sangue, logados, conseguem gerenciar dados da sua conta.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-008.mkv| 
 
 
 |*Caso de Teste*                                 |*TC-04 - Acesso à aplicação por usuários cadastrados*                                         |
 |---|---|
 |Requisito Associado | RF-009 - Usuários, doadores, cadastrados, conseguem logar na aplicação.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-009.mkv| 
 
 
 |*Caso de Teste*                                 |*TC-05 - Inserção de informações complementares para tornar-se um doador*                                         |
 |---|---|
 |Requisito Associado | RF-011 - Usuários, doadores,  logados conseguem inserir informações complementares ao seu cadastro.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-011.mkv | 
 
 
 |*Caso de Teste*                                 |*TC-06 - Acesso àsinformações sobre doações anteriores*                                         |
 |---|---|
 |Requisito Associado | RF-012 - Usuários, doadores, logados conseguem visualizar informações sobre suas doações.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Link do vídeo do teste realizado: | https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/docs/videos/RF-012.mkv | 
 
 
 |*Caso de Teste*                                 |*TC-07 - Gerenciamento de informações de doadores de sangue por rerpresentantes de banco de sangue*                                         |
