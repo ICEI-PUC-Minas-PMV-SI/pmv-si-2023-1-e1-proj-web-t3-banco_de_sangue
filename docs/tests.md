@@ -5,7 +5,6 @@ Neste projeto serão realizados dois tipos de testes:
  - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
  - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
 
-Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
 
 A documentação dos testes é dividida nas seguintes seções:
 
@@ -22,87 +21,68 @@ Nesta seção são documentados os testes de software que verificam a correta im
 
 ## Plano de Testes de Software
 
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
-
-
-**Caso de Teste** | **CT01 - usuários logados ou não, visualizem a página inicial do sistema**
+**Caso de Teste** | **CT01 - Acesso às informações sobre doação de sangue**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário pode acessar o link do site no seguinte endereço: https://banco-de-sangue.netlify.app/<br>2) Ao entrar na página principal o usuário pode visualizar toda apagina e clicar nos botões saiba mais das seguintes opões: "Por que doar?", "quem pode doar", "processo de doação de sangue", "mitos e verdade sobre doaçao", "tipos de sangue", "quem somos".
-**Requisitos associados** | RF-001
-**Resultado esperado** | O usuário fica bem informado antes de fazer seu cadastro.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
-
-**Caso de Teste** | **CT02 - O usuários logados ou não, visualizem a página referente à conscientização sobre doação de sangue**
- :--------------: | ------------
-**Procedimento**  | 1) Na tala principal o usuário clica no botão saiba mais das informações sobre "por que doar" e tira suas duvidas e fica conciente sobre doação de sangue.
-**Requisitos associados** | RF-002
-**Resultado esperado** | Usuario conciente e bem informado sobre doação de sangue.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
-**Resultado obtido** | Sucesso.
-
-**Caso de Teste** | **CT03 - Acesso às informações sobre doação de sangue**
- :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a: "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades" e "Quem somos".
-**Requisitos associados** | RF-002 RF-003 RF-004 RF-005 RF-006
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas de forma clara e de fácil entendimento, motivando o usuário a doar sangue.<br>
+**Procedimento**  | 1) O usuário acessa o link do site no seguinte endereço: https://banco-de-sangue.netlify.app/<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações sobre a aplicação clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a: "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades" ou "Quem somos".
+**Requisitos associados** | RF-001, RF-002, RF-003, RF-004, RF-005 e RF-006
+**Resultado esperado** | O usuário consegue acessar as informações sobre o intuito da aplicação sobre doação de sangue. As informações são exibidas de forma clara e de fácil entendimento, motivando o usuário a doar sangue.<br>
 **Dados de entrada** | Navegação até as telas supracitadas.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT04 - Autogerenciamento de informações pelos doadores**
+**Caso de Teste** | **CT02 - Autogerenciamento de informações pelos doadores**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador ele consegue gerenciar seu cadastro através do botão "Editar Perfil".<br>2) O usuário gerenciára seus dados como, Nome, Telefone, E-mail, Data de nascimento, Cidade, Peso e Tipo Sangue clicando em "Editar Perfil". 3) Após as alterações clicar em confirmar.
+**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador, consegue gerenciar seu cadastro através do botão "Editar Perfil".<br>2) O usuário gerenciará seus dados como, Nome, Telefone, E-mail, Data de nascimento, Cidade, Peso e Tipo Sangue clicando em "Editar Perfil". 3) Após as alterações clicar em "Confirmar".
 **Requisitos associados** | RF-007
-**Resultado esperado** | O usuário consegue geranciar sua conta.
-**Dados de entrada** | Inserir informações no formulário de Editar Perfil. 
+**Resultado esperado** | O usuário consegue gerenciar sua os dados da sua conta.
+**Dados de entrada** | Inserir informações no formulário de "Editar Perfil". 
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT05 - Autogerenciamento das próprias informações por novos usuários representantes de banco de sangue**
+**Caso de Teste** | **CT03 - Autogerenciamento do cadastro por novos usuários representantes de banco de sangue**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Procedimento**  | 1) O usuário previamente cadastrado como representante de banco de sangue, cessa a aplicação e faz login com email e senha.<br>2) Na tela seguinte o usuário clica no botão de "Editar" representado por um lápis.<br>3) Inserir os dados editáveis no formulário: Telefone, Peso, Data de Nascimento, Cidade, Tipo Sanguíneo e Responder à pergunta: "Está se sentido bem?" (Sim ou Não).<br>4) Clicar em "Confirmar".
 **Requisitos associados** | RF-008
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Resultado esperado** | O usuário consegue acessar as informações do seu cadastro e modificá-las e salvá-las.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT06 - Acesso às informações sobre doação de sangue**
+**Caso de Teste** | **CT04 - Acesso à aplicação por usuários cadastrados**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário cadastrado acessa a tela principal através do link: https://banco-de-sangue.netlify.app/, em seguiga clica em fazer login.<br>2) O usuário informa e-mail, senha clica no botão entrar.<br>3) Usuario logado, pode acessa as informações no menu au lado e navegar nas páginas correspondentes a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos", "voltar para home".
+**Procedimento**  | 1) O usuário cadastrado acessa a tela principal através do link: https://banco-de-sangue.netlify.app/. Em seguida clica em fazer login.<br>2) O usuário informa e-mail e senha e clica no botão "Entrar".<br>3) Pronto! Usuário logado.
 **Requisitos associados** | RF-009
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado esperado** | O usuário consegue fazer login na aplicação.
+**Dados de entrada** | Inserção de dados válidos no formulário de login.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT07 - Acesso às informações sobre doação de sangue**
+**Caso de Teste** | **CT05 - Inserção de informações complementares para tornar-se um doador**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Procedimento**  | 1) O usuário acessa a aplicação com login e senha.<br>2) Na tela seguinte o usuário clica no botão "Quero ser doador".<br>3) No formulário aberto insere as informações de peso, data de nascimento, data da última doação, cidade onde reside, tipo de sanguíneo e responde à pergunta:"Está se sentindo bem?" (Sim ou Não).<br>4) Clica em "Cadastrar".
 **Requisitos associados** | RF-011
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado esperado** | O usuário consegue inserir informações complementares para tornar-se um doador.
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro de informações complementares.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT08 - Acesso às informações sobre doação de sangue**
+**Caso de Teste** | **CT06 - Acesso às informações sobre doações de sangue anteriores**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário acessa a aplicação, seja como usuário cadastrado ou não.<br>2) O usuário navega pela tela principal, sem estar logado, e acessa as informações clicando nos botões "Saiba mais", ou quando estiver logado, através do menu hamburguer, clicando na página correspondente a "Porque doar?", "Quem pode doar?", "Processo de doação", "Tipos de sangue", "Mitos e Verdades", "Quem somos".
+**Procedimento**  |1) O usuário acessa a aplicação com login e senha.<br>2) Na tela seguinte o usuário clica no card que contém as informações sobre suas doações de sangue anteriores.
 **Requisitos associados** | RF-12
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado esperado** | O usuário consegue acessar as informações sobre suas doações de sangue.
+**Dados de entrada** | Navegação pelas telas do doador.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT09 - O sistema deve permitir que representantes de banco de sangue gerenciem informações de doadores de sangue**
+**Caso de Teste** | **CT07 - Gerenciamento de informações de doadores de sangue por representantes de banco de sangue**
  :--------------: | ------------
-**Procedimento**  |  1) O sistema deve permitir que o representante gerenciem informções de doadores de sangue.<br>2)As informações disponíveis são: Nome completo, e-mail, telefone, peso, tipo sanguineo, cidade, data de nascimento, estar sentindo bem (sim ou não).
+**Procedimento**  |  1) O usuário representante do banco de sangue faz login com email e senha.<br>2) Na tela seguinte o usuário terá os card´s com as informações dos doadores.<br>3)  Basta clicar no card específico. Será aberta uma tela com informações do doador.<br>4) Para editar as informações clicar no botão de "Editar perfil" para as informações disponíveis que são: Nome completo, e-mail, telefone, peso, tipo sanguíneo, cidade, data de nascimento, "Está se sentindo bem?" (sim ou não).<br>
 **Requisitos associados** | RF-013
-**Resultado esperado** | O usuário consegue acessar as informações sobre a doação de sangue. As informações exibidas são claras, concisas e fornecem um entendimento abrangente sobre cada grupo de alimento.Criação de cadastro A aplicação verifica se os dados são válidos e informa ao usuário caso haja algum problema.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Resultado esperado** | O representante do banco de sangue consegue acessar as informações dos doadores de sangue.
+**Dados de entrada** | Navegação pelas telas de doadores de sangue.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT10 - Remoção de informação do sistema**
+**Caso de Teste** | **CT8 - Remoção de informação do sistema**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador ele consegue remover sua conta através do botão "Encerrar".<br>2) Após  clicar encerrar aparecera uma outra tela pedindo para ele confirmar a remoção de sua conta.
+**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador, consegue remover sua conta através do botão "Encerrar".<br>2) Após  clicar em encerrar aparecerá uma outra tela pedindo para ele confirmar a remoção de sua conta.
 **Requisitos associados** | RF-015
 **Resultado esperado** | O usuário consegue remover sua conta.
-**Dados de entrada** | Faz o Login e ao entrar na página do doador clica no Encerrar.
+**Dados de entrada** | Faz o Login e ao entrar na página do doador clica no botão "Encerrar".
 **Resultado obtido** | Sucesso.
 
 
