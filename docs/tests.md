@@ -31,7 +31,7 @@ Nesta seção são documentados os testes de software que verificam a correta im
 
 **Caso de Teste** | **CT02 - Autogerenciamento de informações pelos doadores**
  :--------------: | ------------
-**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador, consegue gerenciar seu cadastro através do botão "Editar Perfil".<br>2) O usuário gerenciará seus dados como, Nome, Telefone, E-mail, Data de nascimento, Cidade, Peso e Tipo Sangue clicando em "Editar Perfil". 3) Após as alterações clicar em "Confirmar".
+**Procedimento**  | 1) O usuário depois de cadastrado, dentro da página do doador, consegue gerenciar seu cadastro através do botão "Editar Perfil".<br>2) O usuário gerenciará seus dados como: Nome, Telefone, E-mail, Data de Nascimento, Cidade, Peso e Tipo de Sangue clicando em "Editar Perfil".<br>3) Após as alterações clicar em "Confirmar".
 **Requisitos associados** | RF-007
 **Resultado esperado** | O usuário consegue gerenciar os dados da sua conta.
 **Dados de entrada** | Inserir informações no formulário de "Editar Perfil". 
