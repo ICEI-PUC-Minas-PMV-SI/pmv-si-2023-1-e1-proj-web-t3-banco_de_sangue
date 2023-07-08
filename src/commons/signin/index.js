@@ -12,7 +12,6 @@ const signInUser = (user) => {
 
 const signOut = () => {
   const signIn = getSignedInUser();
-
   if (signIn) {
     removeItemFromLocalStorage(signinKey)
   }

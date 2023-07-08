@@ -280,8 +280,6 @@ if (user.bloodType) {
 const donationData = document.getElementsByClassName('donation-data')[0];
 
 if (!user.bloodType || !user.bornAt || !user.isHealthNow || !user.city) {
-  console.log(user)
-  console.log('here')
   renderUserIsNotADonator(donationData)
 }
 else if (!user.donations) {

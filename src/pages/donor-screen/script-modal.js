@@ -125,6 +125,7 @@ closeButtonDelete.addEventListener("click", function() {
   modalDelete.style.display = "none";
 });
 closeButtonDeleteAndConfirm.addEventListener("click", function() {
+  signOut()
   deleteUser(user.id)
   modalDelete.style.display = "none";
   window.location.href='/'

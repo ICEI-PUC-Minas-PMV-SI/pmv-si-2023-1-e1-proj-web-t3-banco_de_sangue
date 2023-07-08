@@ -1,6 +1,6 @@
 const verifyLoggedUser = () => {
   const loggedUser = getSignedInUser();
-
+  console.log(loggedUser)
   if (!loggedUser || !loggedUser?.userId) {
     window.location.assign('../signin/index.html');
   }
@@ -8,7 +8,7 @@ const verifyLoggedUser = () => {
 
 const verifyUserIsAlreadyLogged = () => {
   const loggedUser = getSignedInUser();
-
+  console.log(loggedUser)
   if (loggedUser?.userId) {
     const { isRepresentative } = findUserById(loggedUser.userId);
 
