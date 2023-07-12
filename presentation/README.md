@@ -1,9 +1,6 @@
 # Apresentação
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
-
-Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo neste arquivo Readme.md.
-
+Apresentamos a seguir os links da primeira apresentação do projeto, a apresentação após conclusão do projeto e um vídeo com a apresentação de como a aplicação funciona.
 
 * [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
 * [Apresentação final](https://pucminas.instructure.com/courses/148683/assignments/636446/submissions/228421?download=8988659) 
