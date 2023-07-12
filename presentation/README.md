@@ -6,7 +6,7 @@ Apresentamos a seguir os links da primeira apresentação do projeto, a apresent
 * [Apresentação final](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/blob/main/presentation/Banco%20de%20Sangue%20-%20Apresenta%C3%A7%C3%A3o%20Final.pdf) 
 * [Vídeo de demonstração](https://clipchamp.com/watch/G8PcDskcSLo)
 
-O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
+templados na apresentação são listados a seguir.
 
 ## Título do Projeto
 
