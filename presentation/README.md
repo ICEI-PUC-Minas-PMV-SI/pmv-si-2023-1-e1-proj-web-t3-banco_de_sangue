@@ -6,7 +6,7 @@ Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e 
 
 
 * [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](https://pucminas.instructure.com/courses/148683/assignments/636446/submissions/228421?download=8988659) -- 
+* [Apresentação final](https://pucminas.instructure.com/courses/148683/assignments/636446/submissions/228421?download=8988659) 
 * [Vídeo de demonstração](https://clipchamp.com/watch/G8PcDskcSLo)
 
 O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
