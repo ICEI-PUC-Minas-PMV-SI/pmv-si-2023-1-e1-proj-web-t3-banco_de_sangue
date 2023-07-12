@@ -3,7 +3,7 @@
 Apresentamos a seguir os links da primeira apresentação do projeto, a apresentação após conclusão do projeto e um vídeo com a apresentação de como a aplicação funciona.
 
 * [Pitch inicial](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/presentation/Banco de Sangue - Apresentação Inicial.pptx) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](https://pucminas.instructure.com/courses/148683/assignments/636446/submissions/228421?download=8988659) 
+* [Apresentação final](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-1-e1-proj-web-t3-banco_de_sangue/tree/main/presentationhttps://pucminas.instructure.com/courses/148683/assignments/636446/submissions/228421?download=8988659) 
 * [Vídeo de demonstração](https://clipchamp.com/watch/G8PcDskcSLo)
 
 O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
