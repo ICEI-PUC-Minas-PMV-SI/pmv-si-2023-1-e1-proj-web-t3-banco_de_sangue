@@ -2,7 +2,7 @@
 
 Apresentamos a seguir os links da primeira apresentação do projeto, a apresentação após conclusão do projeto e um vídeo com a apresentação de como a aplicação funciona.
 
-* [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
+* [Pitch inicial](presentation/Banco de Sangue - Apresentação Inicial) -- arquivo com os slides da apresentação inicial
 * [Apresentação final](https://pucminas.instructure.com/courses/148683/assignments/636446/submissions/228421?download=8988659) 
 * [Vídeo de demonstração](https://clipchamp.com/watch/G8PcDskcSLo)
 
